@@ -13,7 +13,7 @@ getStops toMsg =
     Http.get
         { url =
             -- "https://tplfvg.it/services/bus-stops/all"
-            "/services/bus-stops/all"
+            "/services/bus-stops/all.json"
         , expect = Http.expectJson toMsg busStopsDecoder
         }
 
@@ -50,6 +50,7 @@ busStopDecoder =
         (\_ coordinates properties ->
             { name = properties.name
             , code = properties.code
+            , commune = properties.commune
             , coordinates = coordinates
             , services = properties.services
             }
@@ -64,22 +65,24 @@ propertiesDecoder :
     Decoder
         { name : String
         , code : String
+        , commune : String
         , services : List Service
         }
 propertiesDecoder =
     DecodeComplete.object
-        (\name code services ->
+        (\name code commune services ->
             { name = name
             , code = code
             , services = services
+            , commune = commune
             }
         )
         |> DecodeComplete.required "name" Json.Decode.string
         |> DecodeComplete.required "code" Json.Decode.string
+        |> DecodeComplete.required "commune" Json.Decode.string
         |> DecodeComplete.discard "address"
         |> DecodeComplete.discard "marker"
         |> DecodeComplete.discard "accessibility"
-        |> DecodeComplete.discard "commune"
         |> DecodeComplete.required "services" (Json.Decode.list serviceDecoder)
         |> DecodeComplete.complete
 

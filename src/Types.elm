@@ -38,6 +38,7 @@ type BackendMsg
 type alias Stop =
     { name : String
     , code : String
+    , commune : String
     , coordinates : Point
     , services : List Service
     }
