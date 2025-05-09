@@ -7,7 +7,10 @@ try {
         createServer: ({ onRequest, onUpgrade }) =>
             http
                 .createServer((request, response) => {
-                    if (false && request.url.startsWith("/services")) {
+                    if (
+                        request.url.startsWith("/it") ||
+                        request.url.startsWith("/services/timetables")
+                    ) {
                         tplFvgProxy(request, response);
                     } else {
                         // Let elm-watch’s server do its thing for all other URLs.

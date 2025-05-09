@@ -1,9 +1,10 @@
-module Types exposing (BackendModel, BackendMsg(..), FrontendModel, FrontendMsg(..), Point, Service(..), Stop, ToBackend(..), ToFrontend(..))
+module Types exposing (BackendModel, BackendMsg(..), FrontendModel, FrontendMsg(..), Point, Service(..), StopInfo, ToBackend(..), ToFrontend(..))
 
 import Angle exposing (Angle)
 import Browser exposing (UrlRequest)
 import Browser.Navigation exposing (Key)
 import Http
+import Id exposing (Id, Stop)
 import Lamdera exposing (ClientId, SessionId)
 import RemoteData exposing (WebData)
 import Url exposing (Url)
@@ -11,12 +12,12 @@ import Url exposing (Url)
 
 type alias FrontendModel =
     { key : Key
-    , stops : WebData (List Stop)
+    , stops : WebData (List StopInfo)
     }
 
 
 type alias BackendModel =
-    { stops : WebData (List Stop) }
+    { stops : WebData (List StopInfo) }
 
 
 type FrontendMsg
@@ -31,13 +32,13 @@ type ToBackend
 
 
 type BackendMsg
-    = GotStops (Result Http.Error (List Stop))
+    = GotStops (Result Http.Error (List StopInfo))
     | OnConnect SessionId ClientId
 
 
-type alias Stop =
+type alias StopInfo =
     { name : String
-    , code : String
+    , code : Id Stop
     , commune : String
     , coordinates : Point
     , services : List Service
@@ -57,4 +58,4 @@ type Service
 
 
 type ToFrontend
-    = TFStops (Result Http.Error (List Stop))
+    = TFStops (Result Http.Error (List StopInfo))

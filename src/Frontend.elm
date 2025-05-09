@@ -97,12 +97,12 @@ view model =
     }
 
 
-viewStops : RemoteData.WebData (List Types.Stop) -> Html FrontendMsg
+viewStops : RemoteData.WebData (List Types.StopInfo) -> Html FrontendMsg
 viewStops data =
     viewRemoteData viewHttpError (viewList viewStop) data
 
 
-viewStop : Types.Stop -> Html FrontendMsg
+viewStop : Types.StopInfo -> Html FrontendMsg
 viewStop stop =
     text "TODO"
 
