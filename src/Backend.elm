@@ -23,7 +23,7 @@ app =
 
 init : ( BackendModel, Cmd BackendMsg )
 init =
-    ( { stops = Loading }, Api.getStops GotStops )
+    ( { stops = NotAsked }, Cmd.none )
 
 
 update : BackendMsg -> BackendModel -> ( BackendModel, Cmd BackendMsg )
