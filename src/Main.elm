@@ -8,14 +8,12 @@ import FNV1a
 import Frame2d
 import Html exposing (Html, text)
 import Http
-import List.Extra
 import Point2d exposing (Point2d)
 import Quantity exposing (Quantity, Unitless)
 import Rectangle2d
 import RemoteData exposing (RemoteData(..), WebData)
 import Svg
 import Svg.Attributes
-import Svg.Attributes.Extra
 import Types exposing (Point, Stop)
 
 
@@ -89,45 +87,13 @@ viewStops items =
 
         stops =
             List.map viewStop items
-
-        communes =
-            items
-                |> List.Extra.gatherEqualsBy .commune
-                |> List.concatMap
-                    (\( { commune } as head, tail ) ->
-                        let
-                            enlargedBounds : BoundingBox2d Unitless world
-                            enlargedBounds =
-                                getBounds (head :: tail)
-
-                            ( width, height ) =
-                                BoundingBox2d.dimensions enlargedBounds
-                        in
-                        [ Svg.rect
-                            [ Svg.Attributes.Extra.x (BoundingBox2d.minX enlargedBounds)
-                            , Svg.Attributes.Extra.y (BoundingBox2d.minY enlargedBounds)
-                            , Svg.Attributes.Extra.width width
-                            , Svg.Attributes.Extra.height height
-                            , Svg.Attributes.stroke (communeToColor commune)
-                            , Svg.Attributes.strokeWidth "0.004"
-                            , Svg.Attributes.fill "transparent"
-                            ]
-                            []
-                        , Svg.text_
-                            [ Svg.Attributes.Extra.x (BoundingBox2d.minX enlargedBounds)
-                            , Svg.Attributes.Extra.y
-                                (BoundingBox2d.minY enlargedBounds
-                                    |> Quantity.minus (Quantity.float 0.01)
-                                )
-                            , Svg.Attributes.fontSize "0.02"
-                            , Svg.Attributes.fill (communeToColor commune)
-                            ]
-                            [ Svg.text commune ]
-                        ]
-                    )
     in
-    Svg.svg [ Svg.Attributes.viewBox viewBox ]
-        (stops ++ communes)
+    Svg.svg
+        [ Svg.Attributes.viewBox viewBox
+        , Svg.Attributes.height "auto"
+        , Svg.Attributes.width "100%"
+        ]
+        stops
 
 
 getBounds : List { a | coordinates : Point } -> BoundingBox2d Unitless world
