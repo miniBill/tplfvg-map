@@ -1,5 +1,6 @@
-module Types exposing (BackendModel, BackendMsg(..), FrontendModel, FrontendMsg(..), Stop, ToBackend(..), ToFrontend(..))
+module Types exposing (BackendModel, BackendMsg(..), FrontendModel, FrontendMsg(..), Point, Service(..), Stop, ToBackend(..), ToFrontend(..))
 
+import Angle exposing (Angle)
 import Browser exposing (UrlRequest)
 import Browser.Navigation exposing (Key)
 import Http
@@ -35,7 +36,23 @@ type BackendMsg
 
 
 type alias Stop =
-    {}
+    { name : String
+    , code : String
+    , coordinates : Point
+    , services : List Service
+    }
+
+
+type alias Point =
+    { latitude : Angle
+    , longitude : Angle
+    }
+
+
+type Service
+    = Urban
+    | Maritime
+    | ExtraUrban
 
 
 type ToFrontend
