@@ -1,23 +1,32 @@
-module Main exposing (main)
+port module Main exposing (main)
 
 import Angle
 import Api
 import BoundingBox2d exposing (BoundingBox2d)
 import Browser
+import ConcurrentTask as Task exposing (ConcurrentTask)
+import ConcurrentTask.Extra
+import ConcurrentTask.Http as Http
 import FNV1a
 import Frame2d
 import Html exposing (Html, text)
 import Html.Attributes
-import Http
 import Id exposing (Stop)
 import IdSet exposing (IdSet)
+import Json.Decode
 import Point2d exposing (Point2d)
 import Quantity exposing (Quantity, Unitless)
 import Rectangle2d
-import RemoteData exposing (RemoteData(..), WebData)
+import RemoteData exposing (RemoteData(..))
 import Svg exposing (Svg)
 import Svg.Attributes
 import Types exposing (Point, StopInfo)
+
+
+port send : Json.Decode.Value -> Cmd msg
+
+
+port receive : (Json.Decode.Value -> msg) -> Sub msg
 
 
 type alias Flags =
@@ -25,14 +34,17 @@ type alias Flags =
 
 
 type alias Model =
-    { stops : WebData (List StopInfo)
-    , endpoints : WebData (IdSet Stop)
+    { stops : RemoteData Http.Error (List StopInfo)
+    , endpoints : RemoteData Http.Error (IdSet Stop)
+    , tasks : ConcurrentTask.Extra.Pool Msg
     }
 
 
 type Msg
     = GotStops (Result Http.Error (List StopInfo))
     | GotEndpoints (Result Http.Error (IdSet Stop))
+    | OnProgress ( ConcurrentTask.Extra.Pool Msg, Cmd Msg )
+    | OnUnexpected Task.UnexpectedError
 
 
 main : Program Flags Model Msg
@@ -49,12 +61,24 @@ init : Flags -> ( Model, Cmd Msg )
 init _ =
     ( { stops = Loading
       , endpoints = Loading
+      , tasks = Task.pool
       }
-    , Cmd.batch
-        [ Api.getStops GotStops
-        , Api.getEndpoints GotEndpoints (Id.fromString "70101")
-        ]
+    , Cmd.none
     )
+        |> attempt GotStops Api.getStops
+        |> attempt GotEndpoints (Api.getEndpoints (Id.fromString "70101"))
+
+
+attempt :
+    (Result error a -> Msg)
+    -> ConcurrentTask error a
+    -> ( Model, Cmd Msg )
+    -> ( Model, Cmd Msg )
+attempt =
+    ConcurrentTask.Extra.attempt
+        { send = send
+        , onUnexpected = OnUnexpected
+        }
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -65,6 +89,16 @@ update msg model =
 
         GotEndpoints result ->
             ( { model | endpoints = RemoteData.fromResult result }, Cmd.none )
+
+        OnProgress ( tasks, cmd ) ->
+            ( { model | tasks = tasks }, cmd )
+
+        OnUnexpected err ->
+            let
+                _ =
+                    Debug.log "Unexpected error" err
+            in
+            ( model, Cmd.none )
 
 
 view : Model -> Browser.Document Msg
@@ -77,7 +111,7 @@ view model =
     }
 
 
-viewStops : WebData (IdSet Stop) -> List Types.StopInfo -> Html msg
+viewStops : RemoteData Http.Error (IdSet Stop) -> List Types.StopInfo -> Html msg
 viewStops endpoints items =
     let
         bounds : BoundingBox2d Unitless world
@@ -223,8 +257,8 @@ viewHttpError err =
         msg : String
         msg =
             case err of
-                Http.BadBody reason ->
-                    "Bad body: " ++ reason
+                Http.BadBody _ _ _ ->
+                    "Bad body"
 
                 Http.BadUrl _ ->
                     "Bad url"
@@ -235,8 +269,8 @@ viewHttpError err =
                 Http.NetworkError ->
                     "Network error"
 
-                Http.BadStatus status ->
-                    "Bad status " ++ String.fromInt status
+                Http.BadStatus { statusCode } _ ->
+                    "Bad status " ++ String.fromInt statusCode
     in
     Html.text msg
 
@@ -258,5 +292,10 @@ viewRemoteData onError onSuccess data =
 
 
 subscriptions : Model -> Sub Msg
-subscriptions _ =
-    Sub.none
+subscriptions model =
+    Task.onProgress
+        { send = send
+        , receive = receive
+        , onProgress = OnProgress
+        }
+        model.tasks

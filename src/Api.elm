@@ -1,33 +1,34 @@
 module Api exposing (getEndpoints, getStops)
 
 import Angle exposing (Angle)
+import ConcurrentTask as Task exposing (ConcurrentTask)
+import ConcurrentTask.Http as Http
 import DecodeComplete
-import Http
 import Id exposing (Environment, Id, Line, Stop)
 import IdSet exposing (IdSet)
 import Json.Decode exposing (Decoder)
 import Json.Extra
 import List.Extra
-import Parser exposing ((|.), (|=), Parser)
 import Regex exposing (Match, Regex)
-import Task exposing (Task)
 import Types exposing (Point, Service(..), StopInfo)
 
 
-getStops : (Result Http.Error (List StopInfo) -> msg) -> Cmd msg
-getStops toMsg =
+getStops : ConcurrentTask Http.Error (List StopInfo)
+getStops =
     Http.get
         { url =
             -- "https://tplfvg.it/services/bus-stops/all"
             "/services/bus-stops/all.json"
-        , expect = Http.expectJson toMsg busStopsDecoder
+        , expect = Http.expectJson busStopsDecoder
+        , timeout = Nothing
+        , headers = []
         }
 
 
-getEndpoints : (Result Http.Error (IdSet Stop) -> msg) -> Id Stop -> Cmd msg
-getEndpoints toMsg rootId =
+getEndpoints : Id Stop -> ConcurrentTask Http.Error (IdSet Stop)
+getEndpoints rootId =
     let
-        step : IdSet Stop -> List (Id Stop) -> Task Http.Error (IdSet Stop)
+        step : IdSet Stop -> List (Id Stop) -> ConcurrentTask Http.Error (IdSet Stop)
         step acc queue =
             case queue of
                 stopId :: tail ->
@@ -35,6 +36,7 @@ getEndpoints toMsg rootId =
                         |> Task.andThen
                             (\lines ->
                                 lines
+                                    |> List.take 2
                                     |> List.map getEndpointsForLine
                                     |> Task.sequence
                                     |> Task.map List.concat
@@ -45,66 +47,32 @@ getEndpoints toMsg rootId =
                     Task.succeed acc
     in
     step IdSet.empty [ rootId ]
-        |> Task.attempt toMsg
 
 
-getLinesPassingByStop : Id Stop -> Task Http.Error (List ( Id Environment, Id Line ))
+getLinesPassingByStop : Id Stop -> ConcurrentTask Http.Error (List ( Id Environment, Id Line ))
 getLinesPassingByStop stopId =
-    Http.task
+    Http.get
         { url =
             -- "https://tplfvg.it/it/il-viaggio/costruisci-il-tuo-orario/?bus_stop=" ++ Id.toString stopId ++ "&search-lines-by-bus-stops"
             "/it/il-viaggio/costruisci-il-tuo-orario/?bus_stop=" ++ Id.toString stopId ++ "&search-lines-by-bus-stops"
-        , resolver =
-            Http.stringResolver
-                (\res ->
-                    res
-                        |> generalResolver
-                        |> Result.map parseLines
-                )
-        , method = "GET"
+        , expect = Http.expectString
         , timeout = Nothing
         , headers = [ Http.header "X-Requested-With" "XMLHttpRequest" ]
-        , body = Http.emptyBody
         }
+        |> Task.map parseLines
 
 
-getEndpointsForLine : ( Id Environment, Id Line ) -> Task Http.Error (List (Id Stop))
+getEndpointsForLine : ( Id Environment, Id Line ) -> ConcurrentTask Http.Error (List (Id Stop))
 getEndpointsForLine ( environment, line ) =
-    Http.task
+    Http.get
         { url =
             -- "https://tplfvg.it/services/timetables/full/?code=" ++ Id.toString line ++ "&lang=it&env=" ++ Id.toString environment
             "/services/timetables/full/?code=" ++ Id.toString line ++ "&lang=it&env=" ++ Id.toString environment
-        , resolver =
-            Http.stringResolver
-                (\res ->
-                    res
-                        |> generalResolver
-                        |> Result.map parseEndpoints
-                )
-        , method = "GET"
+        , expect = Http.expectString
         , timeout = Nothing
         , headers = [ Http.header "X-Requested-With" "XMLHttpRequest" ]
-        , body = Http.emptyBody
         }
-
-
-generalResolver : Http.Response a -> Result Http.Error a
-generalResolver response =
-    case response of
-        Http.BadUrl_ url ->
-            Http.BadUrl url |> Err
-
-        Http.Timeout_ ->
-            Err Http.Timeout
-
-        Http.NetworkError_ ->
-            Err Http.NetworkError
-
-        Http.BadStatus_ metadata _ ->
-            Http.BadStatus metadata.statusCode |> Err
-
-        Http.GoodStatus_ _ body ->
-            Ok body
+        |> Task.map parseEndpoints
 
 
 lineRegex : Regex
