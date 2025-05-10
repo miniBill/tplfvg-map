@@ -24,7 +24,7 @@ try {
     console.error("Unexpected elm-watch error:", error);
 }
 
-function tplFvgProxy(request, response) {
+async function tplFvgProxy(request, response) {
     const options = {
         hostname: "tplfvg.it",
         port: 443,
@@ -34,15 +34,12 @@ function tplFvgProxy(request, response) {
     };
     options.headers.host = "tplfvg.it:443";
 
-    const proxyRequest = https.request(options, (proxyResponse) => {
+    try {
+        const proxyResponse = await fetch(options);
         response.writeHead(proxyResponse.statusCode, proxyResponse.headers);
         proxyResponse.pipe(response, { end: true });
-    });
-
-    proxyRequest.on("error", (error) => {
+    } catch (error) {
         response.writeHead(503);
         response.end(`Failed to proxy to tplfvg.it.\n\n${error.stack}`);
-    });
-
-    request.pipe(proxyRequest, { end: true });
+    }
 }

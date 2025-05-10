@@ -1,4 +1,4 @@
-module IdSet exposing (IdSet, empty, insertAll, member, toList)
+module IdSet exposing (IdSet, empty, fromList, insertAll, member, toList)
 
 import Id exposing (Id)
 import Set exposing (Set)
@@ -31,3 +31,8 @@ toList (IdSet set) =
 member : Id a -> IdSet a -> Bool
 member id (IdSet set) =
     Set.member (Id.toString id) set
+
+
+fromList : List (Id a) -> IdSet a
+fromList list =
+    IdSet (Set.fromList (List.map Id.toString list))

@@ -1,0 +1,10 @@
+{
+    "license": "BSD-3-Clause",
+    "scripts": {
+        "start": "elm-pages run src/DownloadData.elm"
+    },
+    "devDependencies": {
+        "elm-codegen": "^0.6.1",
+        "elm-pages": "^3.0.24"
+    }
+}

@@ -1,78 +1,122 @@
 module Api exposing (getEndpoints, getStops)
 
 import Angle exposing (Angle)
-import ConcurrentTask as Task exposing (ConcurrentTask)
-import ConcurrentTask.Http as Http
+import BackendTask exposing (BackendTask)
+import BackendTask.Do as Do
+import CachedHttp
 import DecodeComplete
+import FatalError exposing (FatalError)
 import Id exposing (Environment, Id, Line, Stop)
 import IdSet exposing (IdSet)
 import Json.Decode exposing (Decoder)
 import Json.Extra
 import List.Extra
+import Pages.Script as Script
 import Regex exposing (Match, Regex)
+import Result.Extra
 import Types exposing (Point, Service(..), StopInfo)
 
 
-getStops : ConcurrentTask Http.Error (List StopInfo)
+getStops : BackendTask FatalError (List StopInfo)
 getStops =
-    Http.get
-        { url =
-            -- "https://tplfvg.it/services/bus-stops/all"
-            "/services/bus-stops/all.json"
-        , expect = Http.expectJson busStopsDecoder
-        , timeout = Nothing
-        , headers = []
-        }
+    CachedHttp.getJson
+        "https://tplfvg.it/services/bus-stops/all"
+        busStopsDecoder
 
 
-getEndpoints : Id Stop -> ConcurrentTask Http.Error (IdSet Stop)
-getEndpoints rootId =
+getEndpoints : List (Id Stop) -> BackendTask FatalError (IdSet Stop)
+getEndpoints initialQueue =
     let
-        step : IdSet Stop -> List (Id Stop) -> ConcurrentTask Http.Error (IdSet Stop)
-        step acc queue =
-            case queue of
-                stopId :: tail ->
-                    getLinesPassingByStop stopId
-                        |> Task.andThen
-                            (\lines ->
-                                lines
-                                    |> List.take 2
-                                    |> List.map getEndpointsForLine
-                                    |> Task.sequence
-                                    |> Task.map List.concat
+        step : IdSet Stop -> IdSet Line -> List (Id Stop) -> BackendTask FatalError (IdSet Stop)
+        step acc failingLines queue =
+            let
+                queueLength : Int
+                queueLength =
+                    List.length queue
+            in
+            Do.do
+                (if (queueLength |> modBy 10) == 0 then
+                    Script.log ("Queue size: " ++ String.fromInt queueLength)
+
+                 else
+                    BackendTask.succeed ()
+                )
+            <| \_ ->
+            case ( List.take 11 queue, List.drop 11 queue ) of
+                ( [], _ ) ->
+                    BackendTask.succeed acc
+
+                ( head, tail ) ->
+                    head
+                        |> List.map
+                            (\stopId ->
+                                getLinesPassingByStop stopId
+                                    |> BackendTask.andThen
+                                        (\lines ->
+                                            lines
+                                                |> List.Extra.removeWhen (\( _, line ) -> IdSet.member line failingLines)
+                                                |> List.map getEndpointsForLine
+                                                |> List.Extra.greedyGroupsOf 10
+                                                |> List.map BackendTask.combine
+                                                |> BackendTask.sequence
+                                                |> BackendTask.map List.concat
+                                        )
                             )
-                        |> Task.andThen (\newIds -> step (IdSet.insertAll newIds acc) tail)
+                        |> BackendTask.combine
+                        |> BackendTask.map List.concat
+                        |> BackendTask.andThen
+                            (\results ->
+                                let
+                                    ( successes, failures ) =
+                                        Result.Extra.partition results
 
-                [] ->
-                    Task.succeed acc
+                                    newIds : List (Id Stop)
+                                    newIds =
+                                        List.concat successes
+
+                                    newAcc : IdSet Stop
+                                    newAcc =
+                                        IdSet.insertAll newIds acc
+                                in
+                                step
+                                    newAcc
+                                    (IdSet.insertAll failures failingLines)
+                                    ((newIds ++ tail)
+                                        |> List.Extra.removeWhen
+                                            (\id ->
+                                                IdSet.member id newAcc
+                                            )
+                                    )
+                            )
     in
-    step IdSet.empty [ rootId ]
+    step IdSet.empty
+        (IdSet.fromList
+            [ Id.fromString "U98DA"
+            , Id.fromString "U232"
+            , Id.fromString "U98DR"
+            , Id.fromString "U231"
+            ]
+        )
+        initialQueue
 
 
-getLinesPassingByStop : Id Stop -> ConcurrentTask Http.Error (List ( Id Environment, Id Line ))
+getLinesPassingByStop : Id Stop -> BackendTask FatalError (List ( Id Environment, Id Line ))
 getLinesPassingByStop stopId =
-    Http.get
-        { url =
-            -- "https://tplfvg.it/it/il-viaggio/costruisci-il-tuo-orario/?bus_stop=" ++ Id.toString stopId ++ "&search-lines-by-bus-stops"
-            "/it/il-viaggio/costruisci-il-tuo-orario/?bus_stop=" ++ Id.toString stopId ++ "&search-lines-by-bus-stops"
-        , expect = Http.expectString
-        , timeout = Nothing
-        , headers = [ Http.header "X-Requested-With" "XMLHttpRequest" ]
-        }
-        |> Task.map parseLines
+    CachedHttp.getString
+        ("https://tplfvg.it/it/il-viaggio/costruisci-il-tuo-orario/?bus_stop="
+            ++ Id.toString stopId
+            ++ "&search-lines-by-bus-stops"
+        )
+        |> BackendTask.map parseLines
 
 
-getEndpointsForLine : ( Id Environment, Id Line ) -> ConcurrentTask Http.Error (List (Id Stop))
+getEndpointsForLine : ( Id Environment, Id Line ) -> BackendTask FatalError (Result (Id Line) (List (Id Stop)))
 getEndpointsForLine ( environment, line ) =
-    Http.get
-        { url =
-            -- "https://tplfvg.it/services/timetables/full/?code=" ++ Id.toString line ++ "&lang=it&env=" ++ Id.toString environment
-            "/services/timetables/full/?code=" ++ Id.toString line ++ "&lang=it&env=" ++ Id.toString environment
-        , expect = Http.expectString
-        , timeout = Nothing
-        , headers = [ Http.header "X-Requested-With" "XMLHttpRequest" ]
-        }
-        |> Task.map parseEndpoints
+    CachedHttp.getString
+        ("https://tplfvg.it/services/timetables/full/?code=" ++ Id.toString line ++ "&lang=it&env=" ++ Id.toString environment)
+        |> BackendTask.map parseEndpoints
+        |> BackendTask.map Ok
+        |> BackendTask.onError (\_ -> BackendTask.succeed (Err line))
 
 
 lineRegex : Regex

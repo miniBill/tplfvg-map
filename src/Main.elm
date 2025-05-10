@@ -1,12 +1,12 @@
 port module Main exposing (main)
 
 import Angle
-import Api
 import BoundingBox2d exposing (BoundingBox2d)
 import Browser
 import ConcurrentTask as Task exposing (ConcurrentTask)
 import ConcurrentTask.Extra
 import ConcurrentTask.Http as Http
+import Data
 import FNV1a
 import Frame2d
 import Html exposing (Html, text)
@@ -20,7 +20,7 @@ import Rectangle2d
 import RemoteData exposing (RemoteData(..))
 import Svg exposing (Svg)
 import Svg.Attributes
-import Types exposing (Point, StopInfo)
+import Types exposing (Point)
 
 
 port send : Json.Decode.Value -> Cmd msg
@@ -34,16 +34,12 @@ type alias Flags =
 
 
 type alias Model =
-    { stops : RemoteData Http.Error (List StopInfo)
-    , endpoints : RemoteData Http.Error (IdSet Stop)
-    , tasks : ConcurrentTask.Extra.Pool Msg
+    { tasks : ConcurrentTask.Extra.Pool Msg
     }
 
 
 type Msg
-    = GotStops (Result Http.Error (List StopInfo))
-    | GotEndpoints (Result Http.Error (IdSet Stop))
-    | OnProgress ( ConcurrentTask.Extra.Pool Msg, Cmd Msg )
+    = OnProgress ( ConcurrentTask.Extra.Pool Msg, Cmd Msg )
     | OnUnexpected Task.UnexpectedError
 
 
@@ -59,14 +55,10 @@ main =
 
 init : Flags -> ( Model, Cmd Msg )
 init _ =
-    ( { stops = Loading
-      , endpoints = Loading
-      , tasks = Task.pool
+    ( { tasks = Task.pool
       }
     , Cmd.none
     )
-        |> attempt GotStops Api.getStops
-        |> attempt GotEndpoints (Api.getEndpoints (Id.fromString "70101"))
 
 
 attempt :
@@ -84,12 +76,6 @@ attempt =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        GotStops result ->
-            ( { model | stops = RemoteData.fromResult result }, Cmd.none )
-
-        GotEndpoints result ->
-            ( { model | endpoints = RemoteData.fromResult result }, Cmd.none )
-
         OnProgress ( tasks, cmd ) ->
             ( { model | tasks = tasks }, cmd )
 
@@ -105,13 +91,12 @@ view : Model -> Browser.Document Msg
 view model =
     { title = ""
     , body =
-        [ viewRemoteData viewHttpError (viewStops model.endpoints) model.stops
-        , viewRemoteData viewHttpError (\_ -> Html.text "") model.endpoints
+        [ viewStops (IdSet.fromList Data.endpoints) Data.stops
         ]
     }
 
 
-viewStops : RemoteData Http.Error (IdSet Stop) -> List Types.StopInfo -> Html msg
+viewStops : IdSet Stop -> List Types.StopInfo -> Html msg
 viewStops endpoints items =
     let
         bounds : BoundingBox2d Unitless world
@@ -138,20 +123,9 @@ viewStops endpoints items =
 
         endpointsViews : List (Svg msg)
         endpointsViews =
-            case endpoints of
-                RemoteData.Success ids ->
-                    items
-                        |> List.filter (\stop -> IdSet.member stop.code ids)
-                        |> List.map viewEndpoint
-
-                RemoteData.Loading ->
-                    []
-
-                RemoteData.NotAsked ->
-                    []
-
-                RemoteData.Failure _ ->
-                    []
+            items
+                |> List.filter (\stop -> IdSet.member stop.code endpoints)
+                |> List.map viewEndpoint
     in
     Svg.svg
         [ Svg.Attributes.viewBox viewBox
