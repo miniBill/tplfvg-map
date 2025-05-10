@@ -10,8 +10,9 @@ import FNV1a
 import Frame2d
 import Html exposing (Html)
 import Html.Attributes
+import Html.Events
 import Http
-import Id exposing (Id, Stop, Vehicle)
+import Id exposing (Id, Line, Stop, Vehicle)
 import IdDict exposing (IdDict)
 import IdSet exposing (IdSet)
 import Json.Decode
@@ -40,7 +41,9 @@ type alias Flags =
 
 type alias Bus =
     { name : String
+    , line : Id Line
     , coordinates : Point
+    , stop : Id Stop
     }
 
 
@@ -51,6 +54,8 @@ type alias Model =
     , fastQueue : List (Id Stop)
     , slowQueue : List (Id Stop)
     , buses : IdDict Vehicle Bus
+    , dark : Bool
+    , pause : Bool
     }
 
 
@@ -59,6 +64,8 @@ type Msg
       -- | OnUnexpected Task.UnexpectedError
       GotBusesFromStop (Id Stop) (Result Http.Error (List ( Id Vehicle, Bus )))
     | Tick Time.Posix
+    | ToggleDark
+    | TogglePause
 
 
 main : Program Flags Model Msg
@@ -79,6 +86,8 @@ init _ =
       , fastQueue = []
       , slowQueue = []
       , buses = IdDict.empty
+      , dark = True
+      , pause = False
       }
     , Cmd.none
     )
@@ -92,7 +101,7 @@ maxPending =
 
 processQueue : ( Model, Cmd Msg ) -> ( Model, Cmd Msg )
 processQueue ( model, cmd ) =
-    if IdSet.size model.pending < maxPending then
+    if IdSet.size model.pending < maxPending && not model.pause then
         let
             size : Int
             size =
@@ -172,7 +181,7 @@ getBusesForStopId sleepTime stopId =
                         "https://realtime.tplfvg.it/API/v1.0/polemonitor/mrcruns?StopCode=" ++ Id.toString stopId ++ "&IsUrban=true"
                     , method = "GET"
                     , timeout = Nothing
-                    , resolver = jsonResolver busesDecoder
+                    , resolver = jsonResolver (busesDecoder stopId)
                     , body = Http.emptyBody
                     , headers = []
                     }
@@ -207,10 +216,10 @@ jsonResolver decoder =
         )
 
 
-busesDecoder : Json.Decode.Decoder (List ( Id Vehicle, Bus ))
-busesDecoder =
+busesDecoder : Id Stop -> Json.Decode.Decoder (List ( Id Vehicle, Bus ))
+busesDecoder stopId =
     (DecodeComplete.object
-        (\departure destination latitude longitude vehicle ->
+        (\departure destination latitude longitude vehicle line ->
             if
                 (longitude == Quantity.zero)
                     && (latitude == Quantity.zero)
@@ -219,29 +228,36 @@ busesDecoder =
 
             else
                 ( vehicle
-                , { name = departure ++ " => " ++ destination
+                , { name =
+                        if String.isEmpty departure then
+                            destination
+
+                        else
+                            departure ++ " => " ++ destination
+                  , line = line
                   , coordinates =
                         { latitude = latitude
                         , longitude = longitude
                         }
+                  , stop = stopId
                   }
                 )
                     |> Just
         )
-        |> DecodeComplete.discard "Line"
-        |> DecodeComplete.discard "Time"
         |> DecodeComplete.required "Departure" Json.Decode.string
-        |> DecodeComplete.discard "DepartureTime"
         |> DecodeComplete.required "Destination" Json.Decode.string
-        |> DecodeComplete.discard "ArrivalTime"
-        |> DecodeComplete.discard "NextPasses"
         |> DecodeComplete.required "Latitude" angleDecoder
         |> DecodeComplete.required "Longitude" angleDecoder
         |> DecodeComplete.required "Vehicle" (Json.Decode.map Id.fromString Json.Decode.string)
+        |> DecodeComplete.required "LineCode" (Json.Decode.map Id.fromString Json.Decode.string)
+        |> DecodeComplete.discard "Line"
+        |> DecodeComplete.discard "Time"
+        |> DecodeComplete.discard "DepartureTime"
+        |> DecodeComplete.discard "ArrivalTime"
+        |> DecodeComplete.discard "NextPasses"
         |> DecodeComplete.discard "Direction"
         |> DecodeComplete.discard "IsDestination"
         |> DecodeComplete.discard "IsStarted"
-        |> DecodeComplete.discard "LineCode"
         |> DecodeComplete.discard "LineType"
         |> DecodeComplete.discard "Note"
         |> DecodeComplete.discard "Platform"
@@ -333,6 +349,12 @@ update msg model =
               }
             , Cmd.none
             )
+
+        ToggleDark ->
+            ( { model | dark = not model.dark }, Cmd.none )
+
+        TogglePause ->
+            ( { model | pause = not model.pause }, Cmd.none )
     )
         |> processQueue
 
@@ -362,32 +384,55 @@ view model =
         , Html.node "style"
             []
             [ Html.text """
+                body {
+                    margin: 0;
+                    display : flex;
+                    padding: 8px;
+                    gap: 8px;
+                    flex-direction: column;
+                }
                 #stats th { text-align: left; }
                 #stats td {
                     text-align: right;
                     font-variant-numeric: tabular-nums;
                 }
             """ ]
-        , Html.table [ Html.Attributes.id "stats" ]
-            [ Html.tr []
-                [ Html.th [] [ Html.text "Pending" ]
-                , Html.td [] [ Html.text (String.fromInt pendingSize) ]
+        , Html.div
+            [ Html.Attributes.style "display" "flex"
+            , Html.Attributes.style "gap" "8px"
+            ]
+            [ Html.button
+                [ Html.Events.onClick ToggleDark ]
+                [ Html.text "Toggle theme" ]
+            , Html.button
+                [ Html.Events.onClick TogglePause ]
+                [ if model.pause then
+                    Html.text "Resume updates"
+
+                  else
+                    Html.text "Pause updates"
                 ]
-            , Html.tr []
-                [ Html.th [] [ Html.text "Initial queue" ]
-                , Html.td [] [ Html.text (String.fromInt initialLength) ]
-                ]
-            , Html.tr []
-                [ Html.th [] [ Html.text "Fast queue" ]
-                , Html.td [] [ Html.text (String.fromInt fastLength) ]
-                ]
-            , Html.tr []
-                [ Html.th [] [ Html.text "Slow queue" ]
-                , Html.td [] [ Html.text (String.fromInt slowLength) ]
-                ]
-            , Html.tr []
-                [ Html.th [] [ Html.text "Total" ]
-                , Html.td [] [ Html.text (String.fromInt (pendingSize + initialLength + fastLength + slowLength)) ]
+            , Html.table [ Html.Attributes.id "stats" ]
+                [ Html.tr []
+                    [ Html.th [] [ Html.text "Pending" ]
+                    , Html.td [] [ Html.text (String.fromInt pendingSize) ]
+                    ]
+                , Html.tr []
+                    [ Html.th [] [ Html.text "Initial queue" ]
+                    , Html.td [] [ Html.text (String.fromInt initialLength) ]
+                    ]
+                , Html.tr []
+                    [ Html.th [] [ Html.text "Fast queue" ]
+                    , Html.td [] [ Html.text (String.fromInt fastLength) ]
+                    ]
+                , Html.tr []
+                    [ Html.th [] [ Html.text "Slow queue" ]
+                    , Html.td [] [ Html.text (String.fromInt slowLength) ]
+                    ]
+                , Html.tr []
+                    [ Html.th [] [ Html.text "Total" ]
+                    , Html.td [] [ Html.text (String.fromInt (pendingSize + initialLength + fastLength + slowLength)) ]
+                    ]
                 ]
             ]
         ]
@@ -397,9 +442,8 @@ view model =
 innerView : Model -> Html msg
 innerView model =
     let
-        endpoints =
-            IdSet.fromList Data.endpoints
-
+        -- endpoints =
+        --     IdSet.fromList Data.endpoints
         bounds : BoundingBox2d Unitless world
         bounds =
             getBounds Data.stops
@@ -420,29 +464,36 @@ innerView model =
 
         stops : List (Svg msg)
         stops =
-            List.map viewStop Data.stops
+            List.map (viewStop { dark = model.dark }) Data.stops
 
-        endpointsViews : List (Svg msg)
-        endpointsViews =
-            Data.stops
-                |> List.filter (\stop -> IdSet.member stop.code endpoints)
-                |> List.map viewEndpoint
-
+        -- endpointsViews : List (Svg msg)
+        -- endpointsViews =
+        --     Data.stops
+        --         |> List.filter (\stop -> IdSet.member stop.code endpoints)
+        --         |> List.map viewEndpoint
         buses : List (Svg msg)
         buses =
             model.buses
                 |> IdDict.values
-                |> List.map viewBus
+                |> List.map (viewBus { dark = model.dark })
     in
     Svg.svg
         [ Svg.Attributes.viewBox viewBox
         , Html.Attributes.style "height" "auto"
         , Html.Attributes.style "width" "100%"
         , Html.Attributes.style "max-height" "90vh"
+        , Html.Attributes.style "background"
+            (if model.dark then
+                "black"
+
+             else
+                "white"
+            )
         ]
-        [ Svg.g [] stops
-        , Svg.g [] endpointsViews
-        , Svg.g [] buses
+        [ Svg.g [ Svg.Attributes.id "stops" ] stops
+
+        -- , Svg.g [ Svg.Attributes.id "endpoints" ] endpointsViews
+        , Svg.g [ Svg.Attributes.id "buses" ] buses
         ]
 
 
@@ -492,60 +543,107 @@ getBounds items =
 
 pointToCoordinates : Point -> ( Float, Float )
 pointToCoordinates point =
-    ( Angle.inDegrees point.longitude
-    , -(Angle.inDegrees point.latitude)
+    ( 1000 * Angle.inDegrees point.longitude
+    , 1000 * -(Angle.inDegrees point.latitude)
     )
 
 
-viewStop : Types.StopInfo -> Html msg
-viewStop stop =
+viewStop : { dark : Bool } -> Types.StopInfo -> Html msg
+viewStop { dark } stop =
     let
         ( cx, cy ) =
             pointToCoordinates stop.coordinates
     in
-    Svg.circle
-        [ Svg.Attributes.cx (String.fromFloat cx)
-        , Svg.Attributes.cy (String.fromFloat cy)
-        , Svg.Attributes.r "0.004"
-        , Svg.Attributes.fill (communeToColor stop.commune)
+    Svg.a
+        [ Svg.Attributes.xlinkHref ("https://realtime.tplfvg.it/?stopcode=" ++ Id.toString stop.code)
         ]
-        [ Svg.title [] [ Svg.text (Id.toString stop.code ++ " - " ++ stop.name) ]
+        [ Svg.path
+            [ Svg.Attributes.d "M246,117.35,212.33,154.7a16,16,0,0,1-11.89,5.3H136v64a8,8,0,0,1-16,0V160H40a16,16,0,0,1-16-16V80A16,16,0,0,1,40,64h80V32a8,8,0,0,1,16,0V64h64.44a16,16,0,0,1,11.89,5.3L246,106.65A8,8,0,0,1,246,117.35Z"
+            , Svg.Attributes.transform
+                ("translate("
+                    ++ String.fromFloat cx
+                    ++ " "
+                    ++ String.fromFloat cy
+                    ++ ") scale(0.1) translate(-128 -128)"
+                )
+            , Svg.Attributes.fill (communeToColor stop.commune)
+            , Svg.Attributes.strokeWidth "2"
+            , Svg.Attributes.stroke
+                (if dark then
+                    "white"
+
+                 else
+                    "black"
+                )
+            ]
+            [ Svg.title [] [ Svg.text (stop.commune ++ " - " ++ stop.name) ]
+            ]
         ]
 
 
-viewEndpoint : Types.StopInfo -> Html msg
-viewEndpoint stop =
-    let
-        ( cx, cy ) =
-            pointToCoordinates stop.coordinates
-    in
-    Svg.circle
-        [ Svg.Attributes.cx (String.fromFloat cx)
-        , Svg.Attributes.cy (String.fromFloat cy)
-        , Svg.Attributes.r "0.008"
-        , Svg.Attributes.fill "red"
-        , Svg.Attributes.strokeWidth "0.002"
-        , Svg.Attributes.stroke "black"
-        ]
-        [ Svg.title [] [ Svg.text (Id.toString stop.code ++ " - " ++ stop.name) ]
-        ]
+
+-- viewEndpoint : Types.StopInfo -> Html msg
+-- viewEndpoint stop =
+--     let
+--         ( cx, cy ) =
+--             pointToCoordinates stop.coordinates
+--     in
+--     Svg.circle
+--         [ Svg.Attributes.cx (String.fromFloat cx)
+--         , Svg.Attributes.cy (String.fromFloat cy)
+--         , Svg.Attributes.r "8"
+--         , Svg.Attributes.fill "red"
+--         , Svg.Attributes.strokeWidth "2"
+--         , Svg.Attributes.stroke "black"
+--         ]
+--         [ Svg.title [] [ Svg.text (Id.toString stop.code ++ " - " ++ stop.name) ]
+--         ]
 
 
-viewBus : Bus -> Svg msg
-viewBus bus =
+viewBus : { dark : Bool } -> Bus -> Svg msg
+viewBus { dark } bus =
     let
         ( cx, cy ) =
             pointToCoordinates bus.coordinates
     in
-    Svg.circle
-        [ Svg.Attributes.cx (String.fromFloat cx)
-        , Svg.Attributes.cy (String.fromFloat cy)
-        , Svg.Attributes.r "0.016"
-        , Svg.Attributes.fill "green"
-        , Svg.Attributes.strokeWidth "0.002"
-        , Svg.Attributes.stroke "black"
+    Svg.a
+        [ Svg.Attributes.xlinkHref ("https://realtime.tplfvg.it/?stopcode=" ++ Id.toString bus.stop)
         ]
-        [ Svg.title [] [ Svg.text bus.name ]
+        [ Svg.path
+            [ Svg.Attributes.d "M248,80v24a8,8,0,0,1-16,0V80a8,8,0,0,1,16,0ZM16,72a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V80A8,8,0,0,0,16,72Zm200-8V208a16,16,0,0,1-16,16H184a16,16,0,0,1-16-16v-8H88v8a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V64A32,32,0,0,1,72,32H184A32,32,0,0,1,216,64ZM104,148a12,12,0,1,0-12,12A12,12,0,0,0,104,148Zm72,0a12,12,0,1,0-12,12A12,12,0,0,0,176,148Zm24-76H56v40H200Z"
+            , Svg.Attributes.transform
+                ("translate("
+                    ++ String.fromFloat cx
+                    ++ " "
+                    ++ String.fromFloat cy
+                    ++ ") scale(0.2) translate(-128 -128)"
+                )
+            , Svg.Attributes.strokeWidth "4"
+            , Svg.Attributes.fill
+                (if dark then
+                    "white"
+
+                 else
+                    "black"
+                )
+            , Svg.Attributes.stroke
+                (if dark then
+                    "black"
+
+                 else
+                    "white"
+                )
+            ]
+            [ Svg.title []
+                [ Svg.text
+                    (if String.isEmpty bus.name then
+                        Id.toString bus.line
+
+                     else
+                        Id.toString bus.line ++ " - " ++ bus.name
+                    )
+                ]
+            ]
         ]
 
 
