@@ -3,13 +3,10 @@ port module Main exposing (main)
 import Angle
 import BoundingBox2d exposing (BoundingBox2d)
 import Browser
-import ConcurrentTask as Task exposing (ConcurrentTask)
-import ConcurrentTask.Extra
-import ConcurrentTask.Http as Http
 import Data
 import FNV1a
 import Frame2d
-import Html exposing (Html, text)
+import Html exposing (Html)
 import Html.Attributes
 import Id exposing (Stop)
 import IdSet exposing (IdSet)
@@ -34,13 +31,14 @@ type alias Flags =
 
 
 type alias Model =
-    { tasks : ConcurrentTask.Extra.Pool Msg
+    { -- tasks : ConcurrentTask.Extra.Pool Msg
     }
 
 
 type Msg
-    = OnProgress ( ConcurrentTask.Extra.Pool Msg, Cmd Msg )
-    | OnUnexpected Task.UnexpectedError
+    = -- | OnProgress ( ConcurrentTask.Extra.Pool Msg, Cmd Msg )
+      -- | OnUnexpected Task.UnexpectedError
+      Noop
 
 
 main : Program Flags Model Msg
@@ -55,40 +53,42 @@ main =
 
 init : Flags -> ( Model, Cmd Msg )
 init _ =
-    ( { tasks = Task.pool
+    ( { -- tasks = Task.pool
       }
     , Cmd.none
     )
 
 
-attempt :
-    (Result error a -> Msg)
-    -> ConcurrentTask error a
-    -> ( Model, Cmd Msg )
-    -> ( Model, Cmd Msg )
-attempt =
-    ConcurrentTask.Extra.attempt
-        { send = send
-        , onUnexpected = OnUnexpected
-        }
+
+-- attempt :
+--     (Result error a -> Msg)
+--     -> ConcurrentTask error a
+--     -> ( Model, Cmd Msg )
+--     -> ( Model, Cmd Msg )
+-- attempt =
+--     ConcurrentTask.Extra.attempt
+--         { send = send
+--         , onUnexpected = OnUnexpected
+--         }
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        OnProgress ( tasks, cmd ) ->
-            ( { model | tasks = tasks }, cmd )
-
-        OnUnexpected err ->
-            let
-                _ =
-                    Debug.log "Unexpected error" err
-            in
+        -- OnProgress ( tasks, cmd ) ->
+        --     ( { model | tasks = tasks }, cmd )
+        -- OnUnexpected err ->
+        --     let
+        --         _ =
+        --             Debug.log "Unexpected error" err
+        --     in
+        --     ( model, Cmd.none )
+        _ ->
             ( model, Cmd.none )
 
 
 view : Model -> Browser.Document Msg
-view model =
+view _ =
     { title = ""
     , body =
         [ viewStops (IdSet.fromList Data.endpoints) Data.stops
@@ -225,51 +225,44 @@ communeToColor commune =
     "oklch(50% 0.09 " ++ (FNV1a.hash commune |> modBy 360 |> String.fromInt) ++ ")"
 
 
-viewHttpError : Http.Error -> Html msg
-viewHttpError err =
-    let
-        msg : String
-        msg =
-            case err of
-                Http.BadBody _ _ _ ->
-                    "Bad body"
 
-                Http.BadUrl _ ->
-                    "Bad url"
-
-                Http.Timeout ->
-                    "Timeout"
-
-                Http.NetworkError ->
-                    "Network error"
-
-                Http.BadStatus { statusCode } _ ->
-                    "Bad status " ++ String.fromInt statusCode
-    in
-    Html.text msg
-
-
-viewRemoteData : (e -> Html msg) -> (a -> Html msg) -> RemoteData e a -> Html msg
-viewRemoteData onError onSuccess data =
-    case data of
-        RemoteData.Success success ->
-            onSuccess success
-
-        RemoteData.NotAsked ->
-            text "Not asked"
-
-        RemoteData.Loading ->
-            text "Loading"
-
-        RemoteData.Failure err ->
-            onError err
+-- viewHttpError : Http.Error -> Html msg
+-- viewHttpError err =
+--     let
+--         msg : String
+--         msg =
+--             case err of
+--                 Http.BadBody _ _ _ ->
+--                     "Bad body"
+--                 Http.BadUrl _ ->
+--                     "Bad url"
+--                 Http.Timeout ->
+--                     "Timeout"
+--                 Http.NetworkError ->
+--                     "Network error"
+--                 Http.BadStatus { statusCode } _ ->
+--                     "Bad status " ++ String.fromInt statusCode
+--     in
+--     Html.text msg
+-- viewRemoteData : (e -> Html msg) -> (a -> Html msg) -> RemoteData e a -> Html msg
+-- viewRemoteData onError onSuccess data =
+--     case data of
+--         RemoteData.Success success ->
+--             onSuccess success
+--         RemoteData.NotAsked ->
+--             text "Not asked"
+--         RemoteData.Loading ->
+--             text "Loading"
+--         RemoteData.Failure err ->
+--             onError err
 
 
 subscriptions : Model -> Sub Msg
-subscriptions model =
-    Task.onProgress
-        { send = send
-        , receive = receive
-        , onProgress = OnProgress
-        }
-        model.tasks
+subscriptions _ =
+    -- Task.onProgress
+    --     { send = send
+    --     , receive = receive
+    --     , onProgress = OnProgress
+    --     }
+    --     model.tasks
+    Sub.none
