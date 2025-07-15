@@ -48,8 +48,7 @@ type alias Bus =
 
 
 type alias Model =
-    { -- tasks : ConcurrentTask.Extra.Pool Msg
-      pending : IdSet Stop
+    { pending : IdSet Stop
     , initialQueue : List (Id Stop)
     , fastQueue : List (Id Stop)
     , slowQueue : List (Id Stop)
@@ -60,9 +59,7 @@ type alias Model =
 
 
 type Msg
-    = -- | OnProgress ( ConcurrentTask.Extra.Pool Msg, Cmd Msg )
-      -- | OnUnexpected Task.UnexpectedError
-      GotBusesFromStop (Id Stop) (Result Http.Error (List ( Id Vehicle, Bus )))
+    = GotBusesFromStop (Id Stop) (Result Http.Error (List ( Id Vehicle, Bus )))
     | Tick Time.Posix
     | ToggleDark
     | TogglePause
@@ -80,8 +77,7 @@ main =
 
 init : Flags -> ( Model, Cmd Msg )
 init _ =
-    ( { -- tasks = Task.pool
-        pending = IdSet.empty
+    ( { pending = IdSet.empty
       , initialQueue = Data.endpoints
       , fastQueue = []
       , slowQueue = []
@@ -276,30 +272,9 @@ angleDecoder =
     Json.Decode.map Angle.degrees Json.Decode.float
 
 
-
--- attempt :
---     (Result error a -> Msg)
---     -> ConcurrentTask error a
---     -> ( Model, Cmd Msg )
---     -> ( Model, Cmd Msg )
--- attempt =
---     ConcurrentTask.Extra.attempt
---         { send = send
---         , onUnexpected = OnUnexpected
---         }
-
-
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     (case msg of
-        -- OnProgress ( tasks, cmd ) ->
-        --     ( { model | tasks = tasks }, cmd )
-        -- OnUnexpected err ->
-        --     let
-        --         _ =
-        --             Debug.log "Unexpected error" err
-        --     in
-        --     ( model, Cmd.none )
         Tick _ ->
             case model.slowQueue of
                 [] ->
@@ -466,11 +441,6 @@ innerView model =
         stops =
             List.map (viewStop { dark = model.dark }) Data.stops
 
-        -- endpointsViews : List (Svg msg)
-        -- endpointsViews =
-        --     Data.stops
-        --         |> List.filter (\stop -> IdSet.member stop.code endpoints)
-        --         |> List.map viewEndpoint
         buses : List (Svg msg)
         buses =
             model.buses
@@ -491,8 +461,6 @@ innerView model =
             )
         ]
         [ Svg.g [ Svg.Attributes.id "stops" ] stops
-
-        -- , Svg.g [ Svg.Attributes.id "endpoints" ] endpointsViews
         , Svg.g [ Svg.Attributes.id "buses" ] buses
         ]
 
@@ -581,25 +549,6 @@ viewStop { dark } stop =
         ]
 
 
-
--- viewEndpoint : Types.StopInfo -> Html msg
--- viewEndpoint stop =
---     let
---         ( cx, cy ) =
---             pointToCoordinates stop.coordinates
---     in
---     Svg.circle
---         [ Svg.Attributes.cx (String.fromFloat cx)
---         , Svg.Attributes.cy (String.fromFloat cy)
---         , Svg.Attributes.r "8"
---         , Svg.Attributes.fill "red"
---         , Svg.Attributes.strokeWidth "2"
---         , Svg.Attributes.stroke "black"
---         ]
---         [ Svg.title [] [ Svg.text (Id.toString stop.code ++ " - " ++ stop.name) ]
---         ]
-
-
 viewBus : { dark : Bool } -> Bus -> Svg msg
 viewBus { dark } bus =
     let
@@ -652,44 +601,6 @@ communeToColor commune =
     "oklch(50% 0.09 " ++ (FNV1a.hash commune |> modBy 360 |> String.fromInt) ++ ")"
 
 
-
--- viewHttpError : Http.Error -> Html msg
--- viewHttpError err =
---     let
---         msg : String
---         msg =
---             case err of
---                 Http.BadBody _ _ _ ->
---                     "Bad body"
---                 Http.BadUrl _ ->
---                     "Bad url"
---                 Http.Timeout ->
---                     "Timeout"
---                 Http.NetworkError ->
---                     "Network error"
---                 Http.BadStatus { statusCode } _ ->
---                     "Bad status " ++ String.fromInt statusCode
---     in
---     Html.text msg
--- viewRemoteData : (e -> Html msg) -> (a -> Html msg) -> RemoteData e a -> Html msg
--- viewRemoteData onError onSuccess data =
---     case data of
---         RemoteData.Success success ->
---             onSuccess success
---         RemoteData.NotAsked ->
---             text "Not asked"
---         RemoteData.Loading ->
---             text "Loading"
---         RemoteData.Failure err ->
---             onError err
-
-
 subscriptions : Model -> Sub Msg
 subscriptions _ =
-    -- Task.onProgress
-    --     { send = send
-    --     , receive = receive
-    --     , onProgress = OnProgress
-    --     }
-    --     model.tasks
     Time.every 5000 Tick
