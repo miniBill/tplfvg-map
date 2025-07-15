@@ -1,4 +1,4 @@
-module IdSet exposing (IdSet, empty, fromList, insert, insertAll, member, remove, size, toList, union)
+module IdSet exposing (IdSet, empty, insert, member, remove, size, toList, union)
 
 import Id exposing (Id)
 import Set exposing (Set)
@@ -11,11 +11,6 @@ type IdSet a
 empty : IdSet a
 empty =
     IdSet Set.empty
-
-
-insertAll : List (Id a) -> IdSet a -> IdSet a
-insertAll list set =
-    List.foldl insert set list
 
 
 insert : Id a -> IdSet a -> IdSet a
@@ -31,11 +26,6 @@ toList (IdSet set) =
 member : Id a -> IdSet a -> Bool
 member id (IdSet set) =
     Set.member (Id.toString id) set
-
-
-fromList : List (Id a) -> IdSet a
-fromList list =
-    IdSet (Set.fromList (List.map Id.toString list))
 
 
 size : IdSet a -> Int

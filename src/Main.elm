@@ -1,4 +1,4 @@
-port module Main exposing (main)
+port module Main exposing (Bus, Flags, Model, Msg, main)
 
 import Angle exposing (Angle)
 import BoundingBox2d exposing (BoundingBox2d)
@@ -21,7 +21,6 @@ import Point2d exposing (Point2d)
 import Process
 import Quantity exposing (Quantity, Unitless)
 import Rectangle2d
-import RemoteData exposing (RemoteData(..))
 import Svg exposing (Svg)
 import Svg.Attributes
 import Task
@@ -99,12 +98,12 @@ processQueue : ( Model, Cmd Msg ) -> ( Model, Cmd Msg )
 processQueue ( model, cmd ) =
     if IdSet.size model.pending < maxPending && not model.pause then
         let
-            size : Int
-            size =
-                maxPending - IdSet.size model.pending
-
             ( toStart, tail ) =
                 let
+                    size : Int
+                    size =
+                        maxPending - IdSet.size model.pending
+
                     go n acc queue =
                         if n >= size then
                             ( acc, queue )
@@ -419,13 +418,13 @@ innerView model =
     let
         -- endpoints =
         --     IdSet.fromList Data.endpoints
-        bounds : BoundingBox2d Unitless world
-        bounds =
-            getBounds Data.stops
-
         viewBox : String
         viewBox =
             let
+                bounds : BoundingBox2d Unitless world
+                bounds =
+                    getBounds Data.stops
+
                 ( width, height ) =
                     BoundingBox2d.dimensions bounds
             in

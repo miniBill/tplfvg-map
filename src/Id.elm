@@ -1,4 +1,4 @@
-module Id exposing (Environment, Id, Line, Stop, Vehicle, fromString, toString)
+module Id exposing (Id, Line, Stop, Vehicle, fromString, toString)
 
 
 type Id a
@@ -7,10 +7,6 @@ type Id a
 
 type Stop
     = Stop
-
-
-type Environment
-    = Environment
 
 
 type Vehicle

@@ -68,7 +68,7 @@ update msg model =
                     , Nav.load url
                     )
 
-        UrlChanged url ->
+        UrlChanged _ ->
             ( model, Cmd.none )
 
         NoOpFrontendMsg ->
