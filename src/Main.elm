@@ -1,4 +1,4 @@
-port module Main exposing (Bus, Flags, Model, Msg, main)
+module Main exposing (Bus, Flags, Model, Msg, main)
 
 import Angle exposing (Angle)
 import BoundingBox2d exposing (BoundingBox2d)
@@ -26,12 +26,6 @@ import Svg.Attributes
 import Task
 import Time
 import Types exposing (Point)
-
-
-port send : Json.Decode.Value -> Cmd msg
-
-
-port receive : (Json.Decode.Value -> msg) -> Sub msg
 
 
 type alias Flags =
