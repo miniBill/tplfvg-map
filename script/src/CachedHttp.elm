@@ -44,15 +44,11 @@ getCached url inner =
                         }
                         Http.expectString
                     )
-                <|
-                    \raw ->
-                        Do.do (Script.sleep 200) <|
-                            \_ ->
-                                Do.allowFatal (Script.writeFile { path = filename ++ ".tmp", body = raw }) <|
-                                    \_ ->
-                                        Do.command "mv" [ filename ++ ".tmp", filename ] <|
-                                            \_ ->
-                                                BackendTask.allowFatal (inner filename)
+                <| \raw ->
+                Do.do (Script.sleep 200) <| \_ ->
+                Do.allowFatal (Script.writeFile { path = filename ++ ".tmp", body = raw }) <| \_ ->
+                Do.command "mv" [ filename ++ ".tmp", filename ] <| \_ ->
+                BackendTask.allowFatal (inner filename)
             )
 
 
