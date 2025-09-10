@@ -43,6 +43,20 @@ getCached url inner =
                         , timeoutInMs = Nothing
                         }
                         Http.expectString
+                        |> BackendTask.onError
+                            (\e ->
+                                case e.recoverable of
+                                    Http.BadStatus metadata _ ->
+                                        if metadata.statusCode == 404 then
+                                            File.rawFile (".cache-old/" ++ Sha256.sha256 url)
+                                                |> BackendTask.onError (\_ -> BackendTask.fail e)
+
+                                        else
+                                            BackendTask.fail e
+
+                                    _ ->
+                                        BackendTask.fail e
+                            )
                     )
                 <| \raw ->
                 Do.do (Script.sleep 200) <| \_ ->
