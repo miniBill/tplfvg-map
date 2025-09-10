@@ -70,7 +70,10 @@ task =
                                 ]
                                 |> Elm.withType Gen.Types.annotation_.stopInfo
                         )
+                    |> List.Extra.greedyGroupsOf 10
+                    |> List.map Elm.list
                     |> Elm.list
+                    |> Gen.List.call_.concat
                     |> Elm.declaration "stops"
                     |> Elm.expose
                 , endpoints
