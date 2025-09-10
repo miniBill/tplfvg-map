@@ -1,7 +1,7 @@
 module DownloadData exposing (run)
 
 import Angle
-import Api
+import ScriptApi
 import BackendTask exposing (BackendTask)
 import BackendTask.Do as Do
 import Elm
@@ -25,9 +25,9 @@ run =
 
 task : BackendTask FatalError ()
 task =
-    Do.do Api.getStops <| \stops ->
+    Do.do ScriptApi.getStops <| \stops ->
     Do.log ("Stops: " ++ String.fromInt (List.length stops)) <| \_ ->
-    Do.do (Api.getEndpoints (List.map .code stops {- Id.fromString "70101" -})) <| \endpoints ->
+    Do.do (ScriptApi.getEndpoints (List.map .code stops {- Id.fromString "70101" -})) <| \endpoints ->
     Do.allowFatal
         (Script.writeFile
             { path = "../generated/Data.elm"

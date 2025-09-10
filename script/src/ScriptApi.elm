@@ -1,4 +1,4 @@
-module Api exposing (getEndpoints, getStops)
+module ScriptApi exposing (getEndpoints, getStops)
 
 import Angle exposing (Angle)
 import BackendTask exposing (BackendTask)
