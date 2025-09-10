@@ -5,15 +5,11 @@
         "start": "node dev-server.js"
     },
     "devDependencies": {
-        "@andrewmacmurray/elm-concurrent-task": "^1.1.1",
         "elm": "^0.19.1-6",
-        "elm-review": "^2.13.4",
-        "elm-watch": "^2.0.0-beta.6",
-        "esbuild": "^0.25.4"
+        "elm-review": "^2.13.4"
     },
     "type": "module",
     "engines": {
         "node": ">=23.0.0"
-    },
-    "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
+    }
 }
