@@ -1,4 +1,4 @@
-module CachedHttp exposing (getJson, getString, isCached)
+module CachedHttp exposing (getJson, getString)
 
 import BackendTask exposing (BackendTask)
 import BackendTask.Do as Do
@@ -44,11 +44,15 @@ getCached url inner =
                         }
                         Http.expectString
                     )
-                <| \raw ->
-                Do.do (Script.sleep 200) <| \_ ->
-                Do.allowFatal (Script.writeFile { path = filename ++ ".tmp", body = raw }) <| \_ ->
-                Do.command "mv" [ filename ++ ".tmp", filename ] <| \_ ->
-                BackendTask.allowFatal (inner filename)
+                <|
+                    \raw ->
+                        Do.do (Script.sleep 200) <|
+                            \_ ->
+                                Do.allowFatal (Script.writeFile { path = filename ++ ".tmp", body = raw }) <|
+                                    \_ ->
+                                        Do.command "mv" [ filename ++ ".tmp", filename ] <|
+                                            \_ ->
+                                                BackendTask.allowFatal (inner filename)
             )
 
 

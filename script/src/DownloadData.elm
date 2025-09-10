@@ -12,7 +12,6 @@ import Gen.Id
 import Gen.List
 import Gen.Types
 import Id
-import IdSet
 import List.Extra
 import Pages.Script as Script exposing (Script)
 import Types
@@ -77,7 +76,7 @@ task =
                     |> Elm.declaration "stops"
                     |> Elm.expose
                 , endpoints
-                    |> IdSet.toList
+                    |> SeqSet.toList
                     |> List.map (\id -> Gen.Id.fromString (Id.toString id))
                     |> Elm.list
                     |> Elm.withType (Elm.Annotation.list (Gen.Id.annotation_.id Gen.Id.annotation_.stop))

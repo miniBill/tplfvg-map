@@ -57,3 +57,4 @@ config =
     , Simplify.rule Simplify.defaults
         |> Rule.ignoreErrorsForDirectories [ "generated/" ]
     ]
+        |> List.map (Rule.ignoreErrorsForDirectories [ "codegen/", "../src/Evergreen" ])

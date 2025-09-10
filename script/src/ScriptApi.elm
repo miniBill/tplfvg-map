@@ -7,13 +7,13 @@ import CachedHttp
 import DecodeComplete
 import FatalError exposing (FatalError)
 import Id exposing (Environment, Id, Line, Stop)
-import IdSet exposing (IdSet)
 import Json.Decode exposing (Decoder)
 import Json.Extra
 import List.Extra
 import Pages.Script as Script
 import Regex exposing (Match, Regex)
 import Result.Extra
+import SeqSet exposing (SeqSet)
 import Types exposing (Point, Service(..), StopInfo)
 
 
@@ -24,10 +24,10 @@ getStops =
         busStopsDecoder
 
 
-getEndpoints : List (Id Stop) -> BackendTask FatalError (IdSet Stop)
+getEndpoints : List (Id Stop) -> BackendTask FatalError (SeqSet (Id Stop))
 getEndpoints initialQueue =
     let
-        step : IdSet Stop -> IdSet Line -> List (Id Stop) -> BackendTask FatalError (IdSet Stop)
+        step : SeqSet (Id Stop) -> SeqSet (Id Line) -> List (Id Stop) -> BackendTask FatalError (SeqSet (Id Stop))
         step acc failingLines queue =
             let
                 queueLength : Int
@@ -54,7 +54,7 @@ getEndpoints initialQueue =
                                     |> BackendTask.andThen
                                         (\lines ->
                                             lines
-                                                |> List.Extra.removeWhen (\( _, line ) -> IdSet.member line failingLines)
+                                                |> List.Extra.removeWhen (\( _, line ) -> SeqSet.member line failingLines)
                                                 |> List.map getEndpointsForLine
                                                 |> List.Extra.greedyGroupsOf 10
                                                 |> List.map BackendTask.combine
@@ -74,23 +74,23 @@ getEndpoints initialQueue =
                                     newIds =
                                         List.concat successes
 
-                                    newAcc : IdSet Stop
+                                    newAcc : SeqSet (Id Stop)
                                     newAcc =
-                                        IdSet.insertAll newIds acc
+                                        SeqSet.insertAll newIds acc
                                 in
                                 step
                                     newAcc
-                                    (IdSet.insertAll failures failingLines)
+                                    (SeqSet.insertAll failures failingLines)
                                     ((newIds ++ tail)
                                         |> List.Extra.removeWhen
                                             (\id ->
-                                                IdSet.member id newAcc
+                                                SeqSet.member id newAcc
                                             )
                                     )
                             )
     in
-    step IdSet.empty
-        (IdSet.fromList
+    step SeqSet.empty
+        (SeqSet.fromList
             [ Id.fromString "U98DA"
             , Id.fromString "U232"
             , Id.fromString "U98DR"
