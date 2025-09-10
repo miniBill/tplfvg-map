@@ -8,18 +8,9 @@
     <body>
         <main></main>
         <script src="./build/main.js"></script>
-        <script src="./build/concurrent-task.js"></script>
         <script>
             const app = window.Elm.Main.init({
                 node: document.querySelector("main"),
-            });
-
-            window.ConcurrentTask.register({
-                tasks: {},
-                ports: {
-                    send: app.ports.send,
-                    receive: app.ports.receive,
-                },
             });
         </script>
     </body>
