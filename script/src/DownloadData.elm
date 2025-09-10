@@ -1,7 +1,6 @@
 module DownloadData exposing (run)
 
 import Angle
-import ScriptApi
 import BackendTask exposing (BackendTask)
 import BackendTask.Do as Do
 import Elm
@@ -14,6 +13,8 @@ import Gen.Types
 import Id
 import List.Extra
 import Pages.Script as Script exposing (Script)
+import ScriptApi
+import SeqSet
 import Types
 
 

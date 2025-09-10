@@ -6,15 +6,19 @@ import BackendTask.Do as Do
 import CachedHttp
 import DecodeComplete
 import FatalError exposing (FatalError)
-import Id exposing (Environment, Id, Line, Stop)
+import Id exposing (Id, Line, Stop)
 import Json.Decode exposing (Decoder)
-import Json.Extra
+import Json.Encode
 import List.Extra
 import Pages.Script as Script
 import Regex exposing (Match, Regex)
 import Result.Extra
 import SeqSet exposing (SeqSet)
 import Types exposing (Point, Service(..), StopInfo)
+
+
+type Environment
+    = Environment
 
 
 getStops : BackendTask FatalError (List StopInfo)
@@ -76,11 +80,11 @@ getEndpoints initialQueue =
 
                                     newAcc : SeqSet (Id Stop)
                                     newAcc =
-                                        SeqSet.insertAll newIds acc
+                                        List.foldl SeqSet.insert acc newIds
                                 in
                                 step
                                     newAcc
-                                    (SeqSet.insertAll failures failingLines)
+                                    (List.foldl SeqSet.insert failingLines failures)
                                     ((newIds ++ tail)
                                         |> List.Extra.removeWhen
                                             (\id ->
@@ -183,11 +187,16 @@ constantDecoder constant =
                 else
                     Json.Decode.fail
                         ("Expected "
-                            ++ Json.Extra.escape constant
+                            ++ escape constant
                             ++ ", found "
-                            ++ Json.Extra.escape raw
+                            ++ escape raw
                         )
             )
+
+
+escape : String -> String
+escape s =
+    Json.Encode.encode 0 (Json.Encode.string s)
 
 
 busStopDecoder : Decoder StopInfo
