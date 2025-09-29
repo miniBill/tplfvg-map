@@ -2,3 +2,4 @@ generated
 .cache
 .cache-old
 codegen/Gen
+.elm-pages
