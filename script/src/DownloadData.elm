@@ -8,10 +8,8 @@ import Elm.Annotation
 import FatalError exposing (FatalError)
 import Gen.Angle
 import Gen.Id
-import Gen.List
 import Gen.Types
 import Id
-import List.Extra
 import Pages.Script as Script exposing (Script)
 import ScriptApi
 import SeqSet
@@ -70,10 +68,7 @@ task =
                                 ]
                                 |> Elm.withType Gen.Types.annotation_.stopInfo
                         )
-                    |> List.Extra.greedyGroupsOf 10
-                    |> List.map Elm.list
                     |> Elm.list
-                    |> Gen.List.call_.concat
                     |> Elm.declaration "stops"
                     |> Elm.expose
                 , endpoints
