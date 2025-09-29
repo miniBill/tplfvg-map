@@ -13,8 +13,7 @@ import Types
 
 stops : List Types.StopInfo
 stops =
-    [ { name =
-            "ARIIS piazza Martiri della Libertaà 2 (direzione Rivignano)"
+    [ { name = "ARIIS piazza Martiri della Libertaà 2 (direzione Rivignano)"
       , code = Id.fromString "30703"
       , commune = "RIVIGNANO TEOR"
       , coordinates =
@@ -221,8 +220,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MASSERIS Strada Comunale Masseris (direzione Montemaggiore)"
+    , { name = "MASSERIS Strada Comunale Masseris (direzione Montemaggiore)"
       , code = Id.fromString "35904"
       , commune = "SAVOGNA"
       , coordinates =
@@ -249,8 +247,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AZZIDA Strada Provinciale 19 (bivio, direz. Ponte S.Quirino)"
+    , { name = "AZZIDA Strada Provinciale 19 (bivio, direz. Ponte S.Quirino)"
       , code = Id.fromString "36105"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -259,8 +256,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CLENIA Strada Provinciale 11 (civico 27, direzione Azzida)"
+    , { name = "CLENIA Strada Provinciale 11 (civico 27, direzione Azzida)"
       , code = Id.fromString "36106"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -287,8 +283,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ORSARIA DI PREMARIACCO piazza Concordia 1 (direzione Udine)"
+    , { name = "ORSARIA DI PREMARIACCO piazza Concordia 1 (direzione Udine)"
       , code = Id.fromString "36305"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -315,8 +310,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MANZANO via Udine 8 (fronte autostazione, direzione Udine)"
+    , { name = "MANZANO via Udine 8 (fronte autostazione, direzione Udine)"
       , code = Id.fromString "36401"
       , commune = "MANZANO"
       , coordinates =
@@ -352,8 +346,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BUTTRIO via Nazionale 20 (angolo via Pavia, direz. Manzano)"
+    , { name = "BUTTRIO via Nazionale 20 (angolo via Pavia, direz. Manzano)"
       , code = Id.fromString "36510"
       , commune = "BUTTRIO"
       , coordinates =
@@ -524,8 +517,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COLLOREDO DI M.A. via Pradis (direz. Pagnacco), loc. Pradis"
+    , { name = "COLLOREDO DI M.A. via Pradis (direz. Pagnacco), loc. Pradis"
       , code = Id.fromString "51115"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -606,8 +598,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PALUZZA via Divisione Julia 89 (direzione Paluzza), Casteons"
+    , { name = "PALUZZA via Divisione Julia 89 (direzione Paluzza), Casteons"
       , code = Id.fromString "81706"
       , commune = "PALUZZA"
       , coordinates =
@@ -661,8 +652,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "GRADISCA D'ISONZO viale Regina Elena (giardini, lato parco)"
+    , { name = "GRADISCA D'ISONZO viale Regina Elena (giardini, lato parco)"
       , code = Id.fromString "G0811"
       , commune = "GRADISCA D'ISONZO"
       , coordinates =
@@ -716,8 +706,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "località Farnei 14 (strada provinciale 15 direzione Muggia)"
+    , { name = "località Farnei 14 (strada provinciale 15 direzione Muggia)"
       , code = Id.fromString "E0156"
       , commune = ""
       , coordinates =
@@ -924,8 +913,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CARLINO via S.G. di Nogaro (incr. via Toppo W., dir.Nogaro)"
+    , { name = "CARLINO via S.G. di Nogaro (incr. via Toppo W., dir.Nogaro)"
       , code = Id.fromString "31A04"
       , commune = "CARLINO"
       , coordinates =
@@ -943,8 +931,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NAT. via dell'asilo 13 (direz. sottopassaggio)"
+    , { name = "S.GIOVANNI AL NAT. via dell'asilo 13 (direz. sottopassaggio)"
       , code = Id.fromString "35301"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -1043,8 +1030,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPOFORMIDO via Principe di Udine 140 (SteelJobs, dir.Udine"
+    , { name = "CAMPOFORMIDO via Principe di Udine 140 (SteelJobs, dir.Udine"
       , code = Id.fromString "40102"
       , commune = "CAMPOFORMIDO"
       , coordinates =
@@ -1116,8 +1102,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERVIGNANO DEL FRIULI via M. Ramazzotti 41 (Ist. Malignani)"
+    , { name = "CERVIGNANO DEL FRIULI via M. Ramazzotti 41 (Ist. Malignani)"
       , code = Id.fromString "38112"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -1126,8 +1111,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAMMARDENCHIA DI POZZ. piazza 24 Maggio 12 (fronte chiesa)"
+    , { name = "SAMMARDENCHIA DI POZZ. piazza 24 Maggio 12 (fronte chiesa)"
       , code = Id.fromString "38804"
       , commune = "POZZUOLO DEL FRIULI"
       , coordinates =
@@ -1163,8 +1147,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMINO AL TAGL. via Aquileia 33 (centro, direzione Codroipo)"
+    , { name = "CAMINO AL TAGL. via Aquileia 33 (centro, direzione Codroipo)"
       , code = Id.fromString "40701"
       , commune = "CAMINO AL TAGLIAMENTO"
       , coordinates =
@@ -1191,8 +1174,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MADRISIO DI VARMO via Santa Radegonda 6 (direzione Latisana)"
+    , { name = "MADRISIO DI VARMO via Santa Radegonda 6 (direzione Latisana)"
       , code = Id.fromString "40606"
       , commune = "VARMO"
       , coordinates =
@@ -1201,8 +1183,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SEDEGLIANO piazza Roma (fronte 29, centro direz. Codroipo)"
+    , { name = "SEDEGLIANO piazza Roma (fronte 29, centro direz. Codroipo)"
       , code = Id.fromString "40901"
       , commune = "SEDEGLIANO"
       , coordinates =
@@ -1211,8 +1192,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FLAIBANO piazza monumento ai Caduti (fronte 9, dir.Codroipo)"
+    , { name = "FLAIBANO piazza monumento ai Caduti (fronte 9, dir.Codroipo)"
       , code = Id.fromString "41A01"
       , commune = "FLAIBANO"
       , coordinates =
@@ -1329,8 +1309,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN PIETRO DI RAGOGNA via V.della Libertà 13 (dir.S.Daniele)"
+    , { name = "SAN PIETRO DI RAGOGNA via V.della Libertà 13 (dir.S.Daniele)"
       , code = Id.fromString "51307"
       , commune = "RAGOGNA"
       , coordinates =
@@ -1339,8 +1318,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOLI Z.I. via delle Ferriere (De Simon, direzione Osoppo)"
+    , { name = "RIVOLI Z.I. via delle Ferriere (De Simon, direzione Osoppo)"
       , code = Id.fromString "51702"
       , commune = "OSOPPO"
       , coordinates =
@@ -1349,8 +1327,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOLI via Rivoli 75 (ex stazione Majano, direzione Osoppo)"
+    , { name = "RIVOLI via Rivoli 75 (ex stazione Majano, direzione Osoppo)"
       , code = Id.fromString "51703"
       , commune = "OSOPPO"
       , coordinates =
@@ -1368,8 +1345,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ALESSO via Borgo Oncedis (direzione Trasaghis), loc. Palar"
+    , { name = "ALESSO via Borgo Oncedis (direzione Trasaghis), loc. Palar"
       , code = Id.fromString "51I06"
       , commune = "TRASAGHIS"
       , coordinates =
@@ -1405,8 +1381,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TAIPANA Strada Provinciale 38 (Casa Famiglia, direz. Nimis)"
+    , { name = "TAIPANA Strada Provinciale 38 (Casa Famiglia, direz. Nimis)"
       , code = Id.fromString "61406"
       , commune = "TAIPANA"
       , coordinates =
@@ -1460,8 +1435,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "PIANI DI CHIUSAFORTE SP 76 Val Raccolana (dir. Sella Nevea)"
+    , { name = "PIANI DI CHIUSAFORTE SP 76 Val Raccolana (dir. Sella Nevea)"
       , code = Id.fromString "80207"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -1506,8 +1480,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FUSEA piazza Fontana (fronte civico 10, direzione Tolmezzo)"
+    , { name = "FUSEA piazza Fontana (fronte civico 10, direzione Tolmezzo)"
       , code = Id.fromString "81258"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -1525,8 +1498,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "ROSA DEI VENTI Strada Provinciale 40 (direzione Lambrugno)"
+    , { name = "ROSA DEI VENTI Strada Provinciale 40 (direzione Lambrugno)"
       , code = Id.fromString "81313"
       , commune = "ARTA TERME"
       , coordinates =
@@ -1607,8 +1579,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI piazzale 4 Novembre (lato monumento)"
+    , { name = "SAN DANIELE DEL FRIULI piazzale 4 Novembre (lato monumento)"
       , code = Id.fromString "50I01"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -1743,8 +1714,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BARBIANIS via Fornalis 237 (bivio Cialla, direz. Cividale)"
+    , { name = "BARBIANIS via Fornalis 237 (bivio Cialla, direz. Cividale)"
       , code = Id.fromString "36205"
       , commune = "CIVIDALE DEL FRIULI"
       , coordinates =
@@ -1771,8 +1741,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BUTTRIO via Divisione Julia (fronte 2, chiesa dir. Cividale)"
+    , { name = "BUTTRIO via Divisione Julia (fronte 2, chiesa dir. Cividale)"
       , code = Id.fromString "36501"
       , commune = "BUTTRIO"
       , coordinates =
@@ -1799,8 +1768,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRADAMANO via Garibaldi 118 (bivio Cerneglons, dir.Cividale)"
+    , { name = "PRADAMANO via Garibaldi 118 (bivio Cerneglons, dir.Cividale)"
       , code = Id.fromString "36607"
       , commune = "PRADAMANO"
       , coordinates =
@@ -1836,8 +1804,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GORIZIA via Trieste SS 55 (Motorizzazione Civile, esterno)"
+    , { name = "GORIZIA via Trieste SS 55 (Motorizzazione Civile, esterno)"
       , code = Id.fromString "G7131"
       , commune = "GORIZIA"
       , coordinates =
@@ -1900,8 +1867,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GRADISCUTTA DI VARMO piazza San Giorgio 4 (direzione Varmo)"
+    , { name = "GRADISCUTTA DI VARMO piazza San Giorgio 4 (direzione Varmo)"
       , code = Id.fromString "40607"
       , commune = "VARMO"
       , coordinates =
@@ -1910,8 +1876,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.MARCO DI MERETO via del Monumento 12 (chiesa, dir. Udine)"
+    , { name = "S.MARCO DI MERETO via del Monumento 12 (chiesa, dir. Udine)"
       , code = Id.fromString "41107"
       , commune = "MERETO DI TOMBA"
       , coordinates =
@@ -1920,8 +1885,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GRIONS DEL TORRE via Monte Emilius (Maddalena, dir. Udine)"
+    , { name = "GRIONS DEL TORRE via Monte Emilius (Maddalena, dir. Udine)"
       , code = Id.fromString "60306"
       , commune = "POVOLETTO"
       , coordinates =
@@ -1930,8 +1894,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RASCHIACCO via dei Campi 1 (trattoria, direzione Cividale)"
+    , { name = "RASCHIACCO via dei Campi 1 (trattoria, direzione Cividale)"
       , code = Id.fromString "60404"
       , commune = "FAEDIS"
       , coordinates =
@@ -1958,8 +1921,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOLTO piazza delle Scuole 7 (rotonda, direz. Villacaccia)"
+    , { name = "RIVOLTO piazza delle Scuole 7 (rotonda, direz. Villacaccia)"
       , code = Id.fromString "40844"
       , commune = "CODROIPO"
       , coordinates =
@@ -1986,8 +1948,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERVIGNANO DEL FRIULI via Aquileia 73 (bivio liceo Einstein)"
+    , { name = "CERVIGNANO DEL FRIULI via Aquileia 73 (bivio liceo Einstein)"
       , code = Id.fromString "38113"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -1996,8 +1957,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TORVISCOSA via Stradone Zuino Nord (fr. 237, distributore)"
+    , { name = "TORVISCOSA via Stradone Zuino Nord (fr. 237, distributore)"
       , code = Id.fromString "38705"
       , commune = "TORVISCOSA"
       , coordinates =
@@ -2060,8 +2020,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CARNIA via Nazionale (bivio stazione FS, direzione Tolmezzo)"
+    , { name = "CARNIA via Nazionale (bivio stazione FS, direzione Tolmezzo)"
       , code = Id.fromString "61204"
       , commune = "VENZONE"
       , coordinates =
@@ -2079,8 +2038,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PALUZZA via Monte Tersadia (ponte Cercivento, dir.Tolmezzo)"
+    , { name = "PALUZZA via Monte Tersadia (ponte Cercivento, dir.Tolmezzo)"
       , code = Id.fromString "81704"
       , commune = "PALUZZA"
       , coordinates =
@@ -2125,8 +2083,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTINA viale John Fitgerald Kennedy 26 (direzione Cividale)"
+    , { name = "MONTINA viale John Fitgerald Kennedy 26 (direzione Cividale)"
       , code = Id.fromString "36910"
       , commune = "TORREANO"
       , coordinates =
@@ -2171,8 +2128,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SCLAUNICCO via S.Giovanni Bosco 7 (bar, direzione Orgnano)"
+    , { name = "SCLAUNICCO via S.Giovanni Bosco 7 (bar, direzione Orgnano)"
       , code = Id.fromString "40407"
       , commune = "LESTIZZA"
       , coordinates =
@@ -2199,8 +2155,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SUSANS fraz.Susans 46 (bar, direzione Majano), borgo Villa"
+    , { name = "SUSANS fraz.Susans 46 (bar, direzione Majano), borgo Villa"
       , code = Id.fromString "51209"
       , commune = "MAJANO"
       , coordinates =
@@ -2218,8 +2173,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MELS piazza del Tiglio 12 (Là Di Petros, direzione Majano)"
+    , { name = "MELS piazza del Tiglio 12 (Là Di Petros, direzione Majano)"
       , code = Id.fromString "51110"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -2273,8 +2227,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GRIONS DEL TORRE piazza G. Garibaldi 4 (centro, dir. Udine)"
+    , { name = "GRIONS DEL TORRE piazza G. Garibaldi 4 (centro, dir. Udine)"
       , code = Id.fromString "60304"
       , commune = "POVOLETTO"
       , coordinates =
@@ -2283,8 +2236,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ATTIMIS via Montecroce (fr. 22, passo M.Croce dir.Cividale)"
+    , { name = "ATTIMIS via Montecroce (fr. 22, passo M.Croce dir.Cividale)"
       , code = Id.fromString "60505"
       , commune = "ATTIMIS"
       , coordinates =
@@ -2302,8 +2254,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MAGNANO IN RIVIERA via Nazionale 76 (bivio, direzione Udine)"
+    , { name = "MAGNANO IN RIVIERA via Nazionale 76 (bivio, direzione Udine)"
       , code = Id.fromString "60805"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -2366,8 +2317,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE piazzale S. Maria della Misericordia (fronte ospedale)"
+    , { name = "UDINE piazzale S. Maria della Misericordia (fronte ospedale)"
       , code = Id.fromString "70C12"
       , commune = "UDINE"
       , coordinates =
@@ -2430,8 +2380,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIORGIO DI RESIA via Prato (fronte 1A, chiesa dir.Stolvizz"
+    , { name = "S.GIORGIO DI RESIA via Prato (fronte 1A, chiesa dir.Stolvizz"
       , code = Id.fromString "80103"
       , commune = "RESIA"
       , coordinates =
@@ -2503,8 +2452,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN ANTONIO DI TARVISIO via L.Cadorna (bivio, dir.Tarvisio)"
+    , { name = "SAN ANTONIO DI TARVISIO via L.Cadorna (bivio, dir.Tarvisio)"
       , code = Id.fromString "80316"
       , commune = "TARVISIO"
       , coordinates =
@@ -2576,8 +2524,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN LEOPOLDO Laglesie Strada Statale 13 (direzione Tarvisio)"
+    , { name = "SAN LEOPOLDO Laglesie Strada Statale 13 (direzione Tarvisio)"
       , code = Id.fromString "80803"
       , commune = "PONTEBBA"
       , coordinates =
@@ -2622,8 +2569,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PIANO D'ARTA via Nazionale (Edelweiss, direzione Tolmezzo)"
+    , { name = "PIANO D'ARTA via Nazionale (Edelweiss, direzione Tolmezzo)"
       , code = Id.fromString "81303"
       , commune = "ARTA TERME"
       , coordinates =
@@ -2632,8 +2578,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PIANO D'ARTA via Guglielmo Marconi 9 (centro, dir.Tolmezzo)"
+    , { name = "PIANO D'ARTA via Guglielmo Marconi 9 (centro, dir.Tolmezzo)"
       , code = Id.fromString "81304"
       , commune = "ARTA TERME"
       , coordinates =
@@ -2768,8 +2713,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ANDRAZZA DI FORNI DI SOPRA via Nazionale(bivio, dir.Ampezzo)"
+    , { name = "ANDRAZZA DI FORNI DI SOPRA via Nazionale(bivio, dir.Ampezzo)"
       , code = Id.fromString "83203"
       , commune = "FORNI DI SOPRA"
       , coordinates =
@@ -2796,8 +2740,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CASA CANTONIERA Strada Statale 52 km 42 (direzione Cadore)"
+    , { name = "CASA CANTONIERA Strada Statale 52 km 42 (direzione Cadore)"
       , code = Id.fromString "83303"
       , commune = "FORNI DI SOTTO"
       , coordinates =
@@ -2941,8 +2884,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN MARTINO DI CODROIPO  via Lignano (bivio, dir. Rivignano)"
+    , { name = "SAN MARTINO DI CODROIPO  via Lignano (bivio, dir. Rivignano)"
       , code = Id.fromString "40817"
       , commune = "CODROIPO"
       , coordinates =
@@ -2951,8 +2893,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZOMPICCHIA DI CODROIPO piazza Aquileia (dir. Basagliapenta)"
+    , { name = "ZOMPICCHIA DI CODROIPO piazza Aquileia (dir. Basagliapenta)"
       , code = Id.fromString "40818"
       , commune = "CODROIPO"
       , coordinates =
@@ -2988,8 +2929,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BRAZZACCO Str.dei Colli (incr.via del Gruagno, dir. Alnicco)"
+    , { name = "BRAZZACCO Str.dei Colli (incr.via del Gruagno, dir. Alnicco)"
       , code = Id.fromString "50413"
       , commune = "MORUZZO"
       , coordinates =
@@ -3007,8 +2947,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN VITO DI FAGAGNA piazza Umberto I (civico 4, dir.Udine)"
+    , { name = "SAN VITO DI FAGAGNA piazza Umberto I (civico 4, dir.Udine)"
       , code = Id.fromString "50601"
       , commune = "SAN VITO DI FAGAGNA"
       , coordinates =
@@ -3134,8 +3073,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PAGNACCO via Colloredo (direz. Pagnacco), Casali Modoletto"
+    , { name = "PAGNACCO via Colloredo (direz. Pagnacco), Casali Modoletto"
       , code = Id.fromString "50307"
       , commune = "PAGNACCO"
       , coordinates =
@@ -3189,8 +3127,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AUSSA CORNO Z.I. via Fermi (Glass Italy, prov. San Giorgio)"
+    , { name = "AUSSA CORNO Z.I. via Fermi (Glass Italy, prov. San Giorgio)"
       , code = Id.fromString "31A13"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -3208,8 +3145,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NATISONE via del Collio 37 (lato birreria)"
+    , { name = "SAN GIOVANNI AL NATISONE via del Collio 37 (lato birreria)"
       , code = Id.fromString "35326"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -3218,8 +3154,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NAT. via del Collio 67 (Atika, direz.centro)"
+    , { name = "S.GIOVANNI AL NAT. via del Collio 67 (Atika, direz.centro)"
       , code = Id.fromString "35327"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -3228,8 +3163,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NATISONE via delle Scuole 5 (cortile scuole)"
+    , { name = "SAN GIOVANNI AL NATISONE via delle Scuole 5 (cortile scuole)"
       , code = Id.fromString "35351"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -3319,8 +3253,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SELLA NEVEA via Friuli (fronte 2, rifugio Divisione Julia)"
+    , { name = "SELLA NEVEA via Friuli (fronte 2, rifugio Divisione Julia)"
       , code = Id.fromString "80210"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -3383,8 +3316,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CLAUPES DI LAUCO Strada Provinciale 44 (bivio, prov.Avaglio)"
+    , { name = "CLAUPES DI LAUCO Strada Provinciale 44 (bivio, prov.Avaglio)"
       , code = Id.fromString "82103"
       , commune = "LAUCO"
       , coordinates =
@@ -3447,8 +3379,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ESEMON DI SOPRA Strada Provinciale 35 (direz. Villa Santina)"
+    , { name = "ESEMON DI SOPRA Strada Provinciale 35 (direz. Villa Santina)"
       , code = Id.fromString "82403"
       , commune = "RAVEO"
       , coordinates =
@@ -3466,8 +3397,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZOVELLO via Nazionale (direzione Sutrio), Gladegna Prepaulin"
+    , { name = "ZOVELLO via Nazionale (direzione Sutrio), Gladegna Prepaulin"
       , code = Id.fromString "82606"
       , commune = "RAVASCLETTO"
       , coordinates =
@@ -3512,8 +3442,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "NOIARETTO Panoramica delle Vette (bivio, direz. Comeglians)"
+    , { name = "NOIARETTO Panoramica delle Vette (bivio, direz. Comeglians)"
       , code = Id.fromString "82705"
       , commune = "COMEGLIANS"
       , coordinates =
@@ -3522,8 +3451,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIGOLATO piazza Medaglie d'Oro Durigon (centro, dir. Forni)"
+    , { name = "RIGOLATO piazza Medaglie d'Oro Durigon (centro, dir. Forni)"
       , code = Id.fromString "82801"
       , commune = "RIGOLATO"
       , coordinates =
@@ -3532,8 +3460,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FORNI AVOLTRI corso Italia 22 (municipio, dir. Comeglians)"
+    , { name = "FORNI AVOLTRI corso Italia 22 (municipio, dir. Comeglians)"
       , code = Id.fromString "82901"
       , commune = "FORNI AVOLTRI"
       , coordinates =
@@ -3605,8 +3532,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FORNI DI SOTTO via Nazionale (dir.Tolmezzo), loc. S.Antonio"
+    , { name = "FORNI DI SOTTO via Nazionale (dir.Tolmezzo), loc. S.Antonio"
       , code = Id.fromString "83302"
       , commune = "FORNI DI SOTTO"
       , coordinates =
@@ -3651,8 +3577,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PELOS DI CADORE piazza San Bernardino 3 (direzione Ampezzo)"
+    , { name = "PELOS DI CADORE piazza San Bernardino 3 (direzione Ampezzo)"
       , code = Id.fromString "95202"
       , commune = "VIGO DI CADORE"
       , coordinates =
@@ -3697,8 +3622,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOCALITA' TRE PONTI DI VIGO DI CADORE SS 52 (direz. Pelos)"
+    , { name = "LOCALITA' TRE PONTI DI VIGO DI CADORE SS 52 (direz. Pelos)"
       , code = Id.fromString "95405"
       , commune = "VIGO DI CADORE"
       , coordinates =
@@ -3716,8 +3640,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SESTO via S. Giuseppe 54 (Caravan Park, direzione S.Candido)"
+    , { name = "SESTO via S. Giuseppe 54 (Caravan Park, direzione S.Candido)"
       , code = Id.fromString "97707"
       , commune = "SESTO-SEXTEN"
       , coordinates =
@@ -3861,8 +3784,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "AUSSA CORNO Z.I. via Fermi 42 (birrificio, prov. S.Giorgio)"
+    , { name = "AUSSA CORNO Z.I. via Fermi 42 (birrificio, prov. S.Giorgio)"
       , code = Id.fromString "31A12"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -3880,8 +3802,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL N. via Palmarina 73 (distributore, dir.centro)"
+    , { name = "S.GIOVANNI AL N. via Palmarina 73 (distributore, dir.centro)"
       , code = Id.fromString "35323"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -3935,8 +3856,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAVENZANO SP 65 (bivio Strada Provinciale 54, dir. Perteole)"
+    , { name = "CAVENZANO SP 65 (bivio Strada Provinciale 54, dir. Perteole)"
       , code = Id.fromString "37904"
       , commune = "CAMPOLONGO TAPOGLIANO"
       , coordinates =
@@ -4026,8 +3946,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "ZEGLIANUTTO via dei Colli 12 (bivio Mussarie, direz. Buja)"
+    , { name = "ZEGLIANUTTO via dei Colli 12 (bivio Mussarie, direz. Buja)"
       , code = Id.fromString "51525"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -4153,8 +4072,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "NOIARIS piazza Carlo Chiappolino 7 (centro, dir. Arta Terme)"
+    , { name = "NOIARIS piazza Carlo Chiappolino 7 (centro, dir. Arta Terme)"
       , code = Id.fromString "81904"
       , commune = "SUTRIO"
       , coordinates =
@@ -4253,8 +4171,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "LAUZACCO viale dei Platani (rotonda Crosada, direz. Udine)"
+    , { name = "LAUZACCO viale dei Platani (rotonda Crosada, direz. Udine)"
       , code = Id.fromString "37108"
       , commune = "SANTA MARIA LA LONGA"
       , coordinates =
@@ -4299,8 +4216,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERVIGNANO DEL FRIULI viale Stazione31(stazione ferroviaria)"
+    , { name = "CERVIGNANO DEL FRIULI viale Stazione31(stazione ferroviaria)"
       , code = Id.fromString "38102"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -4354,8 +4270,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CROCE Strada Statale 465 (bivio Sostasio, direz. Comeglians)"
+    , { name = "CROCE Strada Statale 465 (bivio Sostasio, direz. Comeglians)"
       , code = Id.fromString "83003"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -4436,8 +4351,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "INVILLINO viale degli Eroi (incrocio via Diaz, dir.Tolmezzo)"
+    , { name = "INVILLINO viale degli Eroi (incrocio via Diaz, dir.Tolmezzo)"
       , code = Id.fromString "82203"
       , commune = "VILLA SANTINA"
       , coordinates =
@@ -4581,8 +4495,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Guarnerio d'Artegna 47 (angolo via Monte S.Marco)"
+    , { name = "UDINE via Guarnerio d'Artegna 47 (angolo via Monte S.Marco)"
       , code = Id.fromString "UD197"
       , commune = "UDINE"
       , coordinates =
@@ -4798,8 +4711,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERVIGNANO DEL FRIULI via Gorizia 35 (Drago Nero, dir.Grado)"
+    , { name = "CERVIGNANO DEL FRIULI via Gorizia 35 (Drago Nero, dir.Grado)"
       , code = Id.fromString "38114"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -4835,8 +4747,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERVIGNANO DEL FRIULI viale Venezia (rotonda dir.Torviscosa)"
+    , { name = "CERVIGNANO DEL FRIULI viale Venezia (rotonda dir.Torviscosa)"
       , code = Id.fromString "38119"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -4917,8 +4828,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RAVASCLETTO via Edelweiss (prov.Comeglians), Sella Valcalda"
+    , { name = "RAVASCLETTO via Edelweiss (prov.Comeglians), Sella Valcalda"
       , code = Id.fromString "82602"
       , commune = "RAVASCLETTO"
       , coordinates =
@@ -4927,8 +4837,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRATO CARNICO SS 465 (civico  88, centro direzione Pesariis)"
+    , { name = "PRATO CARNICO SS 465 (civico  88, centro direzione Pesariis)"
       , code = Id.fromString "83001"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -5108,8 +5017,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SUTRIO via della Liberazione 50 (segheria, direzione centro)"
+    , { name = "SUTRIO via della Liberazione 50 (segheria, direzione centro)"
       , code = Id.fromString "81902"
       , commune = "SUTRIO"
       , coordinates =
@@ -5127,8 +5035,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MUINA Strada Regionale 355 (bivio, direzione Villa Santina)"
+    , { name = "MUINA Strada Regionale 355 (bivio, direzione Villa Santina)"
       , code = Id.fromString "82502"
       , commune = "OVARO"
       , coordinates =
@@ -5146,8 +5053,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CIMA SAPPADA SR 355 (fronte 95, lato chiesa), borgata Cima"
+    , { name = "CIMA SAPPADA SR 355 (fronte 95, lato chiesa), borgata Cima"
       , code = Id.fromString "95005"
       , commune = "SAPPADA"
       , coordinates =
@@ -5210,8 +5116,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "OSOPPO via Volontari della Libertà (dir.Osoppo), loc.Pineta"
+    , { name = "OSOPPO via Volontari della Libertà (dir.Osoppo), loc.Pineta"
       , code = Id.fromString "51718"
       , commune = "OSOPPO"
       , coordinates =
@@ -5454,8 +5359,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Emilia (lato cimitero Paderno, direzione Beivars)"
+    , { name = "UDINE via Emilia (lato cimitero Paderno, direzione Beivars)"
       , code = Id.fromString "UD246"
       , commune = "UDINE"
       , coordinates =
@@ -6121,8 +6025,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "FORNELLI DI SOPRA Strada dei Fornelli e di Villaggio Roma 7"
+    , { name = "FORNELLI DI SOPRA Strada dei Fornelli e di Villaggio Roma 7"
       , code = Id.fromString "38709"
       , commune = "TORVISCOSA"
       , coordinates =
@@ -6158,8 +6061,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PALAZZOLO DELLO STELLA via Nazionale 48 (bivio Precenicco)"
+    , { name = "PALAZZOLO DELLO STELLA via Nazionale 48 (bivio Precenicco)"
       , code = Id.fromString "31304"
       , commune = "PALAZZOLO DELLO STELLA"
       , coordinates =
@@ -6177,8 +6079,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GORGO DI LATISANA via Lignano Nord (fronte 147, Madonnina)"
+    , { name = "GORGO DI LATISANA via Lignano Nord (fronte 147, Madonnina)"
       , code = Id.fromString "31627"
       , commune = "LATISANA"
       , coordinates =
@@ -6268,8 +6169,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO GRANDE via dei Laris (bivio Carvacco, dir. municipio)"
+    , { name = "TREPPO GRANDE via dei Laris (bivio Carvacco, dir. municipio)"
       , code = Id.fromString "51510"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -6287,8 +6187,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CORNINO Strada Provinciale 22 (civico 24, direzione Cimano)"
+    , { name = "CORNINO Strada Provinciale 22 (civico 24, direzione Cimano)"
       , code = Id.fromString "51805"
       , commune = "FORGARIA NEL FRIULI"
       , coordinates =
@@ -6306,8 +6205,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FLAGOGNA via Pinzano 6 (Ponte Armistizio, direzione Pinzano)"
+    , { name = "FLAGOGNA via Pinzano 6 (Ponte Armistizio, direzione Pinzano)"
       , code = Id.fromString "51831"
       , commune = "FORGARIA NEL FRIULI"
       , coordinates =
@@ -6343,8 +6241,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TRICESIMO via Pontebbana (fronte 70, bivio direzione Udine)"
+    , { name = "TRICESIMO via Pontebbana (fronte 70, bivio direzione Udine)"
       , code = Id.fromString "60160"
       , commune = "TRICESIMO"
       , coordinates =
@@ -6353,8 +6250,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TRICESIMO via 11 Febbraio (fronte 50, direz. Ara), Colgallo"
+    , { name = "TRICESIMO via 11 Febbraio (fronte 50, direz. Ara), Colgallo"
       , code = Id.fromString "60161"
       , commune = "TRICESIMO"
       , coordinates =
@@ -6399,8 +6295,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MICOTTIS Strada Turistica Monteaperta (direzione Lusevera)"
+    , { name = "MICOTTIS Strada Turistica Monteaperta (direzione Lusevera)"
       , code = Id.fromString "61315"
       , commune = "LUSEVERA"
       , coordinates =
@@ -6409,8 +6304,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLANOVA GROTTE borgo Funtic (bivio Dolina, dir. Micottis)"
+    , { name = "VILLANOVA GROTTE borgo Funtic (bivio Dolina, dir. Micottis)"
       , code = Id.fromString "61328"
       , commune = "LUSEVERA"
       , coordinates =
@@ -6419,8 +6313,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE viale Leonardo da Vinci 57 (Area 1, fronte Malignani)"
+    , { name = "UDINE viale Leonardo da Vinci 57 (Area 1, fronte Malignani)"
       , code = Id.fromString "70C72"
       , commune = "UDINE"
       , coordinates =
@@ -6429,8 +6322,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Val Saisera (lato parco Turoldo, direz.università)"
+    , { name = "UDINE via Val Saisera (lato parco Turoldo, direz.università)"
       , code = Id.fromString "70C75"
       , commune = "UDINE"
       , coordinates =
@@ -6448,8 +6340,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "PORTOGRUARO viale Udine 11 (incrocio, direzione Portogruaro)"
+    , { name = "PORTOGRUARO viale Udine 11 (incrocio, direzione Portogruaro)"
       , code = Id.fromString "75109"
       , commune = "PORTOGRUARO"
       , coordinates =
@@ -6485,8 +6376,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOLMEZZO via Val di Gorto (fronte civico 100, Centrale Enel)"
+    , { name = "TOLMEZZO via Val di Gorto (fronte civico 100, Centrale Enel)"
       , code = Id.fromString "81204"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -6576,8 +6466,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Luzzatto (entrata cimitero San Vito, dir.cimitero)"
+    , { name = "UDINE via Luzzatto (entrata cimitero San Vito, dir.cimitero)"
       , code = Id.fromString "UD340"
       , commune = "UDINE"
       , coordinates =
@@ -6793,8 +6682,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Don Orione (incr. via della Faula, prov. incrocio)"
+    , { name = "UDINE via Don Orione (incr. via della Faula, prov. incrocio)"
       , code = Id.fromString "UD592"
       , commune = "UDINE"
       , coordinates =
@@ -6830,8 +6718,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "CERVIGNANO DEL FR. via Chiozza 2 (caserma, dir. Scodovacca)"
+    , { name = "CERVIGNANO DEL FR. via Chiozza 2 (caserma, dir. Scodovacca)"
       , code = Id.fromString "38123"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -6867,8 +6754,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CICONICCO via Spilimbergo 122 (bivio Chiarandis, dir.Fagagna"
+    , { name = "CICONICCO via Spilimbergo 122 (bivio Chiarandis, dir.Fagagna"
       , code = Id.fromString "50515"
       , commune = "FAGAGNA"
       , coordinates =
@@ -6922,8 +6808,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.TOMASO via San Zenone 66 (ex poste, direzione San Daniele)"
+    , { name = "S.TOMASO via San Zenone 66 (ex poste, direzione San Daniele)"
       , code = Id.fromString "51225"
       , commune = "MAJANO"
       , coordinates =
@@ -7013,8 +6898,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MAGNANO IN RIVIERA via Prampero 52 (bar, direzione Tarcento)"
+    , { name = "MAGNANO IN RIVIERA via Prampero 52 (bar, direzione Tarcento)"
       , code = Id.fromString "60815"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -7023,8 +6907,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BILLERIO SP 117 (fronte 9, direzione Tarcento), borgo Urana"
+    , { name = "BILLERIO SP 117 (fronte 9, direzione Tarcento), borgo Urana"
       , code = Id.fromString "60820"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -7267,8 +7150,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NATISONE via Roma 125 (chiesa, dir.centro)"
+    , { name = "SAN GIOVANNI AL NATISONE via Roma 125 (chiesa, dir.centro)"
       , code = Id.fromString "35382"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -7322,8 +7204,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "TORREANO DI MART. via Cividina (fronte 366, dir.Martignacco)"
+    , { name = "TORREANO DI MART. via Cividina (fronte 366, dir.Martignacco)"
       , code = Id.fromString "50113"
       , commune = "MARTIGNACCO"
       , coordinates =
@@ -7332,8 +7213,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MARTIGNACCO piazza Vittorio Veneto (fronte 2, dir. Torreano)"
+    , { name = "MARTIGNACCO piazza Vittorio Veneto (fronte 2, dir. Torreano)"
       , code = Id.fromString "50114"
       , commune = "MARTIGNACCO"
       , coordinates =
@@ -7387,8 +7267,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TRICESIMO via dei Caduti (incr. via Castello, dir. Tarcento)"
+    , { name = "TRICESIMO via dei Caduti (incr. via Castello, dir. Tarcento)"
       , code = Id.fromString "60104"
       , commune = "TRICESIMO"
       , coordinates =
@@ -7406,8 +7285,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LEONACCO via Pozzuolo (incr. via San Martino, dir.Tricesimo)"
+    , { name = "LEONACCO via Pozzuolo (incr. via San Martino, dir.Tricesimo)"
       , code = Id.fromString "60130"
       , commune = "TRICESIMO"
       , coordinates =
@@ -7524,8 +7402,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COLLALTO via Udine (fronte civico 96, incrocio via Tomadini)"
+    , { name = "COLLALTO via Udine (fronte civico 96, incrocio via Tomadini)"
       , code = Id.fromString "60708"
       , commune = "TARCENTO"
       , coordinates =
@@ -7543,8 +7420,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BIVIO VEDRONZA VILLANOVA via Crosis (provenienza Villanova)"
+    , { name = "BIVIO VEDRONZA VILLANOVA via Crosis (provenienza Villanova)"
       , code = Id.fromString "60727"
       , commune = "TARCENTO"
       , coordinates =
@@ -7562,8 +7438,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MAGNANO IN RIVIERA via Div. Julia 1 (dir.Udine), Setteponti"
+    , { name = "MAGNANO IN RIVIERA via Div. Julia 1 (dir.Udine), Setteponti"
       , code = Id.fromString "60803"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -7572,8 +7447,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BILLERIO via Prampero 5 (direzione Magnano), borgo Foranesi"
+    , { name = "BILLERIO via Prampero 5 (direzione Magnano), borgo Foranesi"
       , code = Id.fromString "60810"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -7663,8 +7537,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Candonio (Dacia Arena, parcheggio nord dir.centro)"
+    , { name = "UDINE via Candonio (Dacia Arena, parcheggio nord dir.centro)"
       , code = Id.fromString "70C78"
       , commune = "UDINE"
       , coordinates =
@@ -7709,8 +7582,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CEDARCHIS Strada Provinciale 23 (ponte, direzione Tolmezzo)"
+    , { name = "CEDARCHIS Strada Provinciale 23 (ponte, direzione Tolmezzo)"
       , code = Id.fromString "81309"
       , commune = "ARTA TERME"
       , coordinates =
@@ -7782,8 +7654,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPOLONGO DI CADORE via Nazionale 39 (direzione S.Stefano)"
+    , { name = "CAMPOLONGO DI CADORE via Nazionale 39 (direzione S.Stefano)"
       , code = Id.fromString "98204"
       , commune = "SANTO STEFANO DI CADORE"
       , coordinates =
@@ -7864,8 +7735,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Chiusaforte (fronte civico 2, ospedale Ingresso E)"
+    , { name = "UDINE via Chiusaforte (fronte civico 2, ospedale Ingresso E)"
       , code = Id.fromString "UD158"
       , commune = "UDINE"
       , coordinates =
@@ -7973,8 +7843,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AUSSA CORNO Z.I. via Fermi 12 (fr.Marcegaglia, prov.S.Giorgi"
+    , { name = "AUSSA CORNO Z.I. via Fermi 12 (fr.Marcegaglia, prov.S.Giorgi"
       , code = Id.fromString "31A18"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -7992,8 +7861,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CLABUZZARO Strada Provinciale 45 (bivio, direz. Prapotnizza)"
+    , { name = "CLABUZZARO Strada Provinciale 45 (bivio, direz. Prapotnizza)"
       , code = Id.fromString "35814"
       , commune = "DRENCHIA"
       , coordinates =
@@ -8002,8 +7870,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "OBENETTO Strada Provinciale 45 (bivio, direzione Drenchia)"
+    , { name = "OBENETTO Strada Provinciale 45 (bivio, direzione Drenchia)"
       , code = Id.fromString "35816"
       , commune = "DRENCHIA"
       , coordinates =
@@ -8012,8 +7879,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CIVIDALE DEL FRIULI via Manzano 16 (piazza della Resistenza)"
+    , { name = "CIVIDALE DEL FRIULI via Manzano 16 (piazza della Resistenza)"
       , code = Id.fromString "36225"
       , commune = "CIVIDALE DEL FRIULI"
       , coordinates =
@@ -8058,8 +7924,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CORNINO via Napoleonica (bivio via Costa, direzione centro)"
+    , { name = "CORNINO via Napoleonica (bivio via Costa, direzione centro)"
       , code = Id.fromString "51806"
       , commune = "FORGARIA NEL FRIULI"
       , coordinates =
@@ -8266,8 +8131,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CARLINO via Garibaldi (fronte civico 9, direzione Muzzana)"
+    , { name = "CARLINO via Garibaldi (fronte civico 9, direzione Muzzana)"
       , code = Id.fromString "31108"
       , commune = "CARLINO"
       , coordinates =
@@ -8276,8 +8140,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVAROTTA via Don Eugenio Zanini 48 (direzione Chiarmacis)"
+    , { name = "RIVAROTTA via Don Eugenio Zanini 48 (direzione Chiarmacis)"
       , code = Id.fromString "31408"
       , commune = "RIVIGNANO TEOR"
       , coordinates =
@@ -8349,8 +8212,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BUTTRIO via Nazionale 41 (strada interna, monumento Danieli)"
+    , { name = "BUTTRIO via Nazionale 41 (strada interna, monumento Danieli)"
       , code = Id.fromString "36512"
       , commune = "BUTTRIO"
       , coordinates =
@@ -8386,8 +8248,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TORREANO piazza Arturo Malignani (fronte civico 6, centro)"
+    , { name = "TORREANO piazza Arturo Malignani (fronte civico 6, centro)"
       , code = Id.fromString "36901"
       , commune = "TORREANO"
       , coordinates =
@@ -8513,8 +8374,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.MARIZZA via Villa Canciani 55 (direz.Varmo), Casali Levata"
+    , { name = "S.MARIZZA via Villa Canciani 55 (direz.Varmo), Casali Levata"
       , code = Id.fromString "40410"
       , commune = "VARMO"
       , coordinates =
@@ -8568,8 +8428,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOLTO SS 13 (civico 65, Frecce Tricolori direzione Udine)"
+    , { name = "RIVOLTO SS 13 (civico 65, Frecce Tricolori direzione Udine)"
       , code = Id.fromString "40845"
       , commune = "CODROIPO"
       , coordinates =
@@ -8587,8 +8446,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FELETTO UMBERTO via Udine (angolo via Cadore, dir. centro)"
+    , { name = "FELETTO UMBERTO via Udine (angolo via Cadore, dir. centro)"
       , code = Id.fromString "50220"
       , commune = "TAVAGNACCO"
       , coordinates =
@@ -8624,8 +8482,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI IN COLLE via Friuli (incr.via Codarut, dir.Fagagn"
+    , { name = "S.GIOVANNI IN COLLE via Friuli (incr.via Codarut, dir.Fagagn"
       , code = Id.fromString "50528"
       , commune = "FAGAGNA"
       , coordinates =
@@ -8643,8 +8500,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Tagliamento 68 (bar, dir.Ragogna)"
+    , { name = "SAN DANIELE DEL FRIULI via Tagliamento 68 (bar, dir.Ragogna)"
       , code = Id.fromString "50I09"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -8653,8 +8509,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BIVIO PER BORGO SOPRAPALUDO via San Daniele (dir.San Tomaso)"
+    , { name = "BIVIO PER BORGO SOPRAPALUDO via San Daniele (dir.San Tomaso)"
       , code = Id.fromString "50I12"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -8681,8 +8536,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "S.DANIELE DEL F.via S.Luca (fr. 29, lato cimitero dir.Giavon"
+    , { name = "S.DANIELE DEL F.via S.Luca (fr. 29, lato cimitero dir.Giavon"
       , code = Id.fromString "50I38"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -8754,8 +8608,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TAIPANA Strada Provinciale 38 borgo di Sopra (Cabina Enel)"
+    , { name = "TAIPANA Strada Provinciale 38 borgo di Sopra (Cabina Enel)"
       , code = Id.fromString "61403"
       , commune = "TAIPANA"
       , coordinates =
@@ -8764,8 +8617,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "OSEACCO DI RESIA viale dei Corazzieri (dir.Resia), loc.Rauna"
+    , { name = "OSEACCO DI RESIA viale dei Corazzieri (dir.Resia), loc.Rauna"
       , code = Id.fromString "80125"
       , commune = "RESIA"
       , coordinates =
@@ -8783,8 +8635,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.PIETRO DI CADORE via Piave 21 (dir. Santo Stefano), Mare"
+    , { name = "S.PIETRO DI CADORE via Piave 21 (dir. Santo Stefano), Mare"
       , code = Id.fromString "98103"
       , commune = "SAN PIETRO DI CADORE"
       , coordinates =
@@ -8847,8 +8698,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "LIGNANO viale Centrale 16 (lato parco Junior, direz. Pineta)"
+    , { name = "LIGNANO viale Centrale 16 (lato parco Junior, direz. Pineta)"
       , code = Id.fromString "UL013"
       , commune = "LIGNANO SABBIADORO"
       , coordinates =
@@ -8920,8 +8770,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "GONARS via Trieste (fronte 96, direz.Fauglis), San Domenico"
+    , { name = "GONARS via Trieste (fronte 96, direz.Fauglis), San Domenico"
       , code = Id.fromString "30409"
       , commune = "GONARS"
       , coordinates =
@@ -8993,8 +8842,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CRAS DI DRENCHIA Strada Provinciale 45 (direzione Drenchia)"
+    , { name = "CRAS DI DRENCHIA Strada Provinciale 45 (direzione Drenchia)"
       , code = Id.fromString "35803"
       , commune = "DRENCHIA"
       , coordinates =
@@ -9003,8 +8851,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SCALE Strada Provinciale 45 (bivio, direzione Prapotnizza)"
+    , { name = "SCALE Strada Provinciale 45 (bivio, direzione Prapotnizza)"
       , code = Id.fromString "35815"
       , commune = "DRENCHIA"
       , coordinates =
@@ -9022,8 +8869,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PONTEACCO Strada Statale 54 (mulino Dorbolò, direz. Tiglio)"
+    , { name = "PONTEACCO Strada Statale 54 (mulino Dorbolò, direz. Tiglio)"
       , code = Id.fromString "36127"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -9032,8 +8878,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.PIETRO AL NAT. via Alpe Adria (fronte 10, ponte Vernasso)"
+    , { name = "S.PIETRO AL NAT. via Alpe Adria (fronte 10, ponte Vernasso)"
       , code = Id.fromString "36128"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -9096,8 +8941,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GOREGNAVAS Strada Comunale Calla Zapatacco (direzione Loch)"
+    , { name = "GOREGNAVAS Strada Comunale Calla Zapatacco (direzione Loch)"
       , code = Id.fromString "37A17"
       , commune = "PULFERO"
       , coordinates =
@@ -9124,8 +8968,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FELETTO UMBERTO via Buonarroti (fronte 32, direzione Udine)"
+    , { name = "FELETTO UMBERTO via Buonarroti (fronte 32, direzione Udine)"
       , code = Id.fromString "50221"
       , commune = "TAVAGNACCO"
       , coordinates =
@@ -9161,8 +9004,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CARLINO via San Giorgio di Nogaro (dir. Nogaro), loc. Banduz"
+    , { name = "CARLINO via San Giorgio di Nogaro (dir. Nogaro), loc. Banduz"
       , code = Id.fromString "31109"
       , commune = "CARLINO"
       , coordinates =
@@ -9216,8 +9058,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PREPOTTO SP 48 (bivio Strada di S.Anna, direzione Cividale)"
+    , { name = "PREPOTTO SP 48 (bivio Strada di S.Anna, direzione Cividale)"
       , code = Id.fromString "35523"
       , commune = "CIVIDALE DEL FRIULI"
       , coordinates =
@@ -9235,8 +9076,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "NESPOLEDO via Giuseppe Garibaldi (incr. via Vittorio Veneto)"
+    , { name = "NESPOLEDO via Giuseppe Garibaldi (incr. via Vittorio Veneto)"
       , code = Id.fromString "40412"
       , commune = "LESTIZZA"
       , coordinates =
@@ -9515,8 +9355,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.DANIELE DEL F.via Rive S.Luca 50 (alimentari, dir.Giavons)"
+    , { name = "S.DANIELE DEL F.via Rive S.Luca 50 (alimentari, dir.Giavons)"
       , code = Id.fromString "50I37"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -9525,8 +9364,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAPORIACCO via San Daniele 41 (castello, direzione centro)"
+    , { name = "CAPORIACCO via San Daniele 41 (castello, direzione centro)"
       , code = Id.fromString "51126"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -9571,8 +9409,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIACOMO DI RAGOGNA via Roma 35 (bivio, dir. San Daniele)"
+    , { name = "SAN GIACOMO DI RAGOGNA via Roma 35 (bivio, dir. San Daniele)"
       , code = Id.fromString "51319"
       , commune = "RAGOGNA"
       , coordinates =
@@ -9617,8 +9454,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOLI Z.I. via delle Ferriere 9 (Pittini, direzione Osoppo)"
+    , { name = "RIVOLI Z.I. via delle Ferriere 9 (Pittini, direzione Osoppo)"
       , code = Id.fromString "51708"
       , commune = "OSOPPO"
       , coordinates =
@@ -9645,8 +9481,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOLI Z.I. via Europa (fronte 1, Fantoni direzione Tomba)"
+    , { name = "RIVOLI Z.I. via Europa (fronte 1, Fantoni direzione Tomba)"
       , code = Id.fromString "51710"
       , commune = "OSOPPO"
       , coordinates =
@@ -9709,8 +9544,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "REANA via Celio Nanino 129 (rotonda SS13, direzione Rizzolo)"
+    , { name = "REANA via Celio Nanino 129 (rotonda SS13, direzione Rizzolo)"
       , code = Id.fromString "60139"
       , commune = "REANA DEL ROIALE"
       , coordinates =
@@ -9719,8 +9553,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CARGNACCO via Leonardo da Vinci 5 (Tempio, direzione Udine)"
+    , { name = "CARGNACCO via Leonardo da Vinci 5 (Tempio, direzione Udine)"
       , code = Id.fromString "38825"
       , commune = "POZZUOLO DEL FRIULI"
       , coordinates =
@@ -9765,8 +9598,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MOLINIS via G. Ellero (fronte 78, bivio direzione Tarcento)"
+    , { name = "MOLINIS via G. Ellero (fronte 78, bivio direzione Tarcento)"
       , code = Id.fromString "60760"
       , commune = "TARCENTO"
       , coordinates =
@@ -9793,8 +9625,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CESARIIS Strada Pers Cesariis (prefabbricati, dir.Pradielis)"
+    , { name = "CESARIIS Strada Pers Cesariis (prefabbricati, dir.Pradielis)"
       , code = Id.fromString "61334"
       , commune = "LUSEVERA"
       , coordinates =
@@ -9803,8 +9634,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TAIPANA Strada Provinciale 38, Borgo di Sotto (direz. Nimis)"
+    , { name = "TAIPANA Strada Provinciale 38, Borgo di Sotto (direz. Nimis)"
       , code = Id.fromString "61431"
       , commune = "TAIPANA"
       , coordinates =
@@ -9813,8 +9643,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTEAPERTA via Monte Aperta (bivio Cornappo) Dir.Debellis"
+    , { name = "MONTEAPERTA via Monte Aperta (bivio Cornappo) Dir.Debellis"
       , code = Id.fromString "61432"
       , commune = "TAIPANA"
       , coordinates =
@@ -9823,8 +9652,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTEAPERTA via Monte Aperta (fronte 51, direzione Debellis)"
+    , { name = "MONTEAPERTA via Monte Aperta (fronte 51, direzione Debellis)"
       , code = Id.fromString "61433"
       , commune = "TAIPANA"
       , coordinates =
@@ -9941,8 +9769,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOCALITA' BAN DI CECH Strada Provinciale 40 (direz. Paularo)"
+    , { name = "LOCALITA' BAN DI CECH Strada Provinciale 40 (direz. Paularo)"
       , code = Id.fromString "81316"
       , commune = "ARTA TERME"
       , coordinates =
@@ -9969,8 +9796,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ALLEGNIDIS SP 44(campo sportivo, dir.Villa Santina), Porteal"
+    , { name = "ALLEGNIDIS SP 44(campo sportivo, dir.Villa Santina), Porteal"
       , code = Id.fromString "82108"
       , commune = "LAUCO"
       , coordinates =
@@ -10051,8 +9877,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CHIOPRIS via Nazario Sauro 4 (municipio, direzione Viscone)"
+    , { name = "CHIOPRIS via Nazario Sauro 4 (municipio, direzione Viscone)"
       , code = Id.fromString "35205"
       , commune = "CHIOPRIS-VISCONE"
       , coordinates =
@@ -10070,8 +9895,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOGLIANO viale Kennedy 1A (direzione Cividale), loc. Crosada"
+    , { name = "TOGLIANO viale Kennedy 1A (direzione Cividale), loc. Crosada"
       , code = Id.fromString "36924"
       , commune = "TORREANO"
       , coordinates =
@@ -10089,8 +9913,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "OSGNETTO Strada Provinciale 45 (civico 72, bivio dir.Azzida)"
+    , { name = "OSGNETTO Strada Provinciale 45 (civico 72, bivio dir.Azzida)"
       , code = Id.fromString "36A15"
       , commune = "SAN LEONARDO"
       , coordinates =
@@ -10099,8 +9922,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN LEONARDO Strada Provinciale 47 (bivio, direzione Zamir)"
+    , { name = "SAN LEONARDO Strada Provinciale 47 (bivio, direzione Zamir)"
       , code = Id.fromString "36A19"
       , commune = "SAN LEONARDO"
       , coordinates =
@@ -10235,8 +10057,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SAN VITO DI FAG. via San Daniele 5 (chiesa, direzione Udine)"
+    , { name = "SAN VITO DI FAG. via San Daniele 5 (chiesa, direzione Udine)"
       , code = Id.fromString "50612"
       , commune = "SAN VITO DI FAGAGNA"
       , coordinates =
@@ -10317,8 +10138,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MARTIGNACCO via Cividina 100 (San Carlo, direzione Torreano)"
+    , { name = "MARTIGNACCO via Cividina 100 (San Carlo, direzione Torreano)"
       , code = Id.fromString "50117"
       , commune = "MARTIGNACCO"
       , coordinates =
@@ -10444,8 +10264,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SEDILIS via Bernadia (fronte civico 91, bivio via Ramandolo)"
+    , { name = "SEDILIS via Bernadia (fronte civico 91, bivio via Ramandolo)"
       , code = Id.fromString "60751"
       , commune = "TARCENTO"
       , coordinates =
@@ -10481,8 +10300,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Mainerio (Dacia Arena parcheggio nord, dir.Fiera)"
+    , { name = "UDINE via Mainerio (Dacia Arena parcheggio nord, dir.Fiera)"
       , code = Id.fromString "UD648"
       , commune = "UDINE"
       , coordinates =
@@ -10518,8 +10336,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MERETO DI TOMBA via Julia Divisione 8 (municipio, dir.Udine)"
+    , { name = "MERETO DI TOMBA via Julia Divisione 8 (municipio, dir.Udine)"
       , code = Id.fromString "41112"
       , commune = "MERETO DI TOMBA"
       , coordinates =
@@ -10537,8 +10354,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MARTIGNACCO via Spilimbergo 287 (semaforo, direzione Udine)"
+    , { name = "MARTIGNACCO via Spilimbergo 287 (semaforo, direzione Udine)"
       , code = Id.fromString "50108"
       , commune = "MARTIGNACCO"
       , coordinates =
@@ -10547,8 +10363,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MORUZZO via Centa 1 (bivio Casali Gobes, provenienza centro)"
+    , { name = "MORUZZO via Centa 1 (bivio Casali Gobes, provenienza centro)"
       , code = Id.fromString "50411"
       , commune = "MORUZZO"
       , coordinates =
@@ -10593,8 +10408,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SOPRAMONTE DI BUJA via Campo Garzolino 30 (direzione Gemona)"
+    , { name = "SOPRAMONTE DI BUJA via Campo Garzolino 30 (direzione Gemona)"
       , code = Id.fromString "51456"
       , commune = "BUJA"
       , coordinates =
@@ -10603,8 +10417,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CARVACCO via Puccini 22 (incr. via Graonetti, dir.Vendoglio)"
+    , { name = "CARVACCO via Puccini 22 (incr. via Graonetti, dir.Vendoglio)"
       , code = Id.fromString "51520"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -10649,8 +10462,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOTTA via San Martino (ang.via Fagagna, dir.Rive D'Arcano)"
+    , { name = "RIVOTTA via San Martino (ang.via Fagagna, dir.Rive D'Arcano)"
       , code = Id.fromString "51A16"
       , commune = "RIVE D'ARCANO"
       , coordinates =
@@ -10668,8 +10480,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "INTERNEPPO SR 512 Lago di Cavazzo (stallo sud, dir.Tolmezzo)"
+    , { name = "INTERNEPPO SR 512 Lago di Cavazzo (stallo sud, dir.Tolmezzo)"
       , code = Id.fromString "52A07"
       , commune = "BORDANO"
       , coordinates =
@@ -10705,8 +10516,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAVORGNANO DEL TORRE via Principale (fronte 2, dir. Udine)"
+    , { name = "SAVORGNANO DEL TORRE via Principale (fronte 2, dir. Udine)"
       , code = Id.fromString "60327"
       , commune = "POVOLETTO"
       , coordinates =
@@ -10751,8 +10561,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PARTISTAGNO via Attimis (direzione Cividale), borgo Piccoli"
+    , { name = "PARTISTAGNO via Attimis (direzione Cividale), borgo Piccoli"
       , code = Id.fromString "60526"
       , commune = "ATTIMIS"
       , coordinates =
@@ -10833,8 +10642,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MICOTTIS Strada di Monteaperta (dir.Villanova), Case Fabrino"
+    , { name = "MICOTTIS Strada di Monteaperta (dir.Villanova), Case Fabrino"
       , code = Id.fromString "61331"
       , commune = "LUSEVERA"
       , coordinates =
@@ -10843,8 +10651,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE viale Vat (fronte civico 6, parco piazzale Chiavris)"
+    , { name = "UDINE viale Vat (fronte civico 6, parco piazzale Chiavris)"
       , code = Id.fromString "70179"
       , commune = "UDINE"
       , coordinates =
@@ -10925,8 +10732,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIORGIO DI RESIA via Prato (direzione Resiutta), loc.Poie"
+    , { name = "S.GIORGIO DI RESIA via Prato (direzione Resiutta), loc.Poie"
       , code = Id.fromString "80108"
       , commune = "RESIA"
       , coordinates =
@@ -10935,8 +10741,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POCLANAZ DI RESIA via Giuseppe Micelli (direzione Stolvizza)"
+    , { name = "POCLANAZ DI RESIA via Giuseppe Micelli (direzione Stolvizza)"
       , code = Id.fromString "80117"
       , commune = "RESIA"
       , coordinates =
@@ -10972,8 +10777,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPOROSSO via Valcanale (fronte 12, hotel direzione Udine)"
+    , { name = "CAMPOROSSO via Valcanale (fronte 12, hotel direzione Udine)"
       , code = Id.fromString "80327"
       , commune = "TARVISIO"
       , coordinates =
@@ -10991,8 +10795,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TAUSIA via Monte Dimon 11 (sopra cimitero, direzione Treppo)"
+    , { name = "TAUSIA via Monte Dimon 11 (sopra cimitero, direzione Treppo)"
       , code = Id.fromString "81604"
       , commune = "TREPPO CARNICO"
       , coordinates =
@@ -11055,8 +10858,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PESARIIS SS 465 (direzione Comeglians), località Sant'Antoni"
+    , { name = "PESARIIS SS 465 (direzione Comeglians), località Sant'Antoni"
       , code = Id.fromString "83009"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -11110,8 +10912,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOZZO DI CADORE via Treviso (supermercato, direzione Pieve)"
+    , { name = "LOZZO DI CADORE via Treviso (supermercato, direzione Pieve)"
       , code = Id.fromString "95301"
       , commune = "LOZZO DI CADORE"
       , coordinates =
@@ -11129,8 +10930,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VALLESELLA via dell'Occhiale (bivio Grea, direzione Ampezzo)"
+    , { name = "VALLESELLA via dell'Occhiale (bivio Grea, direzione Ampezzo)"
       , code = Id.fromString "95312"
       , commune = "DOMEGGE DI CADORE"
       , coordinates =
@@ -11229,8 +11029,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE P.S.Maria M.(ingr. ospedale, Area 1 dir. stazione FS)"
+    , { name = "UDINE P.S.Maria M.(ingr. ospedale, Area 1 dir. stazione FS)"
       , code = Id.fromString "UD033"
       , commune = "UDINE"
       , coordinates =
@@ -11257,8 +11056,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PICCHI via Lignano Sud (fronte 10, angolo via del Pescatore)"
+    , { name = "PICCHI via Lignano Sud (fronte 10, angolo via del Pescatore)"
       , code = Id.fromString "31605"
       , commune = "LATISANA"
       , coordinates =
@@ -11267,8 +11065,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VISCONE via Palmarina 12 (Magazzini Nico, dir. San Giovanni)"
+    , { name = "VISCONE via Palmarina 12 (Magazzini Nico, dir. San Giovanni)"
       , code = Id.fromString "35204"
       , commune = "CHIOPRIS-VISCONE"
       , coordinates =
@@ -11277,8 +11074,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOGLIANO via Torreano (direzione Torreano), località Crosada"
+    , { name = "TOGLIANO via Torreano (direzione Torreano), località Crosada"
       , code = Id.fromString "36903"
       , commune = "CIVIDALE DEL FRIULI"
       , coordinates =
@@ -11341,8 +11137,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "INTERNEPPO SR 512 Lago di Cavazzo (stallo nord, dir.Gemona)"
+    , { name = "INTERNEPPO SR 512 Lago di Cavazzo (stallo nord, dir.Gemona)"
       , code = Id.fromString "52A06"
       , commune = "BORDANO"
       , coordinates =
@@ -11369,8 +11164,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARCENTO via Pietro Coianiz (fronte 14, distretto sanitario)"
+    , { name = "TARCENTO via Pietro Coianiz (fronte 14, distretto sanitario)"
       , code = Id.fromString "60758"
       , commune = "TARCENTO"
       , coordinates =
@@ -11379,8 +11173,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARVISIO SS 54 via Luigi Cadorna km 94,00 (direzione Fusine)"
+    , { name = "TARVISIO SS 54 via Luigi Cadorna km 94,00 (direzione Fusine)"
       , code = Id.fromString "80328"
       , commune = "TARVISIO"
       , coordinates =
@@ -11434,8 +11227,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CASSACCO via Bindo Chiurlo 17 (bivio Martinazzo, dir.Udine)"
+    , { name = "CASSACCO via Bindo Chiurlo 17 (bivio Martinazzo, dir.Udine)"
       , code = Id.fromString "51626"
       , commune = "CASSACCO"
       , coordinates =
@@ -11642,8 +11434,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOLIZ.I.  via Rivoli (fronte civico 26, direzione Osoppo)"
+    , { name = "RIVOLIZ.I.  via Rivoli (fronte civico 26, direzione Osoppo)"
       , code = Id.fromString "51712"
       , commune = "OSOPPO"
       , coordinates =
@@ -11679,8 +11470,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPEGLIO via dei Campi 47 (cimitero, direzione Raschiacco)"
+    , { name = "CAMPEGLIO via dei Campi 47 (cimitero, direzione Raschiacco)"
       , code = Id.fromString "60430"
       , commune = "FAEDIS"
       , coordinates =
@@ -11734,8 +11524,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTEAPERTA via Monte Aperta (dir.centro), borgo Cossarutto"
+    , { name = "MONTEAPERTA via Monte Aperta (dir.centro), borgo Cossarutto"
       , code = Id.fromString "61435"
       , commune = "TAIPANA"
       , coordinates =
@@ -11753,8 +11542,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE Z.I.U. via Zanussi (rotonda Enel, direzione Lauzacco)"
+    , { name = "UDINE Z.I.U. via Zanussi (rotonda Enel, direzione Lauzacco)"
       , code = Id.fromString "70142"
       , commune = "UDINE"
       , coordinates =
@@ -11781,8 +11569,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Val Saisera (fronte parco Turoldo, direz. Rizzi)"
+    , { name = "UDINE via Val Saisera (fronte parco Turoldo, direz. Rizzi)"
       , code = Id.fromString "70C76"
       , commune = "UDINE"
       , coordinates =
@@ -11791,8 +11578,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "OSEACCO DI RESIA via dei Corazzieri (dir.centro), loc. Rauna"
+    , { name = "OSEACCO DI RESIA via dei Corazzieri (dir.centro), loc. Rauna"
       , code = Id.fromString "80112"
       , commune = "RESIA"
       , coordinates =
@@ -11801,8 +11587,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ROVEREDO DI CHIUSAFORTE Strada Comunale (fontana capolinea)"
+    , { name = "ROVEREDO DI CHIUSAFORTE Strada Comunale (fontana capolinea)"
       , code = Id.fromString "80219"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -11838,8 +11623,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MALBORGHETTO via Nazionale (dir. Tarvisio), località Cucco"
+    , { name = "MALBORGHETTO via Nazionale (dir. Tarvisio), località Cucco"
       , code = Id.fromString "80408"
       , commune = "MALBORGHETTO VALBRUNA"
       , coordinates =
@@ -11992,8 +11776,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ALLEGNIDIS Strada Provinciale 44 (bivio, direzione Buttea)"
+    , { name = "ALLEGNIDIS Strada Provinciale 44 (bivio, direzione Buttea)"
       , code = Id.fromString "82102"
       , commune = "LAUCO"
       , coordinates =
@@ -12011,8 +11794,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLA SANTINA via Pal Piccolo (fronte 6, direzione Tolmezzo)"
+    , { name = "VILLA SANTINA via Pal Piccolo (fronte 6, direzione Tolmezzo)"
       , code = Id.fromString "82202"
       , commune = "VILLA SANTINA"
       , coordinates =
@@ -12021,8 +11803,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "INVILLINO SS 52 (direzione Villa Santina), Casolari Vinadia"
+    , { name = "INVILLINO SS 52 (direzione Villa Santina), Casolari Vinadia"
       , code = Id.fromString "82206"
       , commune = "VILLA SANTINA"
       , coordinates =
@@ -12076,8 +11857,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRATO CARNICO SS 465 (civico 93, Casa Popolo dir.Pesariis)"
+    , { name = "PRATO CARNICO SS 465 (civico 93, Casa Popolo dir.Pesariis)"
       , code = Id.fromString "83010"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -12086,8 +11866,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRATO CARNICO SS 465 (civ. 88, dir.Comeglians),  loc.Muliton"
+    , { name = "PRATO CARNICO SS 465 (civ. 88, dir.Comeglians),  loc.Muliton"
       , code = Id.fromString "83011"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -12258,8 +12037,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "A Richiesta LIGNANO corso delle Nazioni 53 (agenzia Audax)"
+    , { name = "A Richiesta LIGNANO corso delle Nazioni 53 (agenzia Audax)"
       , code = Id.fromString "31818"
       , commune = "LIGNANO SABBIADORO"
       , coordinates =
@@ -12268,8 +12046,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NAT. via Salvo D'Acquisto (fronte civico 48)"
+    , { name = "SAN GIOVANNI AL NAT. via Salvo D'Acquisto (fronte civico 48)"
       , code = Id.fromString "35309"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -12332,8 +12109,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AQUILEIA via G.Augusta (park, direzione Cervi), loc. Beligna"
+    , { name = "AQUILEIA via G.Augusta (park, direzione Cervi), loc. Beligna"
       , code = Id.fromString "38403"
       , commune = "AQUILEIA"
       , coordinates =
@@ -12360,8 +12136,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POZZECCO via Alessandro Manzoni 15 (centro, dir. Galleriano)"
+    , { name = "POZZECCO via Alessandro Manzoni 15 (centro, dir. Galleriano)"
       , code = Id.fromString "40510"
       , commune = "BERTIOLO"
       , coordinates =
@@ -12379,8 +12154,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Trento Trieste 33 (lato ospedale)"
+    , { name = "SAN DANIELE DEL FRIULI via Trento Trieste 33 (lato ospedale)"
       , code = Id.fromString "50I02"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -12389,8 +12163,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLANOVA GROTTE borgo Vignat(Terminal Grotte, dir.Micottis)"
+    , { name = "VILLANOVA GROTTE borgo Vignat(Terminal Grotte, dir.Micottis)"
       , code = Id.fromString "61330"
       , commune = "LUSEVERA"
       , coordinates =
@@ -12399,8 +12172,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "DOGNA Strada Statale 13 (direzione Tarvisio), loc. Saletto"
+    , { name = "DOGNA Strada Statale 13 (direzione Tarvisio), loc. Saletto"
       , code = Id.fromString "80502"
       , commune = "DOGNA"
       , coordinates =
@@ -12418,8 +12190,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Don Orione(Incrocio via della Faula, dir.incrocio)"
+    , { name = "UDINE via Don Orione(Incrocio via della Faula, dir.incrocio)"
       , code = Id.fromString "UD442"
       , commune = "UDINE"
       , coordinates =
@@ -12464,8 +12235,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "DOGNA Strada Statale 13 (direzione Carnia), località Vidali"
+    , { name = "DOGNA Strada Statale 13 (direzione Carnia), località Vidali"
       , code = Id.fromString "80503"
       , commune = "DOGNA"
       , coordinates =
@@ -12510,8 +12280,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Kennedy 104 (direzione Rodeano)"
+    , { name = "SAN DANIELE DEL FRIULI via Kennedy 104 (direzione Rodeano)"
       , code = Id.fromString "50I50"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -12646,8 +12415,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LIGNANO via Casa Bianca 4 (lato Green Village, dir. Bibione)"
+    , { name = "LIGNANO via Casa Bianca 4 (lato Green Village, dir. Bibione)"
       , code = Id.fromString "40H13"
       , commune = "LIGNANO SABBIADORO"
       , coordinates =
@@ -12701,8 +12469,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LIGNANO viale Europa (fronte 33, Luna Park stallo esterno)"
+    , { name = "LIGNANO viale Europa (fronte 33, Luna Park stallo esterno)"
       , code = Id.fromString "40H22"
       , commune = "LIGNANO SABBIADORO"
       , coordinates =
@@ -12837,8 +12604,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TRICESIMO via dei Caduti 6 (piazza Mazzini, dir. Tarcento)"
+    , { name = "TRICESIMO via dei Caduti 6 (piazza Mazzini, dir. Tarcento)"
       , code = Id.fromString "60109"
       , commune = "TRICESIMO"
       , coordinates =
@@ -12919,8 +12685,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CESARIIS Strada Comunale Pers e Cesariis (direzione centro)"
+    , { name = "CESARIIS Strada Comunale Pers e Cesariis (direzione centro)"
       , code = Id.fromString "61304"
       , commune = "LUSEVERA"
       , coordinates =
@@ -12956,8 +12721,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PLATISCHIS frazione Platischis (chiesa, dir. Campo di Bonis)"
+    , { name = "PLATISCHIS frazione Platischis (chiesa, dir. Campo di Bonis)"
       , code = Id.fromString "61423"
       , commune = "TAIPANA"
       , coordinates =
@@ -12975,8 +12739,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "MONTEAPERTA via Monte Aperta (fontana, prov.bivio Debellis)"
+    , { name = "MONTEAPERTA via Monte Aperta (fontana, prov.bivio Debellis)"
       , code = Id.fromString "61420"
       , commune = "TAIPANA"
       , coordinates =
@@ -12985,8 +12748,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MOGGIO UDINESE via Giorgio Ermolli (ponte, direzione centro)"
+    , { name = "MOGGIO UDINESE via Giorgio Ermolli (ponte, direzione centro)"
       , code = Id.fromString "80702"
       , commune = "MOGGIO UDINESE"
       , coordinates =
@@ -13004,8 +12766,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PONTEBBA via Cavour (direzione Tarvisio), località San Rocco"
+    , { name = "PONTEBBA via Cavour (direzione Tarvisio), località San Rocco"
       , code = Id.fromString "80814"
       , commune = "PONTEBBA"
       , coordinates =
@@ -13023,8 +12784,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOLMEZZO SP 125 (direz. Vecchia Statale),  località Redeulis"
+    , { name = "TOLMEZZO SP 125 (direz. Vecchia Statale),  località Redeulis"
       , code = Id.fromString "81227"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -13042,8 +12802,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TERZO DI TOLMEZZO SP 21 località Sega 10 (direzione Zuglio)"
+    , { name = "TERZO DI TOLMEZZO SP 21 località Sega 10 (direzione Zuglio)"
       , code = Id.fromString "81235"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -13151,8 +12910,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Valbruna (incrocio via Lombardia, direzione Rizzi)"
+    , { name = "UDINE via Valbruna (incrocio via Lombardia, direzione Rizzi)"
       , code = Id.fromString "UD271"
       , commune = "UDINE"
       , coordinates =
@@ -13341,8 +13099,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NATISONE via delle Scuole 31 (scuola materna)"
+    , { name = "S.GIOVANNI AL NATISONE via delle Scuole 31 (scuola materna)"
       , code = Id.fromString "35317"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -13351,8 +13108,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NATISONE via S. D'Acquisto (fronte civico 2)"
+    , { name = "S.GIOVANNI AL NATISONE via S. D'Acquisto (fronte civico 2)"
       , code = Id.fromString "35333"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -13424,8 +13180,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PREMARIACCO via Fiore dei Liberi (fronte civico 1, piazza)"
+    , { name = "PREMARIACCO via Fiore dei Liberi (fronte civico 1, piazza)"
       , code = Id.fromString "36302"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -13488,8 +13243,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MICOTTIS Alta Strada Turistica Monteaperta (dir.Villanova)"
+    , { name = "MICOTTIS Alta Strada Turistica Monteaperta (dir.Villanova)"
       , code = Id.fromString "61302"
       , commune = "LUSEVERA"
       , coordinates =
@@ -13579,8 +13333,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LAGO DEL PREDIL Strada Provinciale 76 (direz. Sella Nevea)"
+    , { name = "LAGO DEL PREDIL Strada Provinciale 76 (direz. Sella Nevea)"
       , code = Id.fromString "80302"
       , commune = "TARVISIO"
       , coordinates =
@@ -13733,8 +13486,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPOFORMIDO via Principe di Udine 56 (Monum.PAN, dir.Udine)"
+    , { name = "CAMPOFORMIDO via Principe di Udine 56 (Monum.PAN, dir.Udine)"
       , code = Id.fromString "40120"
       , commune = "CAMPOFORMIDO"
       , coordinates =
@@ -13761,8 +13513,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.MARIZZA via Santa Marizza (dir.S.Marizza), Casali Levata"
+    , { name = "S.MARIZZA via Santa Marizza (dir.S.Marizza), Casali Levata"
       , code = Id.fromString "40419"
       , commune = "VARMO"
       , coordinates =
@@ -13960,8 +13711,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Pasolini (università Polo Rizzi, direzione Fiera)"
+    , { name = "UDINE via Pasolini (università Polo Rizzi, direzione Fiera)"
       , code = Id.fromString "70C63"
       , commune = "UDINE"
       , coordinates =
@@ -14015,8 +13765,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOLMEZZO via Dante Alighieri (fronte 3, collegio Don Bosco)"
+    , { name = "TOLMEZZO via Dante Alighieri (fronte 3, collegio Don Bosco)"
       , code = Id.fromString "81224"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -14025,8 +13774,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CASANOVA DI TOLMEZZO Strada di Fusea (lato via della Pieve)"
+    , { name = "CASANOVA DI TOLMEZZO Strada di Fusea (lato via della Pieve)"
       , code = Id.fromString "81245"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -14035,8 +13783,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOLMEZZO via Illegio 54 (direz. Illegio), località Betania"
+    , { name = "TOLMEZZO via Illegio 54 (direz. Illegio), località Betania"
       , code = Id.fromString "81246"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -14126,8 +13873,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.NICOLO' COMELICO via 6 Novembre(ponte Mina, dir.S.Candido)"
+    , { name = "S.NICOLO' COMELICO via 6 Novembre(ponte Mina, dir.S.Candido)"
       , code = Id.fromString "97501"
       , commune = "COMELICO SUPERIORE"
       , coordinates =
@@ -14181,8 +13927,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "DOSOLEDO via Roma 82 (piazza Tiziano, direzione S.Candido)"
+    , { name = "DOSOLEDO via Roma 82 (piazza Tiziano, direzione S.Candido)"
       , code = Id.fromString "97509"
       , commune = "COMELICO SUPERIORE"
       , coordinates =
@@ -14191,8 +13936,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.NICOLO' DI COMELICO via Lacuna 13 (bar, dir. San Candido)"
+    , { name = "S.NICOLO' DI COMELICO via Lacuna 13 (bar, dir. San Candido)"
       , code = Id.fromString "97901"
       , commune = "SAN NICOLO' DI COMELICO"
       , coordinates =
@@ -14201,8 +13945,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.STEFANO DI CADORE via Venezia 17 (direzione San Candido)"
+    , { name = "S.STEFANO DI CADORE via Venezia 17 (direzione San Candido)"
       , code = Id.fromString "98203"
       , commune = "SANTO STEFANO DI CADORE"
       , coordinates =
@@ -14211,8 +13954,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.STEFANO DI CADORE via San Candido 48 (direzione S.Candido)"
+    , { name = "S.STEFANO DI CADORE via San Candido 48 (direzione S.Candido)"
       , code = Id.fromString "98206"
       , commune = "SANTO STEFANO DI CADORE"
       , coordinates =
@@ -14239,8 +13981,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN CANDIDO via Schranzhofer (Baranci, direzione stazione)"
+    , { name = "SAN CANDIDO via Schranzhofer (Baranci, direzione stazione)"
       , code = Id.fromString "98503"
       , commune = "SAN CANDIDO-INNICHEN"
       , coordinates =
@@ -14447,8 +14188,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CHIOPRIS via Nazario Sauro 7 (municipio, direzione Medeuzza)"
+    , { name = "CHIOPRIS via Nazario Sauro 7 (municipio, direzione Medeuzza)"
       , code = Id.fromString "35208"
       , commune = "CHIOPRIS-VISCONE"
       , coordinates =
@@ -14484,8 +14224,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "IPPLIS piazza della Vittoria (chiesa, direzione Premariacco)"
+    , { name = "IPPLIS piazza della Vittoria (chiesa, direzione Premariacco)"
       , code = Id.fromString "36323"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -14575,8 +14314,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FLAGOGNA via Stazione (fronte civico 8, angolo via Scimon)"
+    , { name = "FLAGOGNA via Stazione (fronte civico 8, angolo via Scimon)"
       , code = Id.fromString "51832"
       , commune = "FORGARIA NEL FRIULI"
       , coordinates =
@@ -14738,8 +14476,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "POIANIS Strada Provinciale 48 (civico 39, direz. Prepotto)"
+    , { name = "POIANIS Strada Provinciale 48 (civico 39, direz. Prepotto)"
       , code = Id.fromString "35516"
       , commune = "PREPOTTO"
       , coordinates =
@@ -14784,8 +14521,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BUTTRIO via Nazionale 19 (angolo via Pavia, direzione Udine)"
+    , { name = "BUTTRIO via Nazionale 19 (angolo via Pavia, direzione Udine)"
       , code = Id.fromString "36515"
       , commune = "BUTTRIO"
       , coordinates =
@@ -14830,8 +14566,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERVIGNANO DEL FRIULI viale Venezia 3 (rotonda, dir. Centro)"
+    , { name = "CERVIGNANO DEL FRIULI viale Venezia 3 (rotonda, dir. Centro)"
       , code = Id.fromString "38107"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -14858,8 +14593,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPOFORMIDO via Principe di Udine (fr. 56, monumento PAN)"
+    , { name = "CAMPOFORMIDO via Principe di Udine (fr. 56, monumento PAN)"
       , code = Id.fromString "40114"
       , commune = "CAMPOFORMIDO"
       , coordinates =
@@ -14985,8 +14719,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLALTA via Spilimbergo 53 (bivio Castello, direz. Udine)"
+    , { name = "VILLALTA via Spilimbergo 53 (bivio Castello, direz. Udine)"
       , code = Id.fromString "50517"
       , commune = "FAGAGNA"
       , coordinates =
@@ -15067,8 +14800,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MARSURE DI SOTTO via Latteria (ang. via Locanda, dir.Siacco)"
+    , { name = "MARSURE DI SOTTO via Latteria (ang. via Locanda, dir.Siacco)"
       , code = Id.fromString "60311"
       , commune = "POVOLETTO"
       , coordinates =
@@ -15086,8 +14818,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COLLERUMIZ via Bueriis (fronte via del Colle, dir. Tarcento)"
+    , { name = "COLLERUMIZ via Bueriis (fronte via del Colle, dir. Tarcento)"
       , code = Id.fromString "60714"
       , commune = "TARCENTO"
       , coordinates =
@@ -15096,8 +14827,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PORTOGRUARO viale Udine 2 (bivio via Gervino, dir. Cintello)"
+    , { name = "PORTOGRUARO viale Udine 2 (bivio via Gervino, dir. Cintello)"
       , code = Id.fromString "75104"
       , commune = "PORTOGRUARO"
       , coordinates =
@@ -15106,8 +14836,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PORTOGRUARO viale Trieste 80 (supermercato, dir. Latisana)"
+    , { name = "PORTOGRUARO viale Trieste 80 (supermercato, dir. Latisana)"
       , code = Id.fromString "75106"
       , commune = "PORTOGRUARO"
       , coordinates =
@@ -15116,8 +14845,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.ANTONIO DI TARVISIO via Luigi Cadorna (bivio, dir.Fusine)"
+    , { name = "S.ANTONIO DI TARVISIO via Luigi Cadorna (bivio, dir.Fusine)"
       , code = Id.fromString "80356"
       , commune = "TARVISIO"
       , coordinates =
@@ -15585,8 +15313,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AEROPORTO CAMPOFORMIDO via Campoformido 138 (dir. Codroipo)"
+    , { name = "AEROPORTO CAMPOFORMIDO via Campoformido 138 (dir. Codroipo)"
       , code = Id.fromString "40116"
       , commune = "PASIAN DI PRATO"
       , coordinates =
@@ -15622,8 +15349,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "CICONICCO via Spilimbergo (bivio Chiarandis, direz. Udine)"
+    , { name = "CICONICCO via Spilimbergo (bivio Chiarandis, direz. Udine)"
       , code = Id.fromString "50516"
       , commune = "FAGAGNA"
       , coordinates =
@@ -15803,8 +15529,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VISINALE DEL JUDRIO via Diacono 10 (Autogamma, dir.Cormons)"
+    , { name = "VISINALE DEL JUDRIO via Diacono 10 (Autogamma, dir.Cormons)"
       , code = Id.fromString "35413"
       , commune = "CORNO DI ROSAZZO"
       , coordinates =
@@ -15831,8 +15556,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BUTTRIO via Prampero (fronte via Beltrame, direzione Udine)"
+    , { name = "BUTTRIO via Prampero (fronte via Beltrame, direzione Udine)"
       , code = Id.fromString "36514"
       , commune = "BUTTRIO"
       , coordinates =
@@ -15868,8 +15592,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERVIGNANO via Carnia (fronte 30, bivio Muscoli dir. Grado)"
+    , { name = "CERVIGNANO via Carnia (fronte 30, bivio Muscoli dir. Grado)"
       , code = Id.fromString "38128"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -15977,8 +15700,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "FELETTO UMBERTO via Udine (fr. 141, ang.via Cadore dir.Udine"
+    , { name = "FELETTO UMBERTO via Udine (fr. 141, ang.via Cadore dir.Udine"
       , code = Id.fromString "50237"
       , commune = "TAVAGNACCO"
       , coordinates =
@@ -16023,8 +15745,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN VITO DI FAGAGNA piazza Umberto I (fronte 4, dir. Udine)"
+    , { name = "SAN VITO DI FAGAGNA piazza Umberto I (fronte 4, dir. Udine)"
       , code = Id.fromString "50602"
       , commune = "SAN VITO DI FAGAGNA"
       , coordinates =
@@ -16069,8 +15790,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIBIS via del Santuario (fronte 67, chiesa direzione Udine)"
+    , { name = "RIBIS via del Santuario (fronte 67, chiesa direzione Udine)"
       , code = Id.fromString "60206"
       , commune = "REANA DEL ROIALE"
       , coordinates =
@@ -16079,8 +15799,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "REMUGNANO via del Municipio 18 (municipio, direzione Udine)"
+    , { name = "REMUGNANO via del Municipio 18 (municipio, direzione Udine)"
       , code = Id.fromString "60249"
       , commune = "REANA DEL ROIALE"
       , coordinates =
@@ -16107,8 +15826,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MARSURE DI SOTTO via Latteria (ang.via Locanda, prov.Siacco)"
+    , { name = "MARSURE DI SOTTO via Latteria (ang.via Locanda, prov.Siacco)"
       , code = Id.fromString "60309"
       , commune = "POVOLETTO"
       , coordinates =
@@ -16117,8 +15835,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MARSURE DI SOTTO via Europa 25 (scuola media,  dir. Udine)"
+    , { name = "MARSURE DI SOTTO via Europa 25 (scuola media,  dir. Udine)"
       , code = Id.fromString "60332"
       , commune = "POVOLETTO"
       , coordinates =
@@ -16127,8 +15844,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MARSURE DI SOTTO via D. Alighieri (bivio SP 17, dir.centro)"
+    , { name = "MARSURE DI SOTTO via D. Alighieri (bivio SP 17, dir.centro)"
       , code = Id.fromString "60333"
       , commune = "POVOLETTO"
       , coordinates =
@@ -16155,8 +15871,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TORLANO via Taipana (fronte 44, trattoria direzione Nimis)"
+    , { name = "TORLANO via Taipana (fronte 44, trattoria direzione Nimis)"
       , code = Id.fromString "60628"
       , commune = "NIMIS"
       , coordinates =
@@ -16165,8 +15880,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CHIALMINIS via Ramandolo (angolo via Tamar, dir.Chialminis)"
+    , { name = "CHIALMINIS via Ramandolo (angolo via Tamar, dir.Chialminis)"
       , code = Id.fromString "60634"
       , commune = "NIMIS"
       , coordinates =
@@ -16229,8 +15943,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Cividale 591 (dir.Cividale), località San Gottardo"
+    , { name = "UDINE via Cividale 591 (dir.Cividale), località San Gottardo"
       , code = Id.fromString "70102"
       , commune = "UDINE"
       , coordinates =
@@ -16239,8 +15952,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Lumignacco (fronte 135, bivio istituti scolastici)"
+    , { name = "UDINE via Lumignacco (fronte 135, bivio istituti scolastici)"
       , code = Id.fromString "70C36"
       , commune = "UDINE"
       , coordinates =
@@ -16276,8 +15988,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BIBIONE PINEDA via Baseleghe (fronte civico 12, campeggio)"
+    , { name = "BIBIONE PINEDA via Baseleghe (fronte civico 12, campeggio)"
       , code = Id.fromString "75319"
       , commune = "SAN MICHELE AL TAGLIAM. 2"
       , coordinates =
@@ -16646,8 +16357,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CIMANO SP del ponte di Cornino (Dal Piciul, direz. Cornino)"
+    , { name = "CIMANO SP del ponte di Cornino (Dal Piciul, direz. Cornino)"
       , code = Id.fromString "50I55"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -16674,8 +16384,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Liguria 267(piazza, dir.Povoletto), località Godia"
+    , { name = "UDINE via Liguria 267(piazza, dir.Povoletto), località Godia"
       , code = Id.fromString "70109"
       , commune = "UDINE"
       , coordinates =
@@ -16729,8 +16438,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SEVEGLIANO via Julia (fronte 29, semaforo SR352 direzione Ud"
+    , { name = "SEVEGLIANO via Julia (fronte 29, semaforo SR352 direzione Ud"
       , code = Id.fromString "37716"
       , commune = "BAGNARIA ARSA"
       , coordinates =
@@ -16856,8 +16564,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BEVAZZANA DI S.MICHELE via Bevazzana 37 (direzione Lignano)"
+    , { name = "BEVAZZANA DI S.MICHELE via Bevazzana 37 (direzione Lignano)"
       , code = Id.fromString "75003"
       , commune = "SAN MICHELE AL TAGLIAM. 2"
       , coordinates =
@@ -16884,8 +16591,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERESETTO via Cividina 265 (tabacchino, direz. Martignacco)"
+    , { name = "CERESETTO via Cividina 265 (tabacchino, direz. Martignacco)"
       , code = Id.fromString "50142"
       , commune = "MARTIGNACCO"
       , coordinates =
@@ -16894,8 +16600,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TAVAGNACCO SP 4 via Nazionale 139 (Arteni, direzione Udine)"
+    , { name = "TAVAGNACCO SP 4 via Nazionale 139 (Arteni, direzione Udine)"
       , code = Id.fromString "50231"
       , commune = "TAVAGNACCO"
       , coordinates =
@@ -16913,8 +16618,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PAGNACCO via Colloredo (direz. Colloredo), Casali Marolins"
+    , { name = "PAGNACCO via Colloredo (direz. Colloredo), Casali Marolins"
       , code = Id.fromString "50331"
       , commune = "PAGNACCO"
       , coordinates =
@@ -16923,8 +16627,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ADEGLIACCO via Nazionale (rotonda Euromercato, direz. Udine)"
+    , { name = "ADEGLIACCO via Nazionale (rotonda Euromercato, direz. Udine)"
       , code = Id.fromString "50234"
       , commune = "TAVAGNACCO"
       , coordinates =
@@ -16969,8 +16672,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CODUGNELLA via dei Prati (direz. Moruzzo), loc. Le Crosade"
+    , { name = "CODUGNELLA via dei Prati (direz. Moruzzo), loc. Le Crosade"
       , code = Id.fromString "51130"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -16988,8 +16690,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Trento Trieste 43 (fr. ospedale)"
+    , { name = "SAN DANIELE DEL FRIULI via Trento Trieste 43 (fr. ospedale)"
       , code = Id.fromString "50I52"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -16998,8 +16699,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BIVIO PER BORGO SOPRAPALUDO via S.Daniele (direzione Farla)"
+    , { name = "BIVIO PER BORGO SOPRAPALUDO via S.Daniele (direzione Farla)"
       , code = Id.fromString "50I59"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -17044,8 +16744,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COLLOREDO DI M.A. via Pradis 25 (direz. centro), loc. Pradis"
+    , { name = "COLLOREDO DI M.A. via Pradis 25 (direz. centro), loc. Pradis"
       , code = Id.fromString "51137"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -17063,8 +16762,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CODUGNELLA via dei Prati (direz. Moruzzo), loc. Case Sparse"
+    , { name = "CODUGNELLA via dei Prati (direz. Moruzzo), loc. Case Sparse"
       , code = Id.fromString "51142"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -17073,8 +16771,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TIVERIACCO via Osoppo 109 (dir. S.Daniele), loc. Ponte Ledra"
+    , { name = "TIVERIACCO via Osoppo 109 (dir. S.Daniele), loc. Ponte Ledra"
       , code = Id.fromString "51212"
       , commune = "MAJANO"
       , coordinates =
@@ -17137,8 +16834,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POVOLETTO piazza Giuseppe Cicuttini (municipio, dir. Udine)"
+    , { name = "POVOLETTO piazza Giuseppe Cicuttini (municipio, dir. Udine)"
       , code = Id.fromString "60341"
       , commune = "POVOLETTO"
       , coordinates =
@@ -17165,8 +16861,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GRIONS DEL TORRE via della Repubblica 15 (centro, dir.Udine)"
+    , { name = "GRIONS DEL TORRE via della Repubblica 15 (centro, dir.Udine)"
       , code = Id.fromString "60344"
       , commune = "POVOLETTO"
       , coordinates =
@@ -17220,8 +16915,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COLLERUMIZ via Bueriis (lato Prontoauto, direzione Tarcento)"
+    , { name = "COLLERUMIZ via Bueriis (lato Prontoauto, direzione Tarcento)"
       , code = Id.fromString "60715"
       , commune = "TARCENTO"
       , coordinates =
@@ -17275,8 +16969,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE Z.I.U. via Manzano 189 (rotonda Enel, dir. Cargnacco)"
+    , { name = "UDINE Z.I.U. via Manzano 189 (rotonda Enel, dir. Cargnacco)"
       , code = Id.fromString "70232"
       , commune = "UDINE"
       , coordinates =
@@ -17285,8 +16978,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Pasolini (università Polo Rizzi, direzione centro)"
+    , { name = "UDINE via Pasolini (università Polo Rizzi, direzione centro)"
       , code = Id.fromString "70C64"
       , commune = "UDINE"
       , coordinates =
@@ -17349,8 +17041,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOLMEZZO via Val di Gorto 100 (Centrale Enel, direz. Udine)"
+    , { name = "TOLMEZZO via Val di Gorto 100 (Centrale Enel, direz. Udine)"
       , code = Id.fromString "81249"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -17377,8 +17068,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CADUNEA via Passo Monte Croce (fronte 48, direz. Tolmezzo)"
+    , { name = "CADUNEA via Passo Monte Croce (fronte 48, direz. Tolmezzo)"
       , code = Id.fromString "81260"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -17405,8 +17095,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TERZO DI TOLM. via Baracca (incr.via Camarin, dir.Tolmezzo)"
+    , { name = "TERZO DI TOLM. via Baracca (incr.via Camarin, dir.Tolmezzo)"
       , code = Id.fromString "81266"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -17532,8 +17221,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PASIAN DI PRATO via cristoforo Colombo 172, Santa Caterina"
+    , { name = "PASIAN DI PRATO via cristoforo Colombo 172, Santa Caterina"
       , code = Id.fromString "40219"
       , commune = "PASIAN DI PRATO"
       , coordinates =
@@ -17605,8 +17293,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Gemona (fronte 31, direz. Majano)"
+    , { name = "SAN DANIELE DEL FRIULI via Gemona (fronte 31, direz. Majano)"
       , code = Id.fromString "50I56"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -17615,8 +17302,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.DANIELE DEL FRIULI via Gemona (fronte 99, bar dir.Majano)"
+    , { name = "S.DANIELE DEL FRIULI via Gemona (fronte 99, bar dir.Majano)"
       , code = Id.fromString "50I60"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -17634,8 +17320,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TRICESIMO via Dante 49 (incr.via della Ferrovia, dir. Udine)"
+    , { name = "TRICESIMO via Dante 49 (incr.via della Ferrovia, dir. Udine)"
       , code = Id.fromString "60158"
       , commune = "TRICESIMO"
       , coordinates =
@@ -17653,8 +17338,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PALAZZOLO DELLO STELLA via Nazionale 59 (bivio Precenicco)"
+    , { name = "PALAZZOLO DELLO STELLA via Nazionale 59 (bivio Precenicco)"
       , code = Id.fromString "31307"
       , commune = "PALAZZOLO DELLO STELLA"
       , coordinates =
@@ -17663,8 +17347,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PERTEGADA via Lignano Sabb.(ang. via Casette, dir. Latisana)"
+    , { name = "PERTEGADA via Lignano Sabb.(ang. via Casette, dir. Latisana)"
       , code = Id.fromString "31629"
       , commune = "LATISANA"
       , coordinates =
@@ -17682,8 +17365,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FELETTANO via Sante Patussi (area verde, direz. Tricesimo)"
+    , { name = "FELETTANO via Sante Patussi (area verde, direz. Tricesimo)"
       , code = Id.fromString "60162"
       , commune = "TRICESIMO"
       , coordinates =
@@ -17746,8 +17428,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAMMARDENCHIA DI T.via Sammardenchia (fronte case popolari)"
+    , { name = "SAMMARDENCHIA DI T.via Sammardenchia (fronte case popolari)"
       , code = Id.fromString "60795"
       , commune = "TARCENTO"
       , coordinates =
@@ -17837,8 +17518,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "DOLEGNANO via Dolegnano di Sopra 67 (direzione San Giovanni)"
+    , { name = "DOLEGNANO via Dolegnano di Sopra 67 (direzione San Giovanni)"
       , code = Id.fromString "35341"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -17856,8 +17536,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLANOVA DELLO JUDRIO via 4 Novembre 17 (dir. San Giovanni)"
+    , { name = "VILLANOVA DELLO JUDRIO via 4 Novembre 17 (dir. San Giovanni)"
       , code = Id.fromString "35396"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -17992,8 +17671,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SCLAUNICCO via Montenero (direzione Galleriano),  Cereal Tav"
+    , { name = "SCLAUNICCO via Montenero (direzione Galleriano),  Cereal Tav"
       , code = Id.fromString "40416"
       , commune = "LESTIZZA"
       , coordinates =
@@ -18074,8 +17752,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MADRISIO DI FAGAGNA via Battaglia 23 (scuole, direz.Fagagna)"
+    , { name = "MADRISIO DI FAGAGNA via Battaglia 23 (scuole, direz.Fagagna)"
       , code = Id.fromString "50542"
       , commune = "FAGAGNA"
       , coordinates =
@@ -18084,8 +17761,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.DANIELE piazzale 4 Novembre (fronte monumento, dir.Udine)"
+    , { name = "S.DANIELE piazzale 4 Novembre (fronte monumento, dir.Udine)"
       , code = Id.fromString "50I51"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -18112,8 +17788,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FARLA via San Daniele 2 (trattoria, direzione San Daniele)"
+    , { name = "FARLA via San Daniele 2 (trattoria, direzione San Daniele)"
       , code = Id.fromString "51260"
       , commune = "MAJANO"
       , coordinates =
@@ -18167,8 +17842,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RASPANO via Borgo di Sopra (fronte 26, direzione Cassacco)"
+    , { name = "RASPANO via Borgo di Sopra (fronte 26, direzione Cassacco)"
       , code = Id.fromString "51640"
       , commune = "CASSACCO"
       , coordinates =
@@ -18240,8 +17914,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARCENTO via Pietro Coianiz 2(distretto sanitario, dir.Coia)"
+    , { name = "TARCENTO via Pietro Coianiz 2(distretto sanitario, dir.Coia)"
       , code = Id.fromString "60797"
       , commune = "TARCENTO"
       , coordinates =
@@ -18268,8 +17941,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "DEBELLIS Strada Provinciale 38 (provenienza bivio De Bellis)"
+    , { name = "DEBELLIS Strada Provinciale 38 (provenienza bivio De Bellis)"
       , code = Id.fromString "61454"
       , commune = "TAIPANA"
       , coordinates =
@@ -18359,8 +18031,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "INVILLINO viale degli Eroi (incr. via Diaz, dir.Villa Santin"
+    , { name = "INVILLINO viale degli Eroi (incr. via Diaz, dir.Villa Santin"
       , code = Id.fromString "82210"
       , commune = "VILLA SANTINA"
       , coordinates =
@@ -18405,8 +18076,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZOVELLO via Nazionale (dir. Ravascletto), Gladegna Prepaulin"
+    , { name = "ZOVELLO via Nazionale (dir. Ravascletto), Gladegna Prepaulin"
       , code = Id.fromString "82647"
       , commune = "RAVASCLETTO"
       , coordinates =
@@ -18460,8 +18130,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CIMA CORSO Strada Esterna(dir.Tolmezzo), loc.Stali dal Predi"
+    , { name = "CIMA CORSO Strada Esterna(dir.Tolmezzo), loc.Stali dal Predi"
       , code = Id.fromString "83416"
       , commune = "AMPEZZO"
       , coordinates =
@@ -18479,8 +18148,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NAT. via Cascina Rinaldi 2A (dir.Dolegnano)"
+    , { name = "SAN GIOVANNI AL NAT. via Cascina Rinaldi 2A (dir.Dolegnano)"
       , code = Id.fromString "35315"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -18570,8 +18238,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CASALI BATTIFERRO Strada Provinciale 48 (civico 24, Museo)"
+    , { name = "CASALI BATTIFERRO Strada Provinciale 48 (civico 24, Museo)"
       , code = Id.fromString "36727"
       , commune = "REMANZACCO"
       , coordinates =
@@ -18589,8 +18256,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MASAROLIS Strada Provinciale 13 (Stallone, direzione chiesa)"
+    , { name = "MASAROLIS Strada Provinciale 13 (Stallone, direzione chiesa)"
       , code = Id.fromString "36915"
       , commune = "TORREANO"
       , coordinates =
@@ -18608,8 +18274,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TORREANO via delle Cave (bivio Laurini, direzione Masarolis)"
+    , { name = "TORREANO via delle Cave (bivio Laurini, direzione Masarolis)"
       , code = Id.fromString "36917"
       , commune = "TORREANO"
       , coordinates =
@@ -18627,8 +18292,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TORVISCOSA via Vittorio Veneto (fronte parco, Carabinieri)"
+    , { name = "TORVISCOSA via Vittorio Veneto (fronte parco, Carabinieri)"
       , code = Id.fromString "38708"
       , commune = "TORVISCOSA"
       , coordinates =
@@ -18682,8 +18346,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PAGNACCO via Castellerio 57 (Tabacchi, direzione Pagnacco)"
+    , { name = "PAGNACCO via Castellerio 57 (Tabacchi, direzione Pagnacco)"
       , code = Id.fromString "50311"
       , commune = "PAGNACCO"
       , coordinates =
@@ -18719,8 +18382,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TERZO DI TOLM. via Baracca 20 (bivio Lorenzaso, dir. Zuglio)"
+    , { name = "TERZO DI TOLM. via Baracca 20 (bivio Lorenzaso, dir. Zuglio)"
       , code = Id.fromString "81267"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -18747,8 +18409,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MORUZZO via della Rotonda 4 (bivio Casali Gobes, dir.centro)"
+    , { name = "MORUZZO via della Rotonda 4 (bivio Casali Gobes, dir.centro)"
       , code = Id.fromString "50420"
       , commune = "MORUZZO"
       , coordinates =
@@ -18802,8 +18463,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CIMA CORSO Strada Esterna (direzione Cadore), loc. Spangher"
+    , { name = "CIMA CORSO Strada Esterna (direzione Cadore), loc. Spangher"
       , code = Id.fromString "83418"
       , commune = "AMPEZZO"
       , coordinates =
@@ -18857,8 +18517,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NAT. via Cascina Rinaldi 27 (dir.Villanova)"
+    , { name = "SAN GIOVANNI AL NAT. via Cascina Rinaldi 27 (dir.Villanova)"
       , code = Id.fromString "35387"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -18867,8 +18526,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NAT. via C.Rinaldi 37 (ex Fiam, dir.Villanova)"
+    , { name = "S.GIOVANNI AL NAT. via C.Rinaldi 37 (ex Fiam, dir.Villanova)"
       , code = Id.fromString "35388"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -18940,8 +18598,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PAMPALUNA via Pampaluna (ang. via San Girolamo, dir.Zellina)"
+    , { name = "PAMPALUNA via Pampaluna (ang. via San Girolamo, dir.Zellina)"
       , code = Id.fromString "30I13"
       , commune = "PORPETTO"
       , coordinates =
@@ -18968,8 +18625,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CARLINO via San Giorgio di Nogaro (direz.Marano), loc.Banduz"
+    , { name = "CARLINO via San Giorgio di Nogaro (direz.Marano), loc.Banduz"
       , code = Id.fromString "31116"
       , commune = "CARLINO"
       , coordinates =
@@ -19005,8 +18661,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AUSSA CORNO Z.I. via Fermi 40 (fronte birrificio, dir.Udine)"
+    , { name = "AUSSA CORNO Z.I. via Fermi 40 (fronte birrificio, dir.Udine)"
       , code = Id.fromString "31A29"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -19033,8 +18688,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.PIETRO AL NAT. via Alpe Adria (fronte civico 105, centro)"
+    , { name = "S.PIETRO AL NAT. via Alpe Adria (fronte civico 105, centro)"
       , code = Id.fromString "36115"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -19169,8 +18823,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FORNELLI DI SOPRA Str. dei Fornelli (fr.7, dir.Torviscosa)"
+    , { name = "FORNELLI DI SOPRA Str. dei Fornelli (fr.7, dir.Torviscosa)"
       , code = Id.fromString "38720"
       , commune = "TORVISCOSA"
       , coordinates =
@@ -19188,8 +18841,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ARSA SP 113 via Madonna Missionaria (direzione Torviscosa)"
+    , { name = "ARSA SP 113 via Madonna Missionaria (direzione Torviscosa)"
       , code = Id.fromString "38722"
       , commune = "TORVISCOSA"
       , coordinates =
@@ -19234,8 +18886,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.LORENZO DI SEDEGLIANO via Pietro Zorutti 80 (dir.Codroipo)"
+    , { name = "S.LORENZO DI SEDEGLIANO via Pietro Zorutti 80 (dir.Codroipo)"
       , code = Id.fromString "40940"
       , commune = "SEDEGLIANO"
       , coordinates =
@@ -19478,8 +19129,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RASPANO via Manzoni (fronte civico 17, direzione Cassacco)"
+    , { name = "RASPANO via Manzoni (fronte civico 17, direzione Cassacco)"
       , code = Id.fromString "51638"
       , commune = "CASSACCO"
       , coordinates =
@@ -19497,8 +19147,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOTTA via San Martino (angolo via Fagagna, dir. Rodeano)"
+    , { name = "RIVOTTA via San Martino (angolo via Fagagna, dir. Rodeano)"
       , code = Id.fromString "51A32"
       , commune = "RIVE D'ARCANO"
       , coordinates =
@@ -19534,8 +19183,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COLLERUMIZ via Bueriis (angolo via Urana, direzione SS 13)"
+    , { name = "COLLERUMIZ via Bueriis (angolo via Urana, direzione SS 13)"
       , code = Id.fromString "60722"
       , commune = "TARCENTO"
       , coordinates =
@@ -19571,8 +19219,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RAVASCLETTO via Edelweiss (prov.Ravascletto), Sella Valcalda"
+    , { name = "RAVASCLETTO via Edelweiss (prov.Ravascletto), Sella Valcalda"
       , code = Id.fromString "82644"
       , commune = "RAVASCLETTO"
       , coordinates =
@@ -19590,8 +19237,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RAVASCLETTO via Edelweiss (direzione centro), Sella Valcalda"
+    , { name = "RAVASCLETTO via Edelweiss (direzione centro), Sella Valcalda"
       , code = Id.fromString "82654"
       , commune = "RAVASCLETTO"
       , coordinates =
@@ -19672,8 +19318,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Luzzatto (entrata cimitero San Vito dir.via Quarto"
+    , { name = "UDINE via Luzzatto (entrata cimitero San Vito dir.via Quarto"
       , code = Id.fromString "UD645"
       , commune = "UDINE"
       , coordinates =
@@ -19691,8 +19336,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "FELETTO UMBERTO via Mazzini (fronte civico 2, piazza Unità)"
+    , { name = "FELETTO UMBERTO via Mazzini (fronte civico 2, piazza Unità)"
       , code = Id.fromString "UD654"
       , commune = "UDINE"
       , coordinates =
@@ -19863,8 +19507,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TORREANO piazza Arturo Malignani 6 (centro, dir. Cividale)"
+    , { name = "TORREANO piazza Arturo Malignani 6 (centro, dir. Cividale)"
       , code = Id.fromString "36926"
       , commune = "TORREANO"
       , coordinates =
@@ -19936,8 +19579,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POZZECCO via A. Manzoni 42 (bivio monumento, dir.Bertiolo)"
+    , { name = "POZZECCO via A. Manzoni 42 (bivio monumento, dir.Bertiolo)"
       , code = Id.fromString "40537"
       , commune = "BERTIOLO"
       , coordinates =
@@ -19973,8 +19615,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LIGNANO viale Europa (fronte 33, Luna Park stallo interno)"
+    , { name = "LIGNANO viale Europa (fronte 33, Luna Park stallo interno)"
       , code = Id.fromString "UL039"
       , commune = "LIGNANO SABBIADORO"
       , coordinates =
@@ -19992,8 +19633,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FLUMIGNANO via 24 Maggio 14 (chiesa, direzione Mortegliano)"
+    , { name = "FLUMIGNANO via 24 Maggio 14 (chiesa, direzione Mortegliano)"
       , code = Id.fromString "30618"
       , commune = "TALMASSONS"
       , coordinates =
@@ -20056,8 +19696,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TRINCO Strada Provinciale 45 (civico  2, dir. Prapotnizza)"
+    , { name = "TRINCO Strada Provinciale 45 (civico  2, dir. Prapotnizza)"
       , code = Id.fromString "35826"
       , commune = "DRENCHIA"
       , coordinates =
@@ -20075,8 +19714,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PONTE SAN QUIRINO via Valli del Natisone 18 (dir. Cividale)"
+    , { name = "PONTE SAN QUIRINO via Valli del Natisone 18 (dir. Cividale)"
       , code = Id.fromString "36140"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -20094,8 +19732,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RONCHIS DI TORREANO Strada Provinciale 13 (direz. Torreano)"
+    , { name = "RONCHIS DI TORREANO Strada Provinciale 13 (direz. Torreano)"
       , code = Id.fromString "36930"
       , commune = "TORREANO"
       , coordinates =
@@ -20113,8 +19750,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MASAROLIS frazione Masarolis 40 (scuola, direzione Cividale)"
+    , { name = "MASAROLIS frazione Masarolis 40 (scuola, direzione Cividale)"
       , code = Id.fromString "36934"
       , commune = "TORREANO"
       , coordinates =
@@ -20150,8 +19786,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MORTEGLIANO SR 353 via Div.Julia 2 (semaforo, dir.Latisana)"
+    , { name = "MORTEGLIANO SR 353 via Div.Julia 2 (semaforo, dir.Latisana)"
       , code = Id.fromString "38915"
       , commune = "MORTEGLIANO"
       , coordinates =
@@ -20169,8 +19804,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MERETO DI TOMBA piazza della Vittoria 7 (chiesa, dir. Udine)"
+    , { name = "MERETO DI TOMBA piazza della Vittoria 7 (chiesa, dir. Udine)"
       , code = Id.fromString "41115"
       , commune = "MERETO DI TOMBA"
       , coordinates =
@@ -20224,8 +19858,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CASTELLIERE DI TOMBA via Padre Evaristo Migotti (fronte 23)"
+    , { name = "CASTELLIERE DI TOMBA via Padre Evaristo Migotti (fronte 23)"
       , code = Id.fromString "41120"
       , commune = "MERETO DI TOMBA"
       , coordinates =
@@ -20396,8 +20029,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARCENTO via Angelo Angeli (fronte 163, caserma dir.Udine)"
+    , { name = "TARCENTO via Angelo Angeli (fronte 163, caserma dir.Udine)"
       , code = Id.fromString "60789"
       , commune = "TARCENTO"
       , coordinates =
@@ -20406,8 +20038,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MOLINIS via Vittorio Alfieri (bivio Segnacco, dir. Tarcento)"
+    , { name = "MOLINIS via Vittorio Alfieri (bivio Segnacco, dir. Tarcento)"
       , code = Id.fromString "60798"
       , commune = "TARCENTO"
       , coordinates =
@@ -20425,8 +20056,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PLATISCHIS frazione Platischis (chiesa) direzione Prossenicc"
+    , { name = "PLATISCHIS frazione Platischis (chiesa) direzione Prossenicc"
       , code = Id.fromString "61444"
       , commune = "TAIPANA"
       , coordinates =
@@ -20435,8 +20065,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOCALITA' PONTE SAN MATTIA SP 38 (direzione bivio Debellis)"
+    , { name = "LOCALITA' PONTE SAN MATTIA SP 38 (direzione bivio Debellis)"
       , code = Id.fromString "61446"
       , commune = "TAIPANA"
       , coordinates =
@@ -20706,8 +20335,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CARLINO via S.G. Di Nogaro (incr. via Toppo W., dir.Carlino)"
+    , { name = "CARLINO via S.G. Di Nogaro (incr. via Toppo W., dir.Carlino)"
       , code = Id.fromString "31A26"
       , commune = "CARLINO"
       , coordinates =
@@ -20743,8 +20371,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ALBANA via Albana 25 (bivio Centa, direzione Molinovecchio)"
+    , { name = "ALBANA via Albana 25 (bivio Centa, direzione Molinovecchio)"
       , code = Id.fromString "35529"
       , commune = "PREPOTTO"
       , coordinates =
@@ -20753,8 +20380,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LIESSA piazza don Rino Marchig 3 (Pesa, direzione Drenchia)"
+    , { name = "LIESSA piazza don Rino Marchig 3 (Pesa, direzione Drenchia)"
       , code = Id.fromString "35723"
       , commune = "GRIMACCO"
       , coordinates =
@@ -20763,8 +20389,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOGLIANO via dei Laghi 1 (fronte piazza, direzione Cividale)"
+    , { name = "TOGLIANO via dei Laghi 1 (fronte piazza, direzione Cividale)"
       , code = Id.fromString "36932"
       , commune = "TORREANO"
       , coordinates =
@@ -20836,8 +20461,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "LIESSA Strada Provinciale 45 (case popolari, dir. Drenchia)"
+    , { name = "LIESSA Strada Provinciale 45 (case popolari, dir. Drenchia)"
       , code = Id.fromString "35722"
       , commune = "GRIMACCO"
       , coordinates =
@@ -20846,8 +20470,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRAPOTNIZZA Strada Provinciale 45 (civico 13, dir. Lombai)"
+    , { name = "PRAPOTNIZZA Strada Provinciale 45 (civico 13, dir. Lombai)"
       , code = Id.fromString "35820"
       , commune = "DRENCHIA"
       , coordinates =
@@ -20901,8 +20524,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "DIGNANO via San Gallo 7 (direzione Vidulis), borgo Mezzoli"
+    , { name = "DIGNANO via San Gallo 7 (direzione Vidulis), borgo Mezzoli"
       , code = Id.fromString "50818"
       , commune = "DIGNANO"
       , coordinates =
@@ -20920,8 +20542,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RONCHIS DI FAEDIS piazza 4 Novembre 9 (direzione Cividale)"
+    , { name = "RONCHIS DI FAEDIS piazza 4 Novembre 9 (direzione Cividale)"
       , code = Id.fromString "60436"
       , commune = "FAEDIS"
       , coordinates =
@@ -20930,8 +20551,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TAIPANA Strada Provinciale 38 (piazza chiesa, direzione Nimi"
+    , { name = "TAIPANA Strada Provinciale 38 (piazza chiesa, direzione Nimi"
       , code = Id.fromString "61436"
       , commune = "TAIPANA"
       , coordinates =
@@ -20967,8 +20587,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PACIUCH Strada Provinciale 45 (ponte, provenienza Peternel)"
+    , { name = "PACIUCH Strada Provinciale 45 (ponte, provenienza Peternel)"
       , code = Id.fromString "35821"
       , commune = "DRENCHIA"
       , coordinates =
@@ -21130,8 +20749,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TERENZANO via Giuseppe Ellero 29 (bivio SR 353, dir. Udine)"
+    , { name = "TERENZANO via Giuseppe Ellero 29 (bivio SR 353, dir. Udine)"
       , code = Id.fromString "38848"
       , commune = "POZZUOLO DEL FRIULI"
       , coordinates =
@@ -21149,8 +20767,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "REDENZICCO Strada Regionale 463 (bivio, provenienza Rivis)"
+    , { name = "REDENZICCO Strada Regionale 463 (bivio, provenienza Rivis)"
       , code = Id.fromString "40931"
       , commune = "SEDEGLIANO"
       , coordinates =
@@ -21177,8 +20794,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.DANIELE DEL F.via Osoppo 96 (dir.Majano), borgo Bronzacco"
+    , { name = "S.DANIELE DEL F.via Osoppo 96 (dir.Majano), borgo Bronzacco"
       , code = Id.fromString "50I61"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -21187,8 +20803,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVOLI Z.I. via delle Ferriere(De Simon, direzione Rivoli)"
+    , { name = "RIVOLI Z.I. via delle Ferriere(De Simon, direzione Rivoli)"
       , code = Id.fromString "51715"
       , commune = "OSOPPO"
       , coordinates =
@@ -21224,8 +20839,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MAGNANO IN RIVIERA piazza Urli 35 (municipio, dir.Tarcento)"
+    , { name = "MAGNANO IN RIVIERA piazza Urli 35 (municipio, dir.Tarcento)"
       , code = Id.fromString "60851"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -21288,8 +20902,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BILLERIO Strada Provinciale 117 (dir. Magnano), borgo Urana"
+    , { name = "BILLERIO Strada Provinciale 117 (dir. Magnano), borgo Urana"
       , code = Id.fromString "60857"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -21379,8 +20992,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CHIAULIS Strada Provinciale 23 (bivio, direzione Cedarchis)"
+    , { name = "CHIAULIS Strada Provinciale 23 (bivio, direzione Cedarchis)"
       , code = Id.fromString "81423"
       , commune = "PAULARO"
       , coordinates =
@@ -21398,8 +21010,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TRELLI Strada Provinciale 40 (bivio, direz. Rosa dei Venti)"
+    , { name = "TRELLI Strada Provinciale 40 (bivio, direz. Rosa dei Venti)"
       , code = Id.fromString "81426"
       , commune = "PAULARO"
       , coordinates =
@@ -21435,8 +21046,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO CARNICO via Dante 128 (direzione Ligosullo), Gleris"
+    , { name = "TREPPO CARNICO via Dante 128 (direzione Ligosullo), Gleris"
       , code = Id.fromString "81607"
       , commune = "TREPPO CARNICO"
       , coordinates =
@@ -21445,8 +21055,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PALUZZA via Monte Tersadia (bivio Englaro Sup., dir.centro)"
+    , { name = "PALUZZA via Monte Tersadia (bivio Englaro Sup., dir.centro)"
       , code = Id.fromString "81609"
       , commune = "PALUZZA"
       , coordinates =
@@ -21455,8 +21064,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PALUZZA via Monte Tersadia (bivio Englaro Sup., dir.Treppo)"
+    , { name = "PALUZZA via Monte Tersadia (bivio Englaro Sup., dir.Treppo)"
       , code = Id.fromString "81619"
       , commune = "PALUZZA"
       , coordinates =
@@ -21474,8 +21082,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PALUZZA via Divisione Julia 88 (direzione Timau), Casteons"
+    , { name = "PALUZZA via Divisione Julia 88 (direzione Timau), Casteons"
       , code = Id.fromString "81726"
       , commune = "PALUZZA"
       , coordinates =
@@ -21646,8 +21253,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ANDRAZZA DI FORNI DI SOPRA via Nazionale (bivio, dir.Cadore)"
+    , { name = "ANDRAZZA DI FORNI DI SOPRA via Nazionale (bivio, dir.Cadore)"
       , code = Id.fromString "83220"
       , commune = "FORNI DI SOPRA"
       , coordinates =
@@ -21674,8 +21280,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOZZO DI CADORE via Treviso (supermercato, direz. Ampezzo)"
+    , { name = "LOZZO DI CADORE via Treviso (supermercato, direz. Ampezzo)"
       , code = Id.fromString "95314"
       , commune = "LOZZO DI CADORE"
       , coordinates =
@@ -21756,8 +21361,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SCRUTTO DI MEZZO Strada Provinciale  45 (direzione centro)"
+    , { name = "SCRUTTO DI MEZZO Strada Provinciale  45 (direzione centro)"
       , code = Id.fromString "36A40"
       , commune = "SAN LEONARDO"
       , coordinates =
@@ -21892,8 +21496,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTENARS borgo Isola (fronte 1, municipio direz. Artegna)"
+    , { name = "MONTENARS borgo Isola (fronte 1, municipio direz. Artegna)"
       , code = Id.fromString "61113"
       , commune = "MONTENARS"
       , coordinates =
@@ -21902,8 +21505,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTENARS SP 34 Borgo Capovilla fronte 18 direzione Artegna"
+    , { name = "MONTENARS SP 34 Borgo Capovilla fronte 18 direzione Artegna"
       , code = Id.fromString "61115"
       , commune = "MONTENARS"
       , coordinates =
@@ -21939,8 +21541,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIGOLATO via della Repubblica 5 (centro, direz. Comeglians)"
+    , { name = "RIGOLATO via della Repubblica 5 (centro, direz. Comeglians)"
       , code = Id.fromString "82808"
       , commune = "RIGOLATO"
       , coordinates =
@@ -21949,8 +21550,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FORNI AVOLTRI corso Italia (fronte municipio, dir. Sappada)"
+    , { name = "FORNI AVOLTRI corso Italia (fronte municipio, dir. Sappada)"
       , code = Id.fromString "82913"
       , commune = "FORNI AVOLTRI"
       , coordinates =
@@ -22076,8 +21676,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SCRUTTO Strada Provinciale 45 (civico 21, direz. Cividale)"
+    , { name = "SCRUTTO Strada Provinciale 45 (civico 21, direz. Cividale)"
       , code = Id.fromString "36A32"
       , commune = "SAN LEONARDO"
       , coordinates =
@@ -22113,8 +21712,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POZZUOLO DEL FRIULI via M.della Salute 2 (dir.Sammardenchia)"
+    , { name = "POZZUOLO DEL FRIULI via M.della Salute 2 (dir.Sammardenchia)"
       , code = Id.fromString "38849"
       , commune = "POZZUOLO DEL FRIULI"
       , coordinates =
@@ -22231,8 +21829,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CORNINO via Costa (bivio via Cadrovin, direzione Forgaria)"
+    , { name = "CORNINO via Costa (bivio via Cadrovin, direzione Forgaria)"
       , code = Id.fromString "51855"
       , commune = "FORGARIA NEL FRIULI"
       , coordinates =
@@ -22268,8 +21865,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PEONIS via Ottavio Bottecchia 6 (ponte, direzione Forgaria)"
+    , { name = "PEONIS via Ottavio Bottecchia 6 (ponte, direzione Forgaria)"
       , code = Id.fromString "51I22"
       , commune = "TRASAGHIS"
       , coordinates =
@@ -22305,8 +21901,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GEMONA via Salcons (S. Maria degli Angeli, dir.centro studi)"
+    , { name = "GEMONA via Salcons (S. Maria degli Angeli, dir.centro studi)"
       , code = Id.fromString "61058"
       , commune = "GEMONA DEL FRIULI"
       , coordinates =
@@ -22369,8 +21964,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MICOTTIS Strada Turistica Di Monteaperta (direz. Villanova)"
+    , { name = "MICOTTIS Strada Turistica Di Monteaperta (direz. Villanova)"
       , code = Id.fromString "61340"
       , commune = "LUSEVERA"
       , coordinates =
@@ -22388,8 +21982,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLANOVA GROTTE borgo Funtic (bivio Dolina, dir.Tarcento)"
+    , { name = "VILLANOVA GROTTE borgo Funtic (bivio Dolina, dir.Tarcento)"
       , code = Id.fromString "61343"
       , commune = "LUSEVERA"
       , coordinates =
@@ -22407,8 +22000,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIORGIO DI RESIA via Prato 1A (chiesa, direzione Resiutta)"
+    , { name = "S.GIORGIO DI RESIA via Prato 1A (chiesa, direzione Resiutta)"
       , code = Id.fromString "80119"
       , commune = "RESIA"
       , coordinates =
@@ -22417,8 +22009,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIORGIO DI RESIA via Prato (direzione Stolvizza), loc.Poie"
+    , { name = "S.GIORGIO DI RESIA via Prato (direzione Stolvizza), loc.Poie"
       , code = Id.fromString "80123"
       , commune = "RESIA"
       , coordinates =
@@ -22436,8 +22027,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POCLANAZ DI RESIA via Giuseppe Micelli (direzione Resiutta)"
+    , { name = "POCLANAZ DI RESIA via Giuseppe Micelli (direzione Resiutta)"
       , code = Id.fromString "80127"
       , commune = "RESIA"
       , coordinates =
@@ -22446,8 +22036,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RESIA Strada Provinciale 52 (ponte Rop, prov.Prato di Resia)"
+    , { name = "RESIA Strada Provinciale 52 (ponte Rop, prov.Prato di Resia)"
       , code = Id.fromString "80128"
       , commune = "RESIA"
       , coordinates =
@@ -22465,8 +22054,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARVISIO via Alpi Giulie 114(fronte Case Fanfani, dir.Udine)"
+    , { name = "TARVISIO via Alpi Giulie 114(fronte Case Fanfani, dir.Udine)"
       , code = Id.fromString "80349"
       , commune = "TARVISIO"
       , coordinates =
@@ -22475,8 +22063,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPOROSSO via Valcanale (angolo via Monte Nero, dir. Udine)"
+    , { name = "CAMPOROSSO via Valcanale (angolo via Monte Nero, dir. Udine)"
       , code = Id.fromString "80350"
       , commune = "TARVISIO"
       , coordinates =
@@ -22494,8 +22081,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPOROSSO via Alpi Giulie (fronte 30, Dawit direz. Udine)"
+    , { name = "CAMPOROSSO via Alpi Giulie (fronte 30, Dawit direz. Udine)"
       , code = Id.fromString "80354"
       , commune = "TARVISIO"
       , coordinates =
@@ -22513,8 +22099,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FUSINE VILLABASSA via Cadorna 29 (bar, direzione Tarvisio)"
+    , { name = "FUSINE VILLABASSA via Cadorna 29 (bar, direzione Tarvisio)"
       , code = Id.fromString "80368"
       , commune = "TARVISIO"
       , coordinates =
@@ -22523,8 +22108,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LAGO INFERIORE DI FUSINE via dei Laghi 8 (direz. Lago Sup.)"
+    , { name = "LAGO INFERIORE DI FUSINE via dei Laghi 8 (direz. Lago Sup.)"
       , code = Id.fromString "80370"
       , commune = "TARVISIO"
       , coordinates =
@@ -22542,8 +22126,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VAL AUPA SP 112 (bivio loc.Grauzaria, direzione Bevorchians)"
+    , { name = "VAL AUPA SP 112 (bivio loc.Grauzaria, direzione Bevorchians)"
       , code = Id.fromString "80723"
       , commune = "MOGGIO UDINESE"
       , coordinates =
@@ -22624,8 +22207,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PESARIIS Strada Statale 465 (bivio, provenienza Comeglians)"
+    , { name = "PESARIIS Strada Statale 465 (bivio, provenienza Comeglians)"
       , code = Id.fromString "83020"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -22634,8 +22216,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PESARIIS SS 465 (direzione Pesariis), località Sant'Antonio"
+    , { name = "PESARIIS SS 465 (direzione Pesariis), località Sant'Antonio"
       , code = Id.fromString "83021"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -22671,8 +22252,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAURIS DI SOTTO SP 73 (direzione Ampezzo), località Klemele"
+    , { name = "SAURIS DI SOTTO SP 73 (direzione Ampezzo), località Klemele"
       , code = Id.fromString "83126"
       , commune = "SAURIS"
       , coordinates =
@@ -22708,8 +22288,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SOCCHIEVE via Nazionale (bivio Preone, direzione Tolmezzo)"
+    , { name = "SOCCHIEVE via Nazionale (bivio Preone, direzione Tolmezzo)"
       , code = Id.fromString "83512"
       , commune = "SOCCHIEVE"
       , coordinates =
@@ -22862,8 +22441,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "CODERNO via Lavia (Incrocio SP 18, provenienza San Lorenzo)"
+    , { name = "CODERNO via Lavia (Incrocio SP 18, provenienza San Lorenzo)"
       , code = Id.fromString "40937"
       , commune = "SEDEGLIANO"
       , coordinates =
@@ -22899,8 +22477,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO PICCOLO via Ellero 2 (Incrocio via Vittorio Veneto)"
+    , { name = "TREPPO PICCOLO via Ellero 2 (Incrocio via Vittorio Veneto)"
       , code = Id.fromString "51527"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -23053,8 +22630,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN PIETRO DI RAGOGNA via al Ponte 7 (direzione S.Daniele)"
+    , { name = "SAN PIETRO DI RAGOGNA via al Ponte 7 (direzione S.Daniele)"
       , code = Id.fromString "51329"
       , commune = "RAGOGNA"
       , coordinates =
@@ -23063,8 +22639,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CORNINO via Venier 2 (direzione Sompcornino), borgo Venier"
+    , { name = "CORNINO via Venier 2 (direzione Sompcornino), borgo Venier"
       , code = Id.fromString "51802"
       , commune = "FORGARIA NEL FRIULI"
       , coordinates =
@@ -23109,8 +22684,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZEGLIACCO via Zegliacco (fronte civico 2, direzione Treppo)"
+    , { name = "ZEGLIACCO via Zegliacco (fronte civico 2, direzione Treppo)"
       , code = Id.fromString "51528"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -23146,8 +22720,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.PIETRO DI RAGOGNA via Volontari della Libertà (fronte 11)"
+    , { name = "S.PIETRO DI RAGOGNA via Volontari della Libertà (fronte 11)"
       , code = Id.fromString "51324"
       , commune = "RAGOGNA"
       , coordinates =
@@ -23192,8 +22765,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MICOTTIS Alta Strada Turistica Di Monteaperta (dir.Lusevera)"
+    , { name = "MICOTTIS Alta Strada Turistica Di Monteaperta (dir.Lusevera)"
       , code = Id.fromString "61337"
       , commune = "LUSEVERA"
       , coordinates =
@@ -23211,8 +22783,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CESARIIS Strada Comunale Pers e Cesariis (direz. Pradielis)"
+    , { name = "CESARIIS Strada Comunale Pers e Cesariis (direz. Pradielis)"
       , code = Id.fromString "61339"
       , commune = "LUSEVERA"
       , coordinates =
@@ -23221,8 +22792,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MUSI Strada Regionale 646 (ponte, bivio direzione Tarcento)"
+    , { name = "MUSI Strada Regionale 646 (ponte, bivio direzione Tarcento)"
       , code = Id.fromString "61347"
       , commune = "LUSEVERA"
       , coordinates =
@@ -23240,8 +22810,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FUSINE via Verdi Km 103,70 (Confine di Stato, dir. Tarvisio)"
+    , { name = "FUSINE via Verdi Km 103,70 (Confine di Stato, dir. Tarvisio)"
       , code = Id.fromString "80364"
       , commune = "TARVISIO"
       , coordinates =
@@ -23250,8 +22819,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COCCAU via Friuli (fronte 44, Confine di Stato dir.Tarvisio)"
+    , { name = "COCCAU via Friuli (fronte 44, Confine di Stato dir.Tarvisio)"
       , code = Id.fromString "80348"
       , commune = "TARVISIO"
       , coordinates =
@@ -23296,8 +22864,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "DOGNA Strada Statale 13 (direzione Carnia), loalità Saletto"
+    , { name = "DOGNA Strada Statale 13 (direzione Carnia), loalità Saletto"
       , code = Id.fromString "80505"
       , commune = "DOGNA"
       , coordinates =
@@ -23306,8 +22873,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MOGGIO UDINESE piazza G. Nais (fronte monumento, dir.Udine)"
+    , { name = "MOGGIO UDINESE piazza G. Nais (fronte monumento, dir.Udine)"
       , code = Id.fromString "80719"
       , commune = "MOGGIO UDINESE"
       , coordinates =
@@ -23316,8 +22882,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRADIS DI SOTTO  Strada Provinciale 112 (direz. Bevorchians)"
+    , { name = "PRADIS DI SOTTO  Strada Provinciale 112 (direz. Bevorchians)"
       , code = Id.fromString "80721"
       , commune = "MOGGIO UDINESE"
       , coordinates =
@@ -23335,8 +22900,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PONTEIBE Strada Provinciale 112 (dir.Aupa), località Frattis"
+    , { name = "PONTEIBE Strada Provinciale 112 (dir.Aupa), località Frattis"
       , code = Id.fromString "80827"
       , commune = "PONTEBBA"
       , coordinates =
@@ -23363,8 +22927,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "STUDENA BASSA fraz.Studena Bassa (latteria, direz. Paularo)"
+    , { name = "STUDENA BASSA fraz.Studena Bassa (latteria, direz. Paularo)"
       , code = Id.fromString "80835"
       , commune = "PONTEBBA"
       , coordinates =
@@ -23445,8 +23008,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FORNI DI SOPRA via Nazionale (seggiovia, direzione Cadore)"
+    , { name = "FORNI DI SOPRA via Nazionale (seggiovia, direzione Cadore)"
       , code = Id.fromString "83205"
       , commune = "FORNI DI SOPRA"
       , coordinates =
@@ -23464,8 +23026,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CIMA SAPPADA SR 355 (civico 95, fronte chiesa), borgata Cima"
+    , { name = "CIMA SAPPADA SR 355 (civico 95, fronte chiesa), borgata Cima"
       , code = Id.fromString "95004"
       , commune = "SAPPADA"
       , coordinates =
@@ -23474,8 +23035,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAPPADA SR 355 (fronte civico 45, albergo), borgata Fontana"
+    , { name = "SAPPADA SR 355 (fronte civico 45, albergo), borgata Fontana"
       , code = Id.fromString "95010"
       , commune = "SAPPADA"
       , coordinates =
@@ -23511,8 +23071,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LORENZAGO DI CADORE viale Città di Genova 266 (dir. Pieve)"
+    , { name = "LORENZAGO DI CADORE viale Città di Genova 266 (dir. Pieve)"
       , code = Id.fromString "95205"
       , commune = "LORENZAGO DI CADORE"
       , coordinates =
@@ -23539,8 +23098,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SEGA DIGON via 6 Novembre 3 (Al Cavallino, dir. S.Stefano)"
+    , { name = "SEGA DIGON via 6 Novembre 3 (Al Cavallino, dir. S.Stefano)"
       , code = Id.fromString "97520"
       , commune = "COMELICO SUPERIORE"
       , coordinates =
@@ -23549,8 +23107,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SESTO via Dolomiti (funivia Monte Elmo, direzione S.Stefano)"
+    , { name = "SESTO via Dolomiti (funivia Monte Elmo, direzione S.Stefano)"
       , code = Id.fromString "97712"
       , commune = "SESTO-SEXTEN"
       , coordinates =
@@ -23568,8 +23125,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SESTO via San Giuseppe (Caravan Park, direzione S.Stefano)"
+    , { name = "SESTO via San Giuseppe (Caravan Park, direzione S.Stefano)"
       , code = Id.fromString "97716"
       , commune = "SESTO-SEXTEN"
       , coordinates =
@@ -23578,8 +23134,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN CANDIDO via Sesto (bivio Campo di Dentro, dir.S.Stefano)"
+    , { name = "SAN CANDIDO via Sesto (bivio Campo di Dentro, dir.S.Stefano)"
       , code = Id.fromString "98507"
       , commune = "SAN CANDIDO-INNICHEN"
       , coordinates =
@@ -23876,8 +23431,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VENZONE via Pontebbana (caserma Feruglio, direzione Carnia)"
+    , { name = "VENZONE via Pontebbana (caserma Feruglio, direzione Carnia)"
       , code = Id.fromString "61213"
       , commune = "VENZONE"
       , coordinates =
@@ -23886,8 +23440,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRADIELIS Strada Regionale 646 (distributore, direz. Uccea)"
+    , { name = "PRADIELIS Strada Regionale 646 (distributore, direz. Uccea)"
       , code = Id.fromString "61342"
       , commune = "LUSEVERA"
       , coordinates =
@@ -24004,8 +23557,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S. MARIA DI SCLAUNICCO piazza Assunzione (fronte 8, chiesa)"
+    , { name = "S. MARIA DI SCLAUNICCO piazza Assunzione (fronte 8, chiesa)"
       , code = Id.fromString "40435"
       , commune = "LESTIZZA"
       , coordinates =
@@ -24032,8 +23584,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PIGNANO via al Lago (fronte civico 1, bivio direzione Muris)"
+    , { name = "PIGNANO via al Lago (fronte civico 1, bivio direzione Muris)"
       , code = Id.fromString "51322"
       , commune = "RAGOGNA"
       , coordinates =
@@ -24096,8 +23647,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "LAGO del PREDIL Strada Provinciale 76 (direzione Tarvisio)"
+    , { name = "LAGO del PREDIL Strada Provinciale 76 (direzione Tarvisio)"
       , code = Id.fromString "80345"
       , commune = "TARVISIO"
       , coordinates =
@@ -24106,8 +23656,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARVISIO CENTRALE via Friuli 1 (ex stazione, direz. Udine)"
+    , { name = "TARVISIO CENTRALE via Friuli 1 (ex stazione, direz. Udine)"
       , code = Id.fromString "80346"
       , commune = "TARVISIO"
       , coordinates =
@@ -24116,8 +23665,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "DOGNA Strada Statale 13 (direz. Tarvisio), località Vidali"
+    , { name = "DOGNA Strada Statale 13 (direz. Tarvisio), località Vidali"
       , code = Id.fromString "80506"
       , commune = "DOGNA"
       , coordinates =
@@ -24162,8 +23710,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Martignacco (fronte poligono di tiro, dir. Udine)"
+    , { name = "UDINE via Martignacco (fronte poligono di tiro, dir. Udine)"
       , code = Id.fromString "UD358"
       , commune = "UDINE"
       , coordinates =
@@ -24262,8 +23809,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MALBORGHETTO via Nazionale (direzione Udine), località Cucco"
+    , { name = "MALBORGHETTO via Nazionale (direzione Udine), località Cucco"
       , code = Id.fromString "80416"
       , commune = "MALBORGHETTO VALBRUNA"
       , coordinates =
@@ -24317,8 +23863,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOLMEZZO via Illegio (fronte 5, dir. Illegio), loc. Betania"
+    , { name = "TOLMEZZO via Illegio (fronte 5, dir. Illegio), loc. Betania"
       , code = Id.fromString "81272"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -24345,8 +23890,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SIGNAUE via S. Giuseppe (bivio funivia, direzione S.Stefano)"
+    , { name = "SIGNAUE via S. Giuseppe (bivio funivia, direzione S.Stefano)"
       , code = Id.fromString "97711"
       , commune = "SESTO-SEXTEN"
       , coordinates =
@@ -24868,8 +24412,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO PICCOLO via Ellero (dir.Treppo Grande), borgo Lucchis"
+    , { name = "TREPPO PICCOLO via Ellero (dir.Treppo Grande), borgo Lucchis"
       , code = Id.fromString "51523"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -24887,8 +24430,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CORNINO Strada Provinciale 84 (trattoria, direz. Forgaria)"
+    , { name = "CORNINO Strada Provinciale 84 (trattoria, direz. Forgaria)"
       , code = Id.fromString "51852"
       , commune = "FORGARIA NEL FRIULI"
       , coordinates =
@@ -25113,8 +24655,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CASANOVA DI TOLM. Strada di Fusea (fronte via della Pieve)"
+    , { name = "CASANOVA DI TOLM. Strada di Fusea (fronte via della Pieve)"
       , code = Id.fromString "81271"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -25150,8 +24691,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "STUDENA BASSA frazione Studena Bassa (ponte, dir. Paularo)"
+    , { name = "STUDENA BASSA frazione Studena Bassa (ponte, dir. Paularo)"
       , code = Id.fromString "80836"
       , commune = "PONTEBBA"
       , coordinates =
@@ -26681,8 +26221,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LIGNANO viale dei Platani (fronte 66, angolo viale Verona)"
+    , { name = "LIGNANO viale dei Platani (fronte 66, angolo viale Verona)"
       , code = Id.fromString "UL070"
       , commune = "LIGNANO SABBIADORO"
       , coordinates =
@@ -27033,8 +26572,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COMERZO via Garibaldi (fronte 85, chiesa direzione Majano)"
+    , { name = "COMERZO via Garibaldi (fronte 85, chiesa direzione Majano)"
       , code = Id.fromString "51245"
       , commune = "MAJANO"
       , coordinates =
@@ -27421,8 +26959,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TERCIMONTE Strada Comuanle Masseris 1 (bivio, dir. Savogna)"
+    , { name = "TERCIMONTE Strada Comuanle Masseris 1 (bivio, dir. Savogna)"
       , code = Id.fromString "35906"
       , commune = "SAVOGNA"
       , coordinates =
@@ -27440,8 +26977,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BIVIO VAL VISDENDE Strada Regionale 355 (direzione Sappada)"
+    , { name = "BIVIO VAL VISDENDE Strada Regionale 355 (direzione Sappada)"
       , code = Id.fromString "98211"
       , commune = "SAN PIETRO DI CADORE"
       , coordinates =
@@ -27450,8 +26986,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN CANDIDO via Schranzhofer (Baranci, dir. Santo Stefano)"
+    , { name = "SAN CANDIDO via Schranzhofer (Baranci, dir. Santo Stefano)"
       , code = Id.fromString "98506"
       , commune = "SAN CANDIDO-INNICHEN"
       , coordinates =
@@ -27676,8 +27211,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BUTTRIO via Divisione Julia 47 (ponte ferrovia, dir.Cividale"
+    , { name = "BUTTRIO via Divisione Julia 47 (ponte ferrovia, dir.Cividale"
       , code = Id.fromString "36521"
       , commune = "BUTTRIO"
       , coordinates =
@@ -28118,8 +27652,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO GRANDE via dei Laris (bivio Carvacco, dir. Carvacco)"
+    , { name = "TREPPO GRANDE via dei Laris (bivio Carvacco, dir. Carvacco)"
       , code = Id.fromString "51531"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -28299,8 +27832,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.STEFANO DI CADORE via Venezia 26 (direzione autostazione)"
+    , { name = "S.STEFANO DI CADORE via Venezia 26 (direzione autostazione)"
       , code = Id.fromString "98207"
       , commune = "SANTO STEFANO DI CADORE"
       , coordinates =
@@ -28534,8 +28066,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZOMPITTA via Mons. Pigani 19 (ang. via Garibaldi, dir.Udine)"
+    , { name = "ZOMPITTA via Mons. Pigani 19 (ang. via Garibaldi, dir.Udine)"
       , code = Id.fromString "60244"
       , commune = "REANA DEL ROIALE"
       , coordinates =
@@ -28544,8 +28075,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLANOVA GROTTE borgo Vignat(Terminal Grotte, dir.Tarcento)"
+    , { name = "VILLANOVA GROTTE borgo Vignat(Terminal Grotte, dir.Tarcento)"
       , code = Id.fromString "61345"
       , commune = "LUSEVERA"
       , coordinates =
@@ -29274,8 +28804,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COSIZZA Strada Provinciale 45 (civico 28, direzione Azzida)"
+    , { name = "COSIZZA Strada Provinciale 45 (civico 28, direzione Azzida)"
       , code = Id.fromString "36A36"
       , commune = "SAN LEONARDO"
       , coordinates =
@@ -29311,8 +28840,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPOLONGO AL TORRE piazza Indipendenza (direz. Cavenzano)"
+    , { name = "CAMPOLONGO AL TORRE piazza Indipendenza (direz. Cavenzano)"
       , code = Id.fromString "37901"
       , commune = "CAMPOLONGO TAPOGLIANO"
       , coordinates =
@@ -29357,8 +28885,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "VILLANOVA GROTTE via Villa Nuova (bivio, direzione Micottis)"
+    , { name = "VILLANOVA GROTTE via Villa Nuova (bivio, direzione Micottis)"
       , code = Id.fromString "61344"
       , commune = "LUSEVERA"
       , coordinates =
@@ -30564,8 +30091,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "MOIMACCO via Nazionale 19 (direz. Cividale), Case Crociate"
+    , { name = "MOIMACCO via Nazionale 19 (direz. Cividale), Case Crociate"
       , code = Id.fromString "36808"
       , commune = "MOIMACCO"
       , coordinates =
@@ -30961,8 +30487,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "MICOTTIS Strada di Monteaperta (dir.Lusevera), Case Fabrino"
+    , { name = "MICOTTIS Strada di Monteaperta (dir.Lusevera), Case Fabrino"
       , code = Id.fromString "61346"
       , commune = "LUSEVERA"
       , coordinates =
@@ -31061,8 +30586,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "MAJANO via Udine 44 (angolo via Deveacco, direzione Farla)"
+    , { name = "MAJANO via Udine 44 (angolo via Deveacco, direzione Farla)"
       , code = Id.fromString "51265"
       , commune = "MAJANO"
       , coordinates =
@@ -31656,8 +31180,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PONTEPERARIA SC Moggio Ovedaso (bivio, direzione Roveredo)"
+    , { name = "PONTEPERARIA SC Moggio Ovedaso (bivio, direzione Roveredo)"
       , code = Id.fromString "80232"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -31666,8 +31189,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MOSO via San Giuseppe 22 (chiesa, direzione Santo Stefano)"
+    , { name = "MOSO via San Giuseppe 22 (chiesa, direzione Santo Stefano)"
       , code = Id.fromString "97717"
       , commune = "SESTO-SEXTEN"
       , coordinates =
@@ -32369,8 +31891,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "DOMEGGE DI CADORE via Treviso (dir. Ampezzo), loc. Somacros"
+    , { name = "DOMEGGE DI CADORE via Treviso (dir. Ampezzo), loc. Somacros"
       , code = Id.fromString "95320"
       , commune = "DOMEGGE DI CADORE"
       , coordinates =
@@ -33522,8 +33043,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "COCEVARO Strada Provinciale 11 (civico 4, direzione Savogna)"
+    , { name = "COCEVARO Strada Provinciale 11 (civico 4, direzione Savogna)"
       , code = Id.fromString "36110"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -33541,8 +33061,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GEMONA via Piovega (lato parco giochi, direz. stazione FS)"
+    , { name = "GEMONA via Piovega (lato parco giochi, direz. stazione FS)"
       , code = Id.fromString "61065"
       , commune = "GEMONA DEL FRIULI"
       , coordinates =
@@ -33560,8 +33079,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOCALITA' TRE PONTI DI VIGO DI CADORE SS 52 (dir. Auronzo)"
+    , { name = "LOCALITA' TRE PONTI DI VIGO DI CADORE SS 52 (dir. Auronzo)"
       , code = Id.fromString "95410"
       , commune = "VIGO DI CADORE"
       , coordinates =
@@ -34551,8 +34069,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PIETRATAGLIATA (bivio Strada Regionale 13, direz. Tarvisio)"
+    , { name = "PIETRATAGLIATA (bivio Strada Regionale 13, direz. Tarvisio)"
       , code = Id.fromString "80822"
       , commune = "PONTEBBA"
       , coordinates =
@@ -34876,8 +34393,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PONTEBBA via Cavour (direzione Carnia), località San Rocco"
+    , { name = "PONTEBBA via Cavour (direzione Carnia), località San Rocco"
       , code = Id.fromString "80821"
       , commune = "PONTEBBA"
       , coordinates =
@@ -34940,8 +34456,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PONTEACCO Strada Statale 54 (civico 2, direzione San Pietro)"
+    , { name = "PONTEACCO Strada Statale 54 (civico 2, direzione San Pietro)"
       , code = Id.fromString "36118"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -34986,8 +34501,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN LEOPOLDO Laglesie Strada Statale 13 (direzione Carnia)"
+    , { name = "SAN LEOPOLDO Laglesie Strada Statale 13 (direzione Carnia)"
       , code = Id.fromString "80818"
       , commune = "PONTEBBA"
       , coordinates =
@@ -35707,8 +35221,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "DOLEGNA DEL COLLIO via Pietro Zorutti SP14 (direz. Cividale)"
+    , { name = "DOLEGNA DEL COLLIO via Pietro Zorutti SP14 (direz. Cividale)"
       , code = Id.fromString "G0403"
       , commune = "DOLEGNA DEL COLLIO"
       , coordinates =
@@ -36347,8 +35860,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "RIVOLTO SS 13 (civico 63, Frecce Tricolori direz. Codroipo)"
+    , { name = "RIVOLTO SS 13 (civico 63, Frecce Tricolori direz. Codroipo)"
       , code = Id.fromString "40804"
       , commune = "CODROIPO"
       , coordinates =
@@ -36510,8 +36022,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FOSSALON viale della Vittoria (centro - direz. Monfalcone)"
+    , { name = "FOSSALON viale della Vittoria (centro - direz. Monfalcone)"
       , code = Id.fromString "G0956"
       , commune = "GRADO"
       , coordinates =
@@ -37105,8 +36616,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAMMARDENCHIA DI T.via Sammardenchia(cimitero, dir.Tarcento)"
+    , { name = "SAMMARDENCHIA DI T.via Sammardenchia(cimitero, dir.Tarcento)"
       , code = Id.fromString "60794"
       , commune = "TARCENTO"
       , coordinates =
@@ -37637,8 +37147,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "COSIZZA Strada Provinciale 45 (civico 29, direz. Drenchia)"
+    , { name = "COSIZZA Strada Provinciale 45 (civico 29, direz. Drenchia)"
       , code = Id.fromString "36A11"
       , commune = "SAN LEONARDO"
       , coordinates =
@@ -37683,8 +37192,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CODUGNELLA via San Rocco (prov.Colloredo), loc. Le Crosade"
+    , { name = "CODUGNELLA via San Rocco (prov.Colloredo), loc. Le Crosade"
       , code = Id.fromString "51144"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -38323,8 +37831,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PREMARIACCO via Strada di Ipplis (bivio Leproso, dir.Ipplis)"
+    , { name = "PREMARIACCO via Strada di Ipplis (bivio Leproso, dir.Ipplis)"
       , code = Id.fromString "36273"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -38774,8 +38281,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Cividale 391 (caserma Cavarzerani, dir. Cividale)"
+    , { name = "UDINE via Cividale 391 (caserma Cavarzerani, dir. Cividale)"
       , code = Id.fromString "70C43"
       , commune = "UDINE"
       , coordinates =
@@ -38784,8 +38290,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "OSEACCO DI RESIA, via Flavia (bivio Oseacco, dir. Stolvizza)"
+    , { name = "OSEACCO DI RESIA, via Flavia (bivio Oseacco, dir. Stolvizza)"
       , code = Id.fromString "80122"
       , commune = "RESIA"
       , coordinates =
@@ -38794,8 +38299,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SEGA DIGON via 6 Novembre 12 (Al Cavallino, dir. S.Candido)"
+    , { name = "SEGA DIGON via 6 Novembre 12 (Al Cavallino, dir. S.Candido)"
       , code = Id.fromString "97510"
       , commune = "COMELICO SUPERIORE"
       , coordinates =
@@ -39164,8 +38668,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BASILIANO via Fabio Asquini (bivio, provenienza Villaorba)"
+    , { name = "BASILIANO via Fabio Asquini (bivio, provenienza Villaorba)"
       , code = Id.fromString "40328"
       , commune = "BASILIANO"
       , coordinates =
@@ -39840,8 +39343,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POSTREGNA Strada Provinciale 47 (bivio, direzione Stregna)"
+    , { name = "POSTREGNA Strada Provinciale 47 (bivio, direzione Stregna)"
       , code = Id.fromString "35626"
       , commune = "STREGNA"
       , coordinates =
@@ -39850,8 +39352,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PREMARIACCO via Strada di Ipplis (bivio Leproso, dir. Udine)"
+    , { name = "PREMARIACCO via Strada di Ipplis (bivio Leproso, dir. Udine)"
       , code = Id.fromString "36236"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -40031,8 +39532,7 @@ stops =
             }
       , services = [ Types.Maritime ]
       }
-    , { name =
-            "REDIPUGLIA via III Armata (fronte 35, stazione ferroviaria)"
+    , { name = "REDIPUGLIA via III Armata (fronte 35, stazione ferroviaria)"
       , code = Id.fromString "G0612"
       , commune = "FOGLIANO REDIPUGLIA"
       , coordinates =
@@ -40158,8 +39658,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "POGGIO III ARMATA stazione ferroviaria (direz. Monfalcone)"
+    , { name = "POGGIO III ARMATA stazione ferroviaria (direz. Monfalcone)"
       , code = Id.fromString "G1704"
       , commune = "SAGRADO"
       , coordinates =
@@ -40483,8 +39982,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "DOLEGNA DI COSIZZA Strada Provinciale  45 (direz. Cosizza)"
+    , { name = "DOLEGNA DI COSIZZA Strada Provinciale  45 (direz. Cosizza)"
       , code = Id.fromString "36A21"
       , commune = "SAN LEONARDO"
       , coordinates =
@@ -40601,8 +40099,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "PRATO DI RESIA via S.Giorgio (direz. Stolvizza), loc.Varcota"
+    , { name = "PRATO DI RESIA via S.Giorgio (direz. Stolvizza), loc.Varcota"
       , code = Id.fromString "80126"
       , commune = "RESIA"
       , coordinates =
@@ -40611,8 +40108,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ROVEREDO DI C. SC Moggio Ovedasso (chiesa, prov.Chiusaforte)"
+    , { name = "ROVEREDO DI C. SC Moggio Ovedasso (chiesa, prov.Chiusaforte)"
       , code = Id.fromString "80212"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -41143,8 +40639,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "BONZICCO via Venezia (fronte civico 7, direzione S.Odorico)"
+    , { name = "BONZICCO via Venezia (fronte civico 7, direzione S.Odorico)"
       , code = Id.fromString "50810"
       , commune = "DIGNANO"
       , coordinates =
@@ -41369,8 +40864,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BEVAZZANA DI LATISANA via Lignano Sud (direzione Latisana)"
+    , { name = "BEVAZZANA DI LATISANA via Lignano Sud (direzione Latisana)"
       , code = Id.fromString "31604"
       , commune = "LATISANA"
       , coordinates =
@@ -41379,8 +40873,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GORGO DI LATISANA via N.Tommaseo 6 (chiesa, direz.Pertegada)"
+    , { name = "GORGO DI LATISANA via N.Tommaseo 6 (chiesa, direz.Pertegada)"
       , code = Id.fromString "31609"
       , commune = "LATISANA"
       , coordinates =
@@ -41497,8 +40990,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "ROMANS DI VARMO via delle Risorgive 11 (direzione Muscletto)"
+    , { name = "ROMANS DI VARMO via delle Risorgive 11 (direzione Muscletto)"
       , code = Id.fromString "40609"
       , commune = "VARMO"
       , coordinates =
@@ -41768,8 +41260,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "via di Prosecco 233 (angolo strada provinciale 1 del Carso)"
+    , { name = "via di Prosecco 233 (angolo strada provinciale 1 del Carso)"
       , code = Id.fromString "D3036"
       , commune = "TRIESTE"
       , coordinates =
@@ -42147,8 +41638,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PERTEGADA via Lignano Sabbiadoro 35 (semaforo, dir.Latisana)"
+    , { name = "PERTEGADA via Lignano Sabbiadoro 35 (semaforo, dir.Latisana)"
       , code = Id.fromString "31610"
       , commune = "LATISANA"
       , coordinates =
@@ -42940,8 +42430,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SIVIGLIANO via Giordano Bruno 47 (chiesa, direz. Rivignano)"
+    , { name = "SIVIGLIANO via Giordano Bruno 47 (chiesa, direz. Rivignano)"
       , code = Id.fromString "30708"
       , commune = "RIVIGNANO TEOR"
       , coordinates =
@@ -42995,8 +42484,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VARCH Strada di Tribuil (bivio, direzione Tribil Superiore)"
+    , { name = "VARCH Strada di Tribuil (bivio, direzione Tribil Superiore)"
       , code = Id.fromString "35613"
       , commune = "STREGNA"
       , coordinates =
@@ -44382,8 +43870,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "via Maestri del Lavoro, (palazzo della Marineria, piscina)"
+    , { name = "via Maestri del Lavoro, (palazzo della Marineria, piscina)"
       , code = Id.fromString "27021"
       , commune = ""
       , coordinates =
@@ -44473,8 +43960,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TAIPANA Strada Provinciale 38 Borgo di Sotto (direz. centro)"
+    , { name = "TAIPANA Strada Provinciale 38 Borgo di Sotto (direz. centro)"
       , code = Id.fromString "61448"
       , commune = "TAIPANA"
       , coordinates =
@@ -44492,8 +43978,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SESTO via Dolomiti (funivia Monte Elmo, direz. San Candido)"
+    , { name = "SESTO via Dolomiti (funivia Monte Elmo, direz. San Candido)"
       , code = Id.fromString "97703"
       , commune = "SESTO-SEXTEN"
       , coordinates =
@@ -44709,8 +44194,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 5 di San Pelagio 64 (passaggio livello)"
+    , { name = "strada provinciale 5 di San Pelagio 64 (passaggio livello)"
       , code = Id.fromString "D6016"
       , commune = ""
       , coordinates =
@@ -44818,8 +44302,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 8 di Monrupino 45 (municipio di Sgonico)"
+    , { name = "strada provinciale 8 di Monrupino 45 (municipio di Sgonico)"
       , code = Id.fromString "D7023"
       , commune = ""
       , coordinates =
@@ -44828,8 +44311,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 28 di Sgonico per Sales (lato Colludrozza"
+    , { name = "strada provinciale 28 di Sgonico per Sales (lato Colludrozza"
       , code = Id.fromString "D7028"
       , commune = ""
       , coordinates =
@@ -45297,8 +44779,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "strada provinciale 29 di borgo Grotta Gigante (campo sportiv"
+    , { name = "strada provinciale 29 di borgo Grotta Gigante (campo sportiv"
       , code = Id.fromString "D7063"
       , commune = "TRIESTE"
       , coordinates =
@@ -45307,8 +44788,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SIGNAUE via San Giuseppe (bivio funivia, direz. San Candido)"
+    , { name = "SIGNAUE via San Giuseppe (bivio funivia, direz. San Candido)"
       , code = Id.fromString "97702"
       , commune = "SESTO-SEXTEN"
       , coordinates =
@@ -45425,8 +44905,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 19 di Gropada 92 (scuola dell'infanzia)"
+    , { name = "strada provinciale 19 di Gropada 92 (scuola dell'infanzia)"
       , code = Id.fromString "D0006"
       , commune = "TRIESTE"
       , coordinates =
@@ -45588,8 +45067,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada statale 14 (via Beirut, castello di Miramare, ICTP)"
+    , { name = "strada statale 14 (via Beirut, castello di Miramare, ICTP)"
       , code = Id.fromString "D5023"
       , commune = "TRIESTE"
       , coordinates =
@@ -45634,8 +45112,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale di borgo Grotta Gigante (campo sportivo)"
+    , { name = "strada provinciale di borgo Grotta Gigante (campo sportivo)"
       , code = Id.fromString "D7015"
       , commune = "TRIESTE"
       , coordinates =
@@ -45716,8 +45193,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "TARCENTO via Alighieri (fronte 167, angolo via della Faula)"
+    , { name = "TARCENTO via Alighieri (fronte 167, angolo via della Faula)"
       , code = Id.fromString "60762"
       , commune = "TARCENTO"
       , coordinates =
@@ -45960,8 +45436,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "località Farnei 14 (strada provinciale 15 direzione Trieste)"
+    , { name = "località Farnei 14 (strada provinciale 15 direzione Trieste)"
       , code = Id.fromString "E0155"
       , commune = ""
       , coordinates =
@@ -46132,8 +45607,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARCENTO via Pratum Laci 1 (incr. via Stazione, dir.centro)"
+    , { name = "TARCENTO via Pratum Laci 1 (incr. via Stazione, dir.centro)"
       , code = Id.fromString "60763"
       , commune = "TARCENTO"
       , coordinates =
@@ -46160,8 +45634,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "BIVIO VAL VISDENDE Strada Regionale 355 (direz. S.Stefano)"
+    , { name = "BIVIO VAL VISDENDE Strada Regionale 355 (direz. S.Stefano)"
       , code = Id.fromString "98210"
       , commune = "SAN PIETRO DI CADORE"
       , coordinates =
@@ -46503,8 +45976,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "strada statale 14 della Venezia Giulia (castello Miramare)"
+    , { name = "strada statale 14 della Venezia Giulia (castello Miramare)"
       , code = Id.fromString "D5007"
       , commune = "TRIESTE"
       , coordinates =
@@ -46945,8 +46417,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE viale Forze Armate (incr. via bariglaria, prov.centro)"
+    , { name = "UDINE viale Forze Armate (incr. via bariglaria, prov.centro)"
       , code = Id.fromString "UD528"
       , commune = "UDINE"
       , coordinates =
@@ -47072,8 +46543,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "CLABUZZARO Strada Provinciale 45 (bivio, direzione Drenchia)"
+    , { name = "CLABUZZARO Strada Provinciale 45 (bivio, direzione Drenchia)"
       , code = Id.fromString "35827"
       , commune = "DRENCHIA"
       , coordinates =
@@ -47127,8 +46597,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARVISIO via Vittorio Veneto 2 (rotonda,  direzione Udine)"
+    , { name = "TARVISIO via Vittorio Veneto 2 (rotonda,  direzione Udine)"
       , code = Id.fromString "80339"
       , commune = "TARVISIO"
       , coordinates =
@@ -47182,8 +46651,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOCALITA' NIER via Sauris (fronte civico 1, direzione Ampezz"
+    , { name = "LOCALITA' NIER via Sauris (fronte civico 1, direzione Ampezz"
       , code = Id.fromString "83405"
       , commune = "AMPEZZO"
       , coordinates =
@@ -47192,8 +46660,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN NICOLO' COMELICO via 6 Novembre (ponte, dir. S.Stefano)"
+    , { name = "SAN NICOLO' COMELICO via 6 Novembre (ponte, dir. S.Stefano)"
       , code = Id.fromString "97513"
       , commune = "COMELICO SUPERIORE"
       , coordinates =
@@ -47571,8 +47038,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "COLLERUMIZ via Bueriis (fronte Prontoauto, direzione SS 13)"
+    , { name = "COLLERUMIZ via Bueriis (fronte Prontoauto, direzione SS 13)"
       , code = Id.fromString "60764"
       , commune = "TARCENTO"
       , coordinates =
@@ -47590,8 +47056,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "GEMONA via Bariglaria (bivio per ospedale, direzione Carnia)"
+    , { name = "GEMONA via Bariglaria (bivio per ospedale, direzione Carnia)"
       , code = Id.fromString "61069"
       , commune = "GEMONA DEL FRIULI"
       , coordinates =
@@ -47627,8 +47092,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERCIVENTO SS 465 km45,850 (dir.Ravascletto), Puint Stuart"
+    , { name = "CERCIVENTO SS 465 km45,850 (dir.Ravascletto), Puint Stuart"
       , code = Id.fromString "81816"
       , commune = "CERCIVENTO"
       , coordinates =
@@ -47664,8 +47128,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "S.NICOLO' DI COMELICO via Campitello (direzione S.Stefano)"
+    , { name = "S.NICOLO' DI COMELICO via Campitello (direzione S.Stefano)"
       , code = Id.fromString "97904"
       , commune = "SAN NICOLO' DI COMELICO"
       , coordinates =
@@ -47881,8 +47344,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SEDILIS via Bernadia 91 (bivio via Ramandolo, dir. Tarcento)"
+    , { name = "SEDILIS via Bernadia 91 (bivio via Ramandolo, dir. Tarcento)"
       , code = Id.fromString "60790"
       , commune = "TARCENTO"
       , coordinates =
@@ -48359,8 +47821,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 12 della Rosandra 355 (località Dolina)"
+    , { name = "strada provinciale 12 della Rosandra 355 (località Dolina)"
       , code = Id.fromString "D9019"
       , commune = ""
       , coordinates =
@@ -48531,8 +47992,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "POGGIO III ARMATA stazione ferroviaria (direzione Gorizia)"
+    , { name = "POGGIO III ARMATA stazione ferroviaria (direzione Gorizia)"
       , code = Id.fromString "G1707"
       , commune = "SAGRADO"
       , coordinates =
@@ -48640,8 +48100,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "LEONACCO via Vittorio Veneto (bivio Luseriacco, dir.Udine)"
+    , { name = "LEONACCO via Vittorio Veneto (bivio Luseriacco, dir.Udine)"
       , code = Id.fromString "60135"
       , commune = "TRICESIMO"
       , coordinates =
@@ -48668,8 +48127,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "STUDENA BASSA frazione Studena Bassa (ponte, dir. Pontebba)"
+    , { name = "STUDENA BASSA frazione Studena Bassa (ponte, dir. Pontebba)"
       , code = Id.fromString "80838"
       , commune = "PONTEBBA"
       , coordinates =
@@ -49038,8 +48496,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE via Freschi (aree verdi, direz. via del Cotonificio)"
+    , { name = "UDINE via Freschi (aree verdi, direz. via del Cotonificio)"
       , code = Id.fromString "UD264"
       , commune = "UDINE"
       , coordinates =
@@ -49111,8 +48568,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "GRADO via Monfalcone (valle Goppion, direzione Monfalcone)"
+    , { name = "GRADO via Monfalcone (valle Goppion, direzione Monfalcone)"
       , code = Id.fromString "G0901"
       , commune = "GRADO"
       , coordinates =
@@ -49130,8 +48586,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN CANZIAN D'ISONZO via risiera San Sabba 80/82 (Paradiso)"
+    , { name = "SAN CANZIAN D'ISONZO via risiera San Sabba 80/82 (Paradiso)"
       , code = Id.fromString "G1813"
       , commune = "SAN CANZIAN D'ISONZO"
       , coordinates =
@@ -49158,8 +48613,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTEAPERTA via Monte Aperta(dir.Debellis), borgo Cossarutto"
+    , { name = "MONTEAPERTA via Monte Aperta(dir.Debellis), borgo Cossarutto"
       , code = Id.fromString "61452"
       , commune = "TAIPANA"
       , coordinates =
@@ -49213,8 +48667,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRATO CARNICO SS 465 (civ. 91, Casa Popolo dir.Comeglians)"
+    , { name = "PRATO CARNICO SS 465 (civ. 91, Casa Popolo dir.Comeglians)"
       , code = Id.fromString "83022"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -49349,8 +48802,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE P.S.Maria M.(ingr. ospedale, Area 2 dir. Chiusaforte)"
+    , { name = "UDINE P.S.Maria M.(ingr. ospedale, Area 2 dir. Chiusaforte)"
       , code = Id.fromString "UD032"
       , commune = "UDINE"
       , coordinates =
@@ -49386,8 +48838,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "S.GIOVANNI AL N.via Palmarina 38 (distributore, dir.Medeuzza"
+    , { name = "S.GIOVANNI AL N.via Palmarina 38 (distributore, dir.Medeuzza"
       , code = Id.fromString "35339"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -49666,8 +49117,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NATISONE via Bolzano 1 (direzione Statale)"
+    , { name = "SAN GIOVANNI AL NATISONE via Bolzano 1 (direzione Statale)"
       , code = Id.fromString "35398"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -49730,8 +49180,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NATISONE via Palmarina 50 (direione Medeuzza)"
+    , { name = "S.GIOVANNI AL NATISONE via Palmarina 50 (direione Medeuzza)"
       , code = Id.fromString "35338"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -49884,8 +49333,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MOLINIS via Alfieri 2 (bivio Segnacco, direzione Segnacco)"
+    , { name = "MOLINIS via Alfieri 2 (bivio Segnacco, direzione Segnacco)"
       , code = Id.fromString "60717"
       , commune = "TARCENTO"
       , coordinates =
@@ -49921,8 +49369,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "UDINE viale 23 Marzo (fronte civico 44, piazzale D'Annunzio)"
+    , { name = "UDINE viale 23 Marzo (fronte civico 44, piazzale D'Annunzio)"
       , code = Id.fromString "UD506"
       , commune = "UDINE"
       , coordinates =
@@ -49949,8 +49396,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PEZZEIT SP 76 Val Raccolana (bivio, direzione Sella Nevea)"
+    , { name = "PEZZEIT SP 76 Val Raccolana (bivio, direzione Sella Nevea)"
       , code = Id.fromString "80216"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -49986,8 +49432,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "TORSA via Fornaci (fronte civico 101, direzione Flumignano)"
+    , { name = "TORSA via Fornaci (fronte civico 101, direzione Flumignano)"
       , code = Id.fromString "30823"
       , commune = "POCENIA"
       , coordinates =
@@ -49996,8 +49441,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PALAZZOLO DELLO STELLA via Casali Moretton (fronte civico 34"
+    , { name = "PALAZZOLO DELLO STELLA via Casali Moretton (fronte civico 34"
       , code = Id.fromString "30824"
       , commune = "PALAZZOLO DELLO STELLA"
       , coordinates =
@@ -50078,8 +49522,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE viale 25 Aprile (parco D'Olivo, direzione viale Afro)"
+    , { name = "UDINE viale 25 Aprile (parco D'Olivo, direzione viale Afro)"
       , code = Id.fromString "UD507"
       , commune = "UDINE"
       , coordinates =
@@ -50115,8 +49558,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NATISONE via Casali 37 (direzione Bolzano)"
+    , { name = "SAN GIOVANNI AL NATISONE via Casali 37 (direzione Bolzano)"
       , code = Id.fromString "35391"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -50350,8 +49792,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "S.GIOVANNI AL N. via M.di Strada(dir. S.Giovanni), loc.La Br"
+    , { name = "S.GIOVANNI AL N. via M.di Strada(dir. S.Giovanni), loc.La Br"
       , code = Id.fromString "35312"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -50459,8 +49900,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "CASASOLA via Zorutti 120 (bivio borgo Schiratti,  dir.Buja)"
+    , { name = "CASASOLA via Zorutti 120 (bivio borgo Schiratti,  dir.Buja)"
       , code = Id.fromString "51235"
       , commune = "MAJANO"
       , coordinates =
@@ -50487,8 +49927,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BASAGLIAPENTA SP 101 26 (Nucleo Casello, direz. Villaorba)"
+    , { name = "BASAGLIAPENTA SP 101 26 (Nucleo Casello, direz. Villaorba)"
       , code = Id.fromString "40330"
       , commune = "BASILIANO"
       , coordinates =
@@ -50497,8 +49936,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TERZO DI T. SP 21 via Baracca Km 4 (dir.Tolmezzo), Imponzaso"
+    , { name = "TERZO DI T. SP 21 via Baracca Km 4 (dir.Tolmezzo), Imponzaso"
       , code = Id.fromString "81265"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -50624,8 +50062,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERVIGNANO DEL FRIULI via Pradati 12 (lato liceo Einstein)"
+    , { name = "CERVIGNANO DEL FRIULI via Pradati 12 (lato liceo Einstein)"
       , code = Id.fromString "38125"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -50706,8 +50143,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "VILLAORBA piazza della Chiesa 17 (direz. Strada Statale 13)"
+    , { name = "VILLAORBA piazza della Chiesa 17 (direz. Strada Statale 13)"
       , code = Id.fromString "40332"
       , commune = "BASILIANO"
       , coordinates =
@@ -51544,8 +50980,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "VARCH Strada Panoramica Tribil Inf. (centro,dir.Varch bivio)"
+    , { name = "VARCH Strada Panoramica Tribil Inf. (centro,dir.Varch bivio)"
       , code = Id.fromString "35620"
       , commune = "STREGNA"
       , coordinates =
@@ -51572,8 +51007,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "DOLINA Strada Provinciale  45 (civico 1, direzione Azzida)"
+    , { name = "DOLINA Strada Provinciale  45 (civico 1, direzione Azzida)"
       , code = Id.fromString "35718"
       , commune = "GRIMACCO"
       , coordinates =
@@ -51753,8 +51187,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BATTAGLIA via Tagliamento (ang.via Principale, dir.Fagagna)"
+    , { name = "BATTAGLIA via Tagliamento (ang.via Principale, dir.Fagagna)"
       , code = Id.fromString "50510"
       , commune = "FAGAGNA"
       , coordinates =
@@ -51772,8 +51205,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "VILLALTA via Spilimbergo (fronte civico 39, bivio castello)"
+    , { name = "VILLALTA via Spilimbergo (fronte civico 39, bivio castello)"
       , code = Id.fromString "50520"
       , commune = "FAGAGNA"
       , coordinates =
@@ -51845,8 +51277,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "ATTIMIS via Cividale 2 (piazza Zorutti, direzione Cividale)"
+    , { name = "ATTIMIS via Cividale 2 (piazza Zorutti, direzione Cividale)"
       , code = Id.fromString "60528"
       , commune = "ATTIMIS"
       , coordinates =
@@ -51855,8 +51286,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ATTIMIS via Montecroce 22 (Passo M.Croce, direzione Nimis)"
+    , { name = "ATTIMIS via Montecroce 22 (Passo M.Croce, direzione Nimis)"
       , code = Id.fromString "60531"
       , commune = "ATTIMIS"
       , coordinates =
@@ -51901,8 +51331,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "VILLANOVA GROTTE via Villa Nuova (bivio, direzione Tarcento)"
+    , { name = "VILLANOVA GROTTE via Villa Nuova (bivio, direzione Tarcento)"
       , code = Id.fromString "61329"
       , commune = "LUSEVERA"
       , coordinates =
@@ -52298,8 +51727,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "RIVAROTTA via Vittorio Emanuele (fronte civico 52, dir.Teor)"
+    , { name = "RIVAROTTA via Vittorio Emanuele (fronte civico 52, dir.Teor)"
       , code = Id.fromString "31405"
       , commune = "RIVIGNANO TEOR"
       , coordinates =
@@ -52371,8 +51799,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NATISONE via Antica (fronte civico 26, Ipsia)"
+    , { name = "S.GIOVANNI AL NATISONE via Antica (fronte civico 26, Ipsia)"
       , code = Id.fromString "35314"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -52525,8 +51952,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Don Orione (incr. via S.Domenico, dir. Incrocio)"
+    , { name = "UDINE via Don Orione (incr. via S.Domenico, dir. Incrocio)"
       , code = Id.fromString "UD593"
       , commune = "UDINE"
       , coordinates =
@@ -52706,8 +52132,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BASILIANO via 3 Novembre 56 (bivio, provenienza Basiliano)"
+    , { name = "BASILIANO via 3 Novembre 56 (bivio, provenienza Basiliano)"
       , code = Id.fromString "40317"
       , commune = "BASILIANO"
       , coordinates =
@@ -52815,8 +52240,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "NOGAREDO DI PRATO via I Maggio (fronte civico 48, cimitero)"
+    , { name = "NOGAREDO DI PRATO via I Maggio (fronte civico 48, cimitero)"
       , code = Id.fromString "50135"
       , commune = "MARTIGNACCO"
       , coordinates =
@@ -52843,8 +52267,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "PAGNACCO via Colloredo (direz. Colloredo), Casali Modoletto"
+    , { name = "PAGNACCO via Colloredo (direz. Colloredo), Casali Modoletto"
       , code = Id.fromString "50330"
       , commune = "PAGNACCO"
       , coordinates =
@@ -52889,8 +52312,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CIMANO SP del Ponte di Cornino (Dal Piciul, dir.San Daniele)"
+    , { name = "CIMANO SP del Ponte di Cornino (Dal Piciul, dir.San Daniele)"
       , code = Id.fromString "50I07"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -52908,8 +52330,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVE D'ARCANO via S.Martino (fronte 43, direzione Rivotta)"
+    , { name = "RIVE D'ARCANO via S.Martino (fronte 43, direzione Rivotta)"
       , code = Id.fromString "51A17"
       , commune = "RIVE D'ARCANO"
       , coordinates =
@@ -52945,8 +52366,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FELETTANO via Natività (fronte 126, dir.Udine), Monastetto"
+    , { name = "FELETTANO via Natività (fronte 126, dir.Udine), Monastetto"
       , code = Id.fromString "60137"
       , commune = "TRICESIMO"
       , coordinates =
@@ -52982,8 +52402,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VENZONE via Pontebbana (caserma Feruglio, direzione Udine)"
+    , { name = "VENZONE via Pontebbana (caserma Feruglio, direzione Udine)"
       , code = Id.fromString "61207"
       , commune = "VENZONE"
       , coordinates =
@@ -53001,8 +52420,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "PIANI DELLA SEGA SP 76 (bivio Pianatti, direz. Sella Nevea)"
+    , { name = "PIANI DELLA SEGA SP 76 (bivio Pianatti, direz. Sella Nevea)"
       , code = Id.fromString "80218"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -53047,8 +52465,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PIANO D'ARTA via Guglielmo Marconi(bivio Sach, dir.Tolmezzo)"
+    , { name = "PIANO D'ARTA via Guglielmo Marconi(bivio Sach, dir.Tolmezzo)"
       , code = Id.fromString "81305"
       , commune = "ARTA TERME"
       , coordinates =
@@ -53066,8 +52483,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CIMA CORSO Strada Esterna (dir. Cadore), loc.Stali dal Predi"
+    , { name = "CIMA CORSO Strada Esterna (dir. Cadore), loc.Stali dal Predi"
       , code = Id.fromString "83404"
       , commune = "AMPEZZO"
       , coordinates =
@@ -53283,8 +52699,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE piazza del Patriarcato (fronte 1A,palazzo patriarcale)"
+    , { name = "UDINE piazza del Patriarcato (fronte 1A,palazzo patriarcale)"
       , code = Id.fromString "UD056"
       , commune = "UDINE"
       , coordinates =
@@ -53446,8 +52861,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NATISONE  via Casali 72 (direzione Villanova)"
+    , { name = "S.GIOVANNI AL NATISONE  via Casali 72 (direzione Villanova)"
       , code = Id.fromString "35331"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -53546,8 +52960,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MADRISIO DI FAGAGNA via Pozzalis 42 (direz. Rive D'Arcano)"
+    , { name = "MADRISIO DI FAGAGNA via Pozzalis 42 (direz. Rive D'Arcano)"
       , code = Id.fromString "50512"
       , commune = "FAGAGNA"
       , coordinates =
@@ -53619,8 +53032,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Candolini (Dacia Arena parcheggio sud, dir. Fiera)"
+    , { name = "UDINE via Candolini (Dacia Arena parcheggio sud, dir. Fiera)"
       , code = Id.fromString "UD681"
       , commune = "UDINE"
       , coordinates =
@@ -53656,8 +53068,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "DOLEGNANO via Dolegnano di Sopra 25 (centro, dir.S.Giovanni)"
+    , { name = "DOLEGNANO via Dolegnano di Sopra 25 (centro, dir.S.Giovanni)"
       , code = Id.fromString "35384"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -53675,8 +53086,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COCEVARO Strada Provinciale 11 (civico 1, direzione Clenia)"
+    , { name = "COCEVARO Strada Provinciale 11 (civico 1, direzione Clenia)"
       , code = Id.fromString "36136"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -53766,8 +53176,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "CAVALICCO via Molin Nuovo (fronte 3, chiesa direzione Udine)"
+    , { name = "CAVALICCO via Molin Nuovo (fronte 3, chiesa direzione Udine)"
       , code = Id.fromString "50236"
       , commune = "TAVAGNACCO"
       , coordinates =
@@ -53803,8 +53212,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Cerere 30 (incrocio via Osoppo)"
+    , { name = "SAN DANIELE DEL FRIULI via Cerere 30 (incrocio via Osoppo)"
       , code = Id.fromString "50I44"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -53831,8 +53239,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AVILLA via Liberazione 15 (centro, direz. S.Stefano di Buja)"
+    , { name = "AVILLA via Liberazione 15 (centro, direz. S.Stefano di Buja)"
       , code = Id.fromString "51460"
       , commune = "BUJA"
       , coordinates =
@@ -53841,8 +53248,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTEGNACCO via Pontebbana 53 (Alpe Adria, direzione Udine)"
+    , { name = "MONTEGNACCO via Pontebbana 53 (Alpe Adria, direzione Udine)"
       , code = Id.fromString "51634"
       , commune = "CASSACCO"
       , coordinates =
@@ -53851,8 +53257,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CORNINO via Napoleonica 26 (bivio via Costa, dir. Forgaria)"
+    , { name = "CORNINO via Napoleonica 26 (bivio via Costa, dir. Forgaria)"
       , code = Id.fromString "51846"
       , commune = "FORGARIA NEL FRIULI"
       , coordinates =
@@ -53861,8 +53266,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN ROCCO via Collino 7 (angolo via Tambosco, dir. Forgaria)"
+    , { name = "SAN ROCCO via Collino 7 (angolo via Tambosco, dir. Forgaria)"
       , code = Id.fromString "51853"
       , commune = "FORGARIA NEL FRIULI"
       , coordinates =
@@ -53916,8 +53320,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POVOLETTO Z.I. via Giacomo Marchi (fronte 2, direz. Udine)"
+    , { name = "POVOLETTO Z.I. via Giacomo Marchi (fronte 2, direz. Udine)"
       , code = Id.fromString "60338"
       , commune = "POVOLETTO"
       , coordinates =
@@ -53935,8 +53338,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SUBIT via General Cantore (angolo via Gortani, dir. Attimis)"
+    , { name = "SUBIT via General Cantore (angolo via Gortani, dir. Attimis)"
       , code = Id.fromString "60537"
       , commune = "ATTIMIS"
       , coordinates =
@@ -53990,8 +53392,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ARTEGNA via Udine (fronte 25, bivio stazione FS dir. Udine)"
+    , { name = "ARTEGNA via Udine (fronte 25, bivio stazione FS dir. Udine)"
       , code = Id.fromString "60910"
       , commune = "ARTEGNA"
       , coordinates =
@@ -54009,8 +53410,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GEMONA via Bariglaria (fronte 162, bivio ospedale dir.Udine)"
+    , { name = "GEMONA via Bariglaria (fronte 162, bivio ospedale dir.Udine)"
       , code = Id.fromString "61052"
       , commune = "GEMONA DEL FRIULI"
       , coordinates =
@@ -54064,8 +53464,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "BIBIONE viale Italia (fronte 3, dir.autostazione), Lido del"
+    , { name = "BIBIONE viale Italia (fronte 3, dir.autostazione), Lido del"
       , code = Id.fromString "75304"
       , commune = "SAN MICHELE AL TAGLIAM. 2"
       , coordinates =
@@ -54074,8 +53473,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BIBIONE corso del Sole(fronte 170, distributore dir.Lignano)"
+    , { name = "BIBIONE corso del Sole(fronte 170, distributore dir.Lignano)"
       , code = Id.fromString "75314"
       , commune = "SAN MICHELE AL TAGLIAM. 2"
       , coordinates =
@@ -54102,8 +53500,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARVISIO SS 54 via Luigi Cadorna km 94,00 (direzione Udine)"
+    , { name = "TARVISIO SS 54 via Luigi Cadorna km 94,00 (direzione Udine)"
       , code = Id.fromString "80362"
       , commune = "TARVISIO"
       , coordinates =
@@ -54121,8 +53518,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S. CATERINA DI MALBORGHETTO via Fella 14 (direzione Udine)"
+    , { name = "S. CATERINA DI MALBORGHETTO via Fella 14 (direzione Udine)"
       , code = Id.fromString "80409"
       , commune = "MALBORGHETTO VALBRUNA"
       , coordinates =
@@ -54140,8 +53536,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PONTEBBA piazzale Cesare Battisti 3 (stazione FS, dir.Udine)"
+    , { name = "PONTEBBA piazzale Cesare Battisti 3 (stazione FS, dir.Udine)"
       , code = Id.fromString "80820"
       , commune = "PONTEBBA"
       , coordinates =
@@ -54177,8 +53572,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "TERZO DI TOL. via Baracca (fronte 117,dir.Zuglio), Imponzaso"
+    , { name = "TERZO DI TOL. via Baracca (fronte 117,dir.Zuglio), Imponzaso"
       , code = Id.fromString "81236"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -54241,8 +53635,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERCIVENTO SS 465 km 45,850 (dir.Sutrio). Loc.Puint Stuart"
+    , { name = "CERCIVENTO SS 465 km 45,850 (dir.Sutrio). Loc.Puint Stuart"
       , code = Id.fromString "81805"
       , commune = "CERCIVENTO"
       , coordinates =
@@ -54251,8 +53644,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SUTRIO via Pedreit 1 (centro, direzione segheria di Ronco)"
+    , { name = "SUTRIO via Pedreit 1 (centro, direzione segheria di Ronco)"
       , code = Id.fromString "81907"
       , commune = "SUTRIO"
       , coordinates =
@@ -54279,8 +53671,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZOVELLO via Nazionale 11 (direzione Ravascletto), Chiampeis"
+    , { name = "ZOVELLO via Nazionale 11 (direzione Ravascletto), Chiampeis"
       , code = Id.fromString "82603"
       , commune = "RAVASCLETTO"
       , coordinates =
@@ -54793,8 +54184,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BRAZZACCO Str.dei Colli (incr. via del Castello, dir.Moruzzo"
+    , { name = "BRAZZACCO Str.dei Colli (incr. via del Castello, dir.Moruzzo"
       , code = Id.fromString "50422"
       , commune = "MORUZZO"
       , coordinates =
@@ -54821,8 +54211,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "URSININS Strada Provinciale 49 (fronte 51, direzione Rivoli)"
+    , { name = "URSININS Strada Provinciale 49 (fronte 51, direzione Rivoli)"
       , code = Id.fromString "51468"
       , commune = "BUJA"
       , coordinates =
@@ -54867,8 +54256,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MANIAGLIA via Artegna (fronte civico 23, direzione Artegna)"
+    , { name = "MANIAGLIA via Artegna (fronte civico 23, direzione Artegna)"
       , code = Id.fromString "61063"
       , commune = "GEMONA DEL FRIULI"
       , coordinates =
@@ -54904,8 +54292,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ALLEGNIDIS SP 44 (campo sportivo, direzione Buttea), Porteal"
+    , { name = "ALLEGNIDIS SP 44 (campo sportivo, direzione Buttea), Porteal"
       , code = Id.fromString "82128"
       , commune = "LAUCO"
       , coordinates =
@@ -54923,8 +54310,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLA SANTINA via Monte Grappa 2 (bivio Lauco, direz. Lauco)"
+    , { name = "VILLA SANTINA via Monte Grappa 2 (bivio Lauco, direz. Lauco)"
       , code = Id.fromString "82207"
       , commune = "VILLA SANTINA"
       , coordinates =
@@ -54978,8 +54364,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOCALITA' MAURIA Strada Statale 52 (hotel, direz. Tolmezzo)"
+    , { name = "LOCALITA' MAURIA Strada Statale 52 (hotel, direz. Tolmezzo)"
       , code = Id.fromString "83222"
       , commune = "FORNI DI SOPRA"
       , coordinates =
@@ -55006,8 +54391,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VALLESELLA via dell'Occhiale (bivio Grea, direzione Pieve)"
+    , { name = "VALLESELLA via dell'Occhiale (bivio Grea, direzione Pieve)"
       , code = Id.fromString "95322"
       , commune = "DOMEGGE DI CADORE"
       , coordinates =
@@ -55016,8 +54400,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SESTO via Dolomiti (parcheggio Hofer, direzione S.Stefano)"
+    , { name = "SESTO via Dolomiti (parcheggio Hofer, direzione S.Stefano)"
       , code = Id.fromString "97713"
       , commune = "SESTO-SEXTEN"
       , coordinates =
@@ -55035,8 +54418,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.NICOLO' DI COMELICO via Campitello 37 (direz. San Candido)"
+    , { name = "S.NICOLO' DI COMELICO via Campitello 37 (direz. San Candido)"
       , code = Id.fromString "97902"
       , commune = "SAN NICOLO' DI COMELICO"
       , coordinates =
@@ -55657,8 +55039,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PETERNEL Strada Provinciale 45 (civico 7, direzione Drenchia"
+    , { name = "PETERNEL Strada Provinciale 45 (civico 7, direzione Drenchia"
       , code = Id.fromString "35822"
       , commune = "DRENCHIA"
       , coordinates =
@@ -55703,8 +55084,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PADOLA via Monte Croce 2 (albergo, direzione Santo Stefano)"
+    , { name = "PADOLA via Monte Croce 2 (albergo, direzione Santo Stefano)"
       , code = Id.fromString "97516"
       , commune = "COMELICO SUPERIORE"
       , coordinates =
@@ -55920,8 +55300,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ORSARIA DI PREMARIACCO via Cividale 35 (dir.Udine), Fanfani"
+    , { name = "ORSARIA DI PREMARIACCO via Cividale 35 (dir.Udine), Fanfani"
       , code = Id.fromString "36320"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -56191,8 +55570,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "strada provinciale 1 del Carso 29 (monumento di Trebiciano)"
+    , { name = "strada provinciale 1 del Carso 29 (monumento di Trebiciano)"
       , code = Id.fromString "D1003"
       , commune = "TRIESTE"
       , coordinates =
@@ -56219,8 +55597,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 1 del Carso 354 (scuola di Santa Croce)"
+    , { name = "strada provinciale 1 del Carso 354 (scuola di Santa Croce)"
       , code = Id.fromString "D4026"
       , commune = "TRIESTE"
       , coordinates =
@@ -56292,8 +55669,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 8 di Monrupino 45 (municipio di Sgonico)"
+    , { name = "strada provinciale 8 di Monrupino 45 (municipio di Sgonico)"
       , code = Id.fromString "D7062"
       , commune = ""
       , coordinates =
@@ -56842,8 +56218,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "BIBIONE via Orsa Maggiore (rotonda supermercato, dir.terme)"
+    , { name = "BIBIONE via Orsa Maggiore (rotonda supermercato, dir.terme)"
       , code = Id.fromString "V3482"
       , commune = "SAN MICHELE AL TAGLIAM. 2"
       , coordinates =
@@ -56888,8 +56263,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FAEDIS via dei Castelli 87 (direz. Udine), borgo S.Anastasia"
+    , { name = "FAEDIS via dei Castelli 87 (direz. Udine), borgo S.Anastasia"
       , code = Id.fromString "60437"
       , commune = "FAEDIS"
       , coordinates =
@@ -56898,8 +56272,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GEMONA via Campagnola 47 (Casa Cantoniera, direzione Udine)"
+    , { name = "GEMONA via Campagnola 47 (Casa Cantoniera, direzione Udine)"
       , code = Id.fromString "61055"
       , commune = "GEMONA DEL FRIULI"
       , coordinates =
@@ -56935,8 +56308,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PIETRATAGLIATA (bivio Strada Regionale 13, direzione Carnia)"
+    , { name = "PIETRATAGLIATA (bivio Strada Regionale 13, direzione Carnia)"
       , code = Id.fromString "80816"
       , commune = "PONTEBBA"
       , coordinates =
@@ -56981,8 +56353,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "VENZONE via Pontebbana (fronte 42, bivio stazione dir.Udine)"
+    , { name = "VENZONE via Pontebbana (fronte 42, bivio stazione dir.Udine)"
       , code = Id.fromString "61210"
       , commune = "VENZONE"
       , coordinates =
@@ -56991,8 +56362,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "DOMEGGE DI CADORE via Risorgimento (albergo, direz. Pieve)"
+    , { name = "DOMEGGE DI CADORE via Risorgimento (albergo, direz. Pieve)"
       , code = Id.fromString "95311"
       , commune = "DOMEGGE DI CADORE"
       , coordinates =
@@ -57478,8 +56848,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Rodeano 13 (fronte bar Zebretta)"
+    , { name = "SAN DANIELE DEL FRIULI via Rodeano 13 (fronte bar Zebretta)"
       , code = Id.fromString "50I99"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -57515,8 +56884,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAPORIACCO via San Daniele (trattoria, direzione Codugnella)"
+    , { name = "CAPORIACCO via San Daniele (trattoria, direzione Codugnella)"
       , code = Id.fromString "51119"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -57588,8 +56956,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "BIBIONE via Orsa Maggiore (rotonda market, dir.autostazione)"
+    , { name = "BIBIONE via Orsa Maggiore (rotonda market, dir.autostazione)"
       , code = Id.fromString "V3483"
       , commune = "SAN MICHELE AL TAGLIAM. 2"
       , coordinates =
@@ -57616,8 +56983,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "ADEGLIACCO via Nazionale (rotonda Euromercato, dir.Gemona)"
+    , { name = "ADEGLIACCO via Nazionale (rotonda Euromercato, dir.Gemona)"
       , code = Id.fromString "50211"
       , commune = "TAVAGNACCO"
       , coordinates =
@@ -57626,8 +56992,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TIVERIACCO via Osoppo (fronte civico 109), loc.Ponte Ledra"
+    , { name = "TIVERIACCO via Osoppo (fronte civico 109), loc.Ponte Ledra"
       , code = Id.fromString "51249"
       , commune = "MAJANO"
       , coordinates =
@@ -57771,8 +57136,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "NOIARETTO Panoramica delle Vette (bivio, direzione Tualis)"
+    , { name = "NOIARETTO Panoramica delle Vette (bivio, direzione Tualis)"
       , code = Id.fromString "82718"
       , commune = "COMEGLIANS"
       , coordinates =
@@ -58123,8 +57487,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RIVIGNANO via 8 Bersaglieri 188 (direz.Ariis), Casali Falt"
+    , { name = "RIVIGNANO via 8 Bersaglieri 188 (direz.Ariis), Casali Falt"
       , code = Id.fromString "30716"
       , commune = "RIVIGNANO TEOR"
       , coordinates =
@@ -58160,8 +57523,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOGLIANO via Cividale (fronte 24, monumento dir. Cividale)"
+    , { name = "TOGLIANO via Cividale (fronte 24, monumento dir. Cividale)"
       , code = Id.fromString "36921"
       , commune = "TORREANO"
       , coordinates =
@@ -58170,8 +57532,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOGLIANO via dei Laghi 28 (prosciuttificio, dir. Cividale)"
+    , { name = "TOGLIANO via dei Laghi 28 (prosciuttificio, dir. Cividale)"
       , code = Id.fromString "36922"
       , commune = "TORREANO"
       , coordinates =
@@ -58180,8 +57541,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CHIARMACIS CAMPOLONGHETTO via 24 Maggio 38 (direzione Udine)"
+    , { name = "CHIARMACIS CAMPOLONGHETTO via 24 Maggio 38 (direzione Udine)"
       , code = Id.fromString "37715"
       , commune = "BAGNARIA ARSA"
       , coordinates =
@@ -58217,8 +57577,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAPORIACCO via San Daniele 36 (castello, provenienza centro)"
+    , { name = "CAPORIACCO via San Daniele 36 (castello, provenienza centro)"
       , code = Id.fromString "51141"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -58623,8 +57982,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PETERNEL Strada Provinciale 45 (civico 2, direzione Azzida)"
+    , { name = "PETERNEL Strada Provinciale 45 (civico 2, direzione Azzida)"
       , code = Id.fromString "35808"
       , commune = "DRENCHIA"
       , coordinates =
@@ -58723,8 +58081,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPEGLIO via Soffumbergo 116 (mulino, direzione Cividale)"
+    , { name = "CAMPEGLIO via Soffumbergo 116 (mulino, direzione Cividale)"
       , code = Id.fromString "60429"
       , commune = "FAEDIS"
       , coordinates =
@@ -58733,8 +58090,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERGNEU INFERIORE via G. Verdi 26 (direzione Cergneu Sup.)"
+    , { name = "CERGNEU INFERIORE via G. Verdi 26 (direzione Cergneu Sup.)"
       , code = Id.fromString "60638"
       , commune = "NIMIS"
       , coordinates =
@@ -58788,8 +58144,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "PRATO DI RESIA via S.Giorgio (dir.San Giorgio), loc. Varcota"
+    , { name = "PRATO DI RESIA via S.Giorgio (dir.San Giorgio), loc. Varcota"
       , code = Id.fromString "80113"
       , commune = "RESIA"
       , coordinates =
@@ -58807,8 +58162,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ARTA TERME via Nazionale (bivio terme, direzione Tolmezzo)"
+    , { name = "ARTA TERME via Nazionale (bivio terme, direzione Tolmezzo)"
       , code = Id.fromString "81355"
       , commune = "ARTA TERME"
       , coordinates =
@@ -59024,8 +58378,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RAVASCLETTO via Belvedere (direzione Salars), Borgata Stalis"
+    , { name = "RAVASCLETTO via Belvedere (direzione Salars), Borgata Stalis"
       , code = Id.fromString "82608"
       , commune = "RAVASCLETTO"
       , coordinates =
@@ -59034,8 +58387,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "strada provinciale 19 di Gropada 92 (scuola dell'infanzia)"
+    , { name = "strada provinciale 19 di Gropada 92 (scuola dell'infanzia)"
       , code = Id.fromString "D0008"
       , commune = "TRIESTE"
       , coordinates =
@@ -59044,8 +58396,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 1 del Carso 354 (scuola di Santa Croce)"
+    , { name = "strada provinciale 1 del Carso 354 (scuola di Santa Croce)"
       , code = Id.fromString "D4027"
       , commune = "TRIESTE"
       , coordinates =
@@ -59189,8 +58540,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "CARPENETO via Maria Antonini 16 (centro, direzione Pozzuolo)"
+    , { name = "CARPENETO via Maria Antonini 16 (centro, direzione Pozzuolo)"
       , code = Id.fromString "38807"
       , commune = "POZZUOLO DEL FRIULI"
       , coordinates =
@@ -59514,8 +58864,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LATISANA via Sabbionera (angolo via Mauro, direz.ospedale)"
+    , { name = "LATISANA via Sabbionera (angolo via Mauro, direz.ospedale)"
       , code = Id.fromString "31644"
       , commune = "LATISANA"
       , coordinates =
@@ -59605,8 +58954,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "STUDENA BASSA fraz.Studena Bassa (latteria, dir. Pontebba)"
+    , { name = "STUDENA BASSA fraz.Studena Bassa (latteria, dir. Pontebba)"
       , code = Id.fromString "80839"
       , commune = "PONTEBBA"
       , coordinates =
@@ -59705,8 +59053,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "AUSSA CORNO Z.I. via Fermi 30 (Friultrans, prov. S.Giorgio)"
+    , { name = "AUSSA CORNO Z.I. via Fermi 30 (Friultrans, prov. S.Giorgio)"
       , code = Id.fromString "31A11"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -59832,8 +59179,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "TRIESTE piazza Guglielmo Oberdan 7 (angolo via XXIV Maggio)"
+    , { name = "TRIESTE piazza Guglielmo Oberdan 7 (angolo via XXIV Maggio)"
       , code = Id.fromString "10009"
       , commune = "TRIESTE"
       , coordinates =
@@ -59941,8 +59287,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "ORSARIA DI PREMARIACCO via Aldo Moro 1 (direzione Cividale)"
+    , { name = "ORSARIA DI PREMARIACCO via Aldo Moro 1 (direzione Cividale)"
       , code = Id.fromString "36329"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -59969,8 +59314,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN PIETRO AL NAT. via Alpe Adria (fronte civico 91, centro)"
+    , { name = "SAN PIETRO AL NAT. via Alpe Adria (fronte civico 91, centro)"
       , code = Id.fromString "36101"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -59979,8 +59323,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SPAGNUT DI PULFERO Strada di S.Giovanni D'Antro (dir.Vernass"
+    , { name = "SPAGNUT DI PULFERO Strada di S.Giovanni D'Antro (dir.Vernass"
       , code = Id.fromString "36142"
       , commune = "PULFERO"
       , coordinates =
@@ -60178,8 +59521,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POZZECCO via A. Manzoni 39 (bivio monumento, dir.Galleriano)"
+    , { name = "POZZECCO via A. Manzoni 39 (bivio monumento, dir.Galleriano)"
       , code = Id.fromString "40507"
       , commune = "BERTIOLO"
       , coordinates =
@@ -60575,8 +59917,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Colugna (fronte 147, chiesa B.Vergine di Fatima)"
+    , { name = "UDINE via Colugna (fronte 147, chiesa B.Vergine di Fatima)"
       , code = Id.fromString "UD178"
       , commune = "UDINE"
       , coordinates =
@@ -60801,8 +60142,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "RAVASCLETTO via Belvedere (dir. Ravascletto), Borgata Stalis"
+    , { name = "RAVASCLETTO via Belvedere (dir. Ravascletto), Borgata Stalis"
       , code = Id.fromString "82649"
       , commune = "RAVASCLETTO"
       , coordinates =
@@ -60838,8 +60178,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FORNI DI SOTTO via Nazionale (segheria), località Colareit"
+    , { name = "FORNI DI SOTTO via Nazionale (segheria), località Colareit"
       , code = Id.fromString "83304"
       , commune = "FORNI DI SOTTO"
       , coordinates =
@@ -60848,8 +60187,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CROCE Strada Statale 465 (bivio Sostasio, direz. Pesariis)"
+    , { name = "CROCE Strada Statale 465 (bivio Sostasio, direz. Pesariis)"
       , code = Id.fromString "83017"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -60939,8 +60277,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPOFORMIDO via Principe di Udine (fronte 140, SteelJobs)"
+    , { name = "CAMPOFORMIDO via Principe di Udine (fronte 140, SteelJobs)"
       , code = Id.fromString "40115"
       , commune = "CAMPOFORMIDO"
       , coordinates =
@@ -60976,8 +60313,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "REDENZICCO via Redentore 31 (centro, direzione  S.Odorico)"
+    , { name = "REDENZICCO via Redentore 31 (centro, direzione  S.Odorico)"
       , code = Id.fromString "40933"
       , commune = "SEDEGLIANO"
       , coordinates =
@@ -61076,8 +60412,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI IN COLLE via del Tennis 32 (direzione Madrisio)"
+    , { name = "S.GIOVANNI IN COLLE via del Tennis 32 (direzione Madrisio)"
       , code = Id.fromString "50541"
       , commune = "FAGAGNA"
       , coordinates =
@@ -61122,8 +60457,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RASPANO viale Bindo Chiurlo (incr.via Manzoni, dir.Cassacco)"
+    , { name = "RASPANO viale Bindo Chiurlo (incr.via Manzoni, dir.Cassacco)"
       , code = Id.fromString "51627"
       , commune = "CASSACCO"
       , coordinates =
@@ -61159,8 +60493,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIACOMO via San Daniele 2 (poste, direzione S.Daniele)"
+    , { name = "SAN GIACOMO via San Daniele 2 (poste, direzione S.Daniele)"
       , code = Id.fromString "51323"
       , commune = "RAGOGNA"
       , coordinates =
@@ -61187,8 +60520,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VENDOGLIO via Zardini 4 (direzione Cassacco), borgo Moretti"
+    , { name = "VENDOGLIO via Zardini 4 (direzione Cassacco), borgo Moretti"
       , code = Id.fromString "51521"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -61269,8 +60601,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "TRICESIMO via dei Caduti (incr. via Roncuz, direzione Udine)"
+    , { name = "TRICESIMO via dei Caduti (incr. via Roncuz, direzione Udine)"
       , code = Id.fromString "60156"
       , commune = "TRICESIMO"
       , coordinates =
@@ -61306,8 +60637,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GRIONS DEL TORRE via Monte Emilius (Maddalena, dir.Cividale)"
+    , { name = "GRIONS DEL TORRE via Monte Emilius (Maddalena, dir.Cividale)"
       , code = Id.fromString "60345"
       , commune = "POVOLETTO"
       , coordinates =
@@ -61361,8 +60691,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SEDILIS via Bernadia 31 (direzione Tarcento), borgo Bovolett"
+    , { name = "SEDILIS via Bernadia 31 (direzione Tarcento), borgo Bovolett"
       , code = Id.fromString "60754"
       , commune = "TARCENTO"
       , coordinates =
@@ -61542,8 +60871,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BEVORCHIANS SP 112 (bivio loc.Gialloz-Cjampiui, dir. centro)"
+    , { name = "BEVORCHIANS SP 112 (bivio loc.Gialloz-Cjampiui, dir. centro)"
       , code = Id.fromString "80715"
       , commune = "MOGGIO UDINESE"
       , coordinates =
@@ -61561,8 +60889,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOLMEZZO via Illegio 34 (direz. Illegio), località Betania"
+    , { name = "TOLMEZZO via Illegio 34 (direz. Illegio), località Betania"
       , code = Id.fromString "81206"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -61688,8 +61015,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NAT. via Casali 1 (direzione SP Palmarina)"
+    , { name = "SAN GIOVANNI AL NAT. via Casali 1 (direzione SP Palmarina)"
       , code = Id.fromString "35307"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -61698,8 +61024,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NAT. via Cascina Rinaldi (direzione Dolegnano)"
+    , { name = "S.GIOVANNI AL NAT. via Cascina Rinaldi (direzione Dolegnano)"
       , code = Id.fromString "35324"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -61708,8 +61033,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NAT. via C.Rinaldi 38 (ex Fiam, dir.Dolegnano)"
+    , { name = "S.GIOVANNI AL NAT. via C.Rinaldi 38 (ex Fiam, dir.Dolegnano)"
       , code = Id.fromString "35325"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -61817,8 +61141,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SOPRAMONTE DI BUJA via Sopramonte 116 (incrocio via Ledra)"
+    , { name = "SOPRAMONTE DI BUJA via Sopramonte 116 (incrocio via Ledra)"
       , code = Id.fromString "51472"
       , commune = "BUJA"
       , coordinates =
@@ -61962,8 +61285,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CALALZO via Nazionale 27 (bivio Marmarole, direzione Pieve)"
+    , { name = "CALALZO via Nazionale 27 (bivio Marmarole, direzione Pieve)"
       , code = Id.fromString "95303"
       , commune = "PIEVE DI CADORE"
       , coordinates =
@@ -62287,8 +61609,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO CARNICO via Dante 69 (direzione Paluzza), loc. Siaio"
+    , { name = "TREPPO CARNICO via Dante 69 (direzione Paluzza), loc. Siaio"
       , code = Id.fromString "81617"
       , commune = "TREPPO CARNICO"
       , coordinates =
@@ -62891,8 +62212,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "TRICESIMO via Nazionale 8 (piazza Mazzini, direzione Udine)"
+    , { name = "TRICESIMO via Nazionale 8 (piazza Mazzini, direzione Udine)"
       , code = Id.fromString "60101"
       , commune = "TRICESIMO"
       , coordinates =
@@ -63009,8 +62329,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "BASALDELLA DI CAMPOFORMIDO via del Molino (fronte civico 40)"
+    , { name = "BASALDELLA DI CAMPOFORMIDO via del Molino (fronte civico 40)"
       , code = Id.fromString "UD710"
       , commune = "CAMPOFORMIDO"
       , coordinates =
@@ -63649,8 +62968,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BASALDELLA DI CAMPOFORMIDO via Adriatica (fronte 120, parco)"
+    , { name = "BASALDELLA DI CAMPOFORMIDO via Adriatica (fronte 120, parco)"
       , code = Id.fromString "UD003"
       , commune = "CAMPOFORMIDO"
       , coordinates =
@@ -63785,8 +63103,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE viale Forze Armate (incr. via Bariglaria, dir.centro)"
+    , { name = "UDINE viale Forze Armate (incr. via Bariglaria, dir.centro)"
       , code = Id.fromString "UD527"
       , commune = "UDINE"
       , coordinates =
@@ -64110,8 +63427,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZOMPICCHIA DI CODROIPO piazza Aquileia 1 (direz. Codroipo)"
+    , { name = "ZOMPICCHIA DI CODROIPO piazza Aquileia 1 (direz. Codroipo)"
       , code = Id.fromString "40846"
       , commune = "CODROIPO"
       , coordinates =
@@ -64246,8 +63562,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "VALBRUNA via Lussari (bivio ex Stazione, direzione Tarvisio)"
+    , { name = "VALBRUNA via Lussari (bivio ex Stazione, direzione Tarvisio)"
       , code = Id.fromString "80308"
       , commune = "TARVISIO"
       , coordinates =
@@ -64292,8 +63607,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLA SANTINA SP355 borgo Moia 7 (bivio Val Degano, dir.Vill"
+    , { name = "VILLA SANTINA SP355 borgo Moia 7 (bivio Val Degano, dir.Vill"
       , code = Id.fromString "82205"
       , commune = "VILLA SANTINA"
       , coordinates =
@@ -64329,8 +63643,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 5 di San Pelagio 54 (passaggio livello)"
+    , { name = "strada provinciale 5 di San Pelagio 54 (passaggio livello)"
       , code = Id.fromString "D6085"
       , commune = ""
       , coordinates =
@@ -64339,8 +63652,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 5 di San Pelagio 63 (passaggio livello)"
+    , { name = "strada provinciale 5 di San Pelagio 63 (passaggio livello)"
       , code = Id.fromString "D6086"
       , commune = ""
       , coordinates =
@@ -64817,8 +64129,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERVIGNANO DEL FRIULI via Chiozza 1 (caserma, direz. centro)"
+    , { name = "CERVIGNANO DEL FRIULI via Chiozza 1 (caserma, direz. centro)"
       , code = Id.fromString "38127"
       , commune = "CERVIGNANO DEL FRIULI"
       , coordinates =
@@ -64917,8 +64228,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TORREANO via delle Cave (fronte 96, incrocio via Castello)"
+    , { name = "TORREANO via delle Cave (fronte 96, incrocio via Castello)"
       , code = Id.fromString "36938"
       , commune = "TORREANO"
       , coordinates =
@@ -64945,8 +64255,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MAGREDIS via Giuseppe Ellero 7 (canonica, direzione Udine)"
+    , { name = "MAGREDIS via Giuseppe Ellero 7 (canonica, direzione Udine)"
       , code = Id.fromString "60347"
       , commune = "POVOLETTO"
       , coordinates =
@@ -65072,8 +64381,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "via di Prosecco 44 (angolo strada provinciale 1 del Carso)"
+    , { name = "via di Prosecco 44 (angolo strada provinciale 1 del Carso)"
       , code = Id.fromString "D3010"
       , commune = "TRIESTE"
       , coordinates =
@@ -65379,8 +64687,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "strada provinciale 28 di Monrupino 45 (municipio di Sgonico)"
+    , { name = "strada provinciale 28 di Monrupino 45 (municipio di Sgonico)"
       , code = Id.fromString "D7026"
       , commune = ""
       , coordinates =
@@ -65443,8 +64750,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARPEZZO Strada Provinciale 11 (civico 2, bivio dir. Clenia)"
+    , { name = "TARPEZZO Strada Provinciale 11 (civico 2, bivio dir. Clenia)"
       , code = Id.fromString "36135"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -65471,8 +64777,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL N.via M.Di Strada(dir. Medeuzza), loc.La Brava"
+    , { name = "S.GIOVANNI AL N.via M.Di Strada(dir. Medeuzza), loc.La Brava"
       , code = Id.fromString "35337"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -65643,8 +64948,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MEDEUZZA via Francesco Baracca 51 (direzione San Giovanni)"
+    , { name = "MEDEUZZA via Francesco Baracca 51 (direzione San Giovanni)"
       , code = Id.fromString "35381"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -65770,8 +65074,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GORIZIA San Roc di Luzzinis (direzione Gorizia posta c.le)"
+    , { name = "GORIZIA San Roc di Luzzinis (direzione Gorizia posta c.le)"
       , code = Id.fromString "G7220"
       , commune = "GORIZIA"
       , coordinates =
@@ -65987,8 +65290,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BASALDELLA DI CAMPOFORMIDO via Verdi 125 (rot. S.Sebastiano)"
+    , { name = "BASALDELLA DI CAMPOFORMIDO via Verdi 125 (rot. S.Sebastiano)"
       , code = Id.fromString "UD004"
       , commune = "CAMPOFORMIDO"
       , coordinates =
@@ -65997,8 +65299,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE viale Volontari della Libertà 61 (piazzale Chiavris)"
+    , { name = "UDINE viale Volontari della Libertà 61 (piazzale Chiavris)"
       , code = Id.fromString "UD082"
       , commune = "UDINE"
       , coordinates =
@@ -66016,8 +65317,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "VILLA PRIMAVERA viale delle Rose (angolo via Santa Caterina)"
+    , { name = "VILLA PRIMAVERA viale delle Rose (angolo via Santa Caterina)"
       , code = Id.fromString "UD085"
       , commune = "CAMPOFORMIDO"
       , coordinates =
@@ -66071,8 +65371,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "S.DANIELE DEL FR. via Osoppo 169 (pizzeria, dir.San Daniele)"
+    , { name = "S.DANIELE DEL FR. via Osoppo 169 (pizzeria, dir.San Daniele)"
       , code = Id.fromString "50I58"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -66198,8 +65497,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PERTEGADA via Lignano Sabbiadoro 82 (semaforo, dir.Lignano)"
+    , { name = "PERTEGADA via Lignano Sabbiadoro 82 (semaforo, dir.Lignano)"
       , code = Id.fromString "31652"
       , commune = "LATISANA"
       , coordinates =
@@ -66217,8 +65515,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VARCH Strada Panoramica Tribil Inf. 10 (centro, dir.Tribil)"
+    , { name = "VARCH Strada Panoramica Tribil Inf. 10 (centro, dir.Tribil)"
       , code = Id.fromString "35607"
       , commune = "STREGNA"
       , coordinates =
@@ -66227,8 +65524,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PERTEGADA via Lignano Sabb.(angolo via Casette, dir.Lignano)"
+    , { name = "PERTEGADA via Lignano Sabb.(angolo via Casette, dir.Lignano)"
       , code = Id.fromString "31654"
       , commune = "LATISANA"
       , coordinates =
@@ -66282,8 +65578,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO PICCOLO via Vittorio Veneto (fr. 1, lato via Ellero)"
+    , { name = "TREPPO PICCOLO via Vittorio Veneto (fr. 1, lato via Ellero)"
       , code = Id.fromString "51537"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -66328,8 +65623,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MAGNANO IN RIVIERA via Nazionale (fronte 76, bivio Tarcento)"
+    , { name = "MAGNANO IN RIVIERA via Nazionale (fronte 76, bivio Tarcento)"
       , code = Id.fromString "60853"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -66338,8 +65632,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VEDRONZA Strada Turistica Monteaperta (bivio, dir.Lusevera)"
+    , { name = "VEDRONZA Strada Turistica Monteaperta (bivio, dir.Lusevera)"
       , code = Id.fromString "61335"
       , commune = "LUSEVERA"
       , coordinates =
@@ -66366,8 +65659,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "VILLA SANTINA SP 355 Borgo Moia 15 (bivio, direzione Raveo)"
+    , { name = "VILLA SANTINA SP 355 Borgo Moia 15 (bivio, direzione Raveo)"
       , code = Id.fromString "82215"
       , commune = "VILLA SANTINA"
       , coordinates =
@@ -66556,8 +65848,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "S.DANIELE DEL F.via Carnia 35 (pizzeria, dir. San Daniele)"
+    , { name = "S.DANIELE DEL F.via Carnia 35 (pizzeria, dir. San Daniele)"
       , code = Id.fromString "50I42"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -66863,8 +66154,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TIGLIO Strada Statale 54 (civico 14, direz. Lasiz Pulfero)"
+    , { name = "TIGLIO Strada Statale 54 (civico 14, direz. Lasiz Pulfero)"
       , code = Id.fromString "36138"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -67224,8 +66514,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PIANI DI CHIUSAFORTE SP 76 Val Raccolana (prov.Sella Nevea)"
+    , { name = "PIANI DI CHIUSAFORTE SP 76 Val Raccolana (prov.Sella Nevea)"
       , code = Id.fromString "80224"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -67324,8 +66613,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GRIONS DEL TORRE via Repubblica (fronte 90, serre dir.Udine)"
+    , { name = "GRIONS DEL TORRE via Repubblica (fronte 90, serre dir.Udine)"
       , code = Id.fromString "60364"
       , commune = "POVOLETTO"
       , coordinates =
@@ -67334,8 +66622,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PIANO D'ARTA viale delle Terme (Edelweiss, direzione centro)"
+    , { name = "PIANO D'ARTA viale delle Terme (Edelweiss, direzione centro)"
       , code = Id.fromString "81353"
       , commune = "ARTA TERME"
       , coordinates =
@@ -67398,8 +66685,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PARTISTAGNO via Attimis (direzione Tarcento), borgo Piccoli"
+    , { name = "PARTISTAGNO via Attimis (direzione Tarcento), borgo Piccoli"
       , code = Id.fromString "60544"
       , commune = "ATTIMIS"
       , coordinates =
@@ -67426,8 +66712,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOCALITA' BAN DI CECH Strada Provinciale 40 (dir.Arta Terme)"
+    , { name = "LOCALITA' BAN DI CECH Strada Provinciale 40 (dir.Arta Terme)"
       , code = Id.fromString "81342"
       , commune = "ARTA TERME"
       , coordinates =
@@ -67499,8 +66784,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "CEDARCHIS Strada Provinciale 23 (ponte, direzione Paularo)"
+    , { name = "CEDARCHIS Strada Provinciale 23 (ponte, direzione Paularo)"
       , code = Id.fromString "81348"
       , commune = "ARTA TERME"
       , coordinates =
@@ -67599,8 +66883,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Cerere 41 (incrocio via Osoppo)"
+    , { name = "SAN DANIELE DEL FRIULI via Cerere 41 (incrocio via Osoppo)"
       , code = Id.fromString "50I69"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -67618,8 +66901,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO PICCOLO via Ellero (direz. Vendoglio), borgo Lucchis"
+    , { name = "TREPPO PICCOLO via Ellero (direz. Vendoglio), borgo Lucchis"
       , code = Id.fromString "51535"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -67637,8 +66919,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "FELETTANO via della Natività 126 (dir.Tricesimo), Monastetto"
+    , { name = "FELETTANO via della Natività 126 (dir.Tricesimo), Monastetto"
       , code = Id.fromString "60167"
       , commune = "TRICESIMO"
       , coordinates =
@@ -67674,8 +66955,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAMMARDENCHIA DI TARCENTO via Sammardenchia (lato cimitero)"
+    , { name = "SAMMARDENCHIA DI TARCENTO via Sammardenchia (lato cimitero)"
       , code = Id.fromString "60755"
       , commune = "TARCENTO"
       , coordinates =
@@ -67693,8 +66973,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TERZO DI TOLM. via Baracca (angolo via Camarin, dir. Zuglio)"
+    , { name = "TERZO DI TOLM. via Baracca (angolo via Camarin, dir. Zuglio)"
       , code = Id.fromString "81237"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -67703,8 +66982,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TERZO DI TOLMEZZO via Baracca (fronte 20, bivio Lorenzaso)"
+    , { name = "TERZO DI TOLMEZZO via Baracca (fronte 20, bivio Lorenzaso)"
       , code = Id.fromString "81238"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -67992,8 +67270,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "NOGAREDO DI PRATO via I Maggio 46 (cimitero, direz. Udine)"
+    , { name = "NOGAREDO DI PRATO via I Maggio 46 (cimitero, direz. Udine)"
       , code = Id.fromString "50149"
       , commune = "MARTIGNACCO"
       , coordinates =
@@ -68083,8 +67360,7 @@ stops =
             }
       , services = [ Types.Maritime ]
       }
-    , { name =
-            "GOREGNAVAS Strada Comunale Calla Zapatacco (dir.Montefosca)"
+    , { name = "GOREGNAVAS Strada Comunale Calla Zapatacco (dir.Montefosca)"
       , code = Id.fromString "37A32"
       , commune = "PULFERO"
       , coordinates =
@@ -68174,8 +67450,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POVOLETTO via Dante Alighieri 3 (municipio, direzione Udine)"
+    , { name = "POVOLETTO via Dante Alighieri 3 (municipio, direzione Udine)"
       , code = Id.fromString "60362"
       , commune = "POVOLETTO"
       , coordinates =
@@ -68184,8 +67459,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Trento Trieste 145 (fronte bar)"
+    , { name = "SAN DANIELE DEL FRIULI via Trento Trieste 145 (fronte bar)"
       , code = Id.fromString "50I63"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -68203,8 +67477,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Carnia 66 (pizzeria, dir.Majano)"
+    , { name = "SAN DANIELE DEL FRIULI via Carnia 66 (pizzeria, dir.Majano)"
       , code = Id.fromString "50I68"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -68213,8 +67486,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO PICCOLO via Tricesimo (dir. Cassacco), borgo Lucchis"
+    , { name = "TREPPO PICCOLO via Tricesimo (dir. Cassacco), borgo Lucchis"
       , code = Id.fromString "51524"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -68268,8 +67540,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AUSSA CORNO Z.I. via Fermi 15 (Nuova Sguassero, direz.Udine)"
+    , { name = "AUSSA CORNO Z.I. via Fermi 15 (Nuova Sguassero, direz.Udine)"
       , code = Id.fromString "31A28"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -68431,8 +67702,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "AUSSA CORNO Z.I. via Fermi (fronte Glass Italy, direz.Udine)"
+    , { name = "AUSSA CORNO Z.I. via Fermi (fronte Glass Italy, direz.Udine)"
       , code = Id.fromString "31A30"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -68477,8 +67747,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SAMMARDENCHIA DI T. via Sammardenchia (case pop., dir.Tarcen"
+    , { name = "SAMMARDENCHIA DI T. via Sammardenchia (case pop., dir.Tarcen"
       , code = Id.fromString "60756"
       , commune = "TARCENTO"
       , coordinates =
@@ -68568,8 +67837,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRATO CARNICO SS 465 (civ. 85, dir.Pesariis), loc. Muliton"
+    , { name = "PRATO CARNICO SS 465 (civ. 85, dir.Pesariis), loc. Muliton"
       , code = Id.fromString "83023"
       , commune = "PRATO CARNICO"
       , coordinates =
@@ -68848,8 +68116,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AUSSA CORNO Z.I. via Fermi 33 (Marcegaglia, direzione Udine)"
+    , { name = "AUSSA CORNO Z.I. via Fermi 33 (Marcegaglia, direzione Udine)"
       , code = Id.fromString "31A33"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -68876,8 +68143,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL N. via Giassico 31(dir.Villanova), Cascina Rin"
+    , { name = "S.GIOVANNI AL N. via Giassico 31(dir.Villanova), Cascina Rin"
       , code = Id.fromString "35350"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -68940,8 +68206,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CASALI BATTIFERRO SP 48 (civico 12, Museo direzione Udine)"
+    , { name = "CASALI BATTIFERRO SP 48 (civico 12, Museo direzione Udine)"
       , code = Id.fromString "36716"
       , commune = "REMANZACCO"
       , coordinates =
@@ -69013,8 +68278,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VILLAGGIO ROMA Str.Fornelli e Vill.Roma 107 (dir.Torviscosa)"
+    , { name = "VILLAGGIO ROMA Str.Fornelli e Vill.Roma 107 (dir.Torviscosa)"
       , code = Id.fromString "38710"
       , commune = "TORVISCOSA"
       , coordinates =
@@ -69023,8 +68287,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ARSA SP 113 via Madonna Missionaria (direz. Campolonghetto)"
+    , { name = "ARSA SP 113 via Madonna Missionaria (direz. Campolonghetto)"
       , code = Id.fromString "38711"
       , commune = "TORVISCOSA"
       , coordinates =
@@ -69042,8 +68305,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CARGNACCO Z.I.U. via Buttrio 57 (fronte ABS, dir. Cargnacco)"
+    , { name = "CARGNACCO Z.I.U. via Buttrio 57 (fronte ABS, dir. Cargnacco)"
       , code = Id.fromString "38821"
       , commune = "POZZUOLO DEL FRIULI"
       , coordinates =
@@ -69061,8 +68323,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MARSURE DI SOTTO via Dante Alighieri (bivio SP17, dir.Udine)"
+    , { name = "MARSURE DI SOTTO via Dante Alighieri (bivio SP17, dir.Udine)"
       , code = Id.fromString "60360"
       , commune = "POVOLETTO"
       , coordinates =
@@ -69080,8 +68341,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERGNEU INFERIORE via G. Verdi 69 (dir. Nimis), borgo Molino"
+    , { name = "CERGNEU INFERIORE via G. Verdi 69 (dir. Nimis), borgo Molino"
       , code = Id.fromString "60637"
       , commune = "NIMIS"
       , coordinates =
@@ -69099,8 +68359,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TARCENTO via Pratum Laci (fronte 1, incr.via della Stazione)"
+    , { name = "TARCENTO via Pratum Laci (fronte 1, incr.via della Stazione)"
       , code = Id.fromString "60706"
       , commune = "TARCENTO"
       , coordinates =
@@ -69190,8 +68449,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "MORSANO DI STRADA piazza San Pellegrino (centro, dir.Gonars)"
+    , { name = "MORSANO DI STRADA piazza San Pellegrino (centro, dir.Gonars)"
       , code = Id.fromString "30503"
       , commune = "CASTIONS DI STRADA"
       , coordinates =
@@ -69425,8 +68683,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SAN CANDIDO via Sesto (bivio Campo di Dentro, dir.S.Candido)"
+    , { name = "SAN CANDIDO via Sesto (bivio Campo di Dentro, dir.S.Candido)"
       , code = Id.fromString "98504"
       , commune = "SAN CANDIDO-INNICHEN"
       , coordinates =
@@ -69714,8 +68971,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PICCHI via Lignano Sud (angolo via Forte, direzione Latisana"
+    , { name = "PICCHI via Lignano Sud (angolo via Forte, direzione Latisana"
       , code = Id.fromString "31613"
       , commune = "LATISANA"
       , coordinates =
@@ -69778,8 +69034,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NATISONE via Casali 2 (direzione Villanova)"
+    , { name = "SAN GIOVANNI AL NATISONE via Casali 2 (direzione Villanova)"
       , code = Id.fromString "35359"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -69842,8 +69097,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ORZANO via Premariacco (fr. 4, dir.Cividale), Casali Pasch"
+    , { name = "ORZANO via Premariacco (fr. 4, dir.Cividale), Casali Pasch"
       , code = Id.fromString "36315"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -69879,8 +69133,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PREMARIACCO via Fiore dei Liberi 49 (Coop, direzione Udine)"
+    , { name = "PREMARIACCO via Fiore dei Liberi 49 (Coop, direzione Udine)"
       , code = Id.fromString "36316"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -69889,8 +69142,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PREMARIACCO via Fiore dei Liberi 95(bivio S.Mauro, dir.Udine"
+    , { name = "PREMARIACCO via Fiore dei Liberi 95(bivio S.Mauro, dir.Udine"
       , code = Id.fromString "36317"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -70160,8 +69412,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "OLEIS via V.Veneto (fronte 71, Artilegno, direz. Cividale)"
+    , { name = "OLEIS via V.Veneto (fronte 71, Artilegno, direz. Cividale)"
       , code = Id.fromString "36319"
       , commune = "MANZANO"
       , coordinates =
@@ -70404,8 +69655,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "S.GIOVANNI AL N. via Giassico(dir.Dolegnano), Cascina Rinald"
+    , { name = "S.GIOVANNI AL N. via Giassico(dir.Dolegnano), Cascina Rinald"
       , code = Id.fromString "35393"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -70450,8 +69700,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "VILLANOVA DELLO JUDRIO via 4 Novembre 87 (dir.San Giovanni)"
+    , { name = "VILLANOVA DELLO JUDRIO via 4 Novembre 87 (dir.San Giovanni)"
       , code = Id.fromString "35354"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -70541,8 +69790,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "via Giulio Cesare (via di Campo Marzio, museo ferroviario)"
+    , { name = "via Giulio Cesare (via di Campo Marzio, museo ferroviario)"
       , code = Id.fromString "27003"
       , commune = ""
       , coordinates =
@@ -70713,8 +69961,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POCENIA via Venezia 189 (direzione Roveredo), Casali Nonis"
+    , { name = "POCENIA via Venezia 189 (direzione Roveredo), Casali Nonis"
       , code = Id.fromString "30817"
       , commune = "POCENIA"
       , coordinates =
@@ -70732,8 +69979,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CORGNOLO via Lancieri D'Aosta 23 (Acli, direzione Porpetto)"
+    , { name = "CORGNOLO via Lancieri D'Aosta 23 (Acli, direzione Porpetto)"
       , code = Id.fromString "30I15"
       , commune = "PORPETTO"
       , coordinates =
@@ -70823,8 +70069,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AUSSA CORNO Z.I. via Fermi (Venetian Gold, prov. S.Giorgio)"
+    , { name = "AUSSA CORNO Z.I. via Fermi (Venetian Gold, prov. S.Giorgio)"
       , code = Id.fromString "31A17"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -70833,8 +70078,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZELLINA via Boscat (fronte 1, bivio Galli, direz.Pampaluna)"
+    , { name = "ZELLINA via Boscat (fronte 1, bivio Galli, direz.Pampaluna)"
       , code = Id.fromString "31A19"
       , commune = "SAN GIORGIO DI NOGARO"
       , coordinates =
@@ -70861,8 +70105,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "via dei Piccardi 66 (angolo via Revoltella, teatro Pellico)"
+    , { name = "via dei Piccardi 66 (angolo via Revoltella, teatro Pellico)"
       , code = Id.fromString "35006"
       , commune = ""
       , coordinates =
@@ -70871,8 +70114,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NAT. via Cascina Rinaldi 7 (dir. Villanova)"
+    , { name = "SAN GIOVANNI AL NAT. via Cascina Rinaldi 7 (dir. Villanova)"
       , code = Id.fromString "35360"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -70917,8 +70159,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "Strada Provinciale 48 (bivio Strada di S.Anna, dir.Prepotto)"
+    , { name = "Strada Provinciale 48 (bivio Strada di S.Anna, dir.Prepotto)"
       , code = Id.fromString "35519"
       , commune = "CIVIDALE DEL FRIULI"
       , coordinates =
@@ -70990,8 +70231,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOGLIANO piazza Severino Lesa 1 (lato piazza, dir.Campeglio)"
+    , { name = "TOGLIANO piazza Severino Lesa 1 (lato piazza, dir.Campeglio)"
       , code = Id.fromString "36912"
       , commune = "TORREANO"
       , coordinates =
@@ -71000,8 +70240,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOGLIANO viale Gemona 201 (dir. Cividale), località Crosada"
+    , { name = "TOGLIANO viale Gemona 201 (dir. Cividale), località Crosada"
       , code = Id.fromString "36913"
       , commune = "CIVIDALE DEL FRIULI"
       , coordinates =
@@ -71010,8 +70249,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MASAROLIS frazione Masarolis 152 (scuola, direzione chiesa)"
+    , { name = "MASAROLIS frazione Masarolis 152 (scuola, direzione chiesa)"
       , code = Id.fromString "36914"
       , commune = "TORREANO"
       , coordinates =
@@ -71029,8 +70267,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TOGLIANO viale Kennedy 5 (direzione Montina), loc. Crosada"
+    , { name = "TOGLIANO viale Kennedy 5 (direzione Montina), loc. Crosada"
       , code = Id.fromString "36943"
       , commune = "TORREANO"
       , coordinates =
@@ -71201,8 +70438,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "S.GIOVANNI AL NATISONE via Palmarina 109 (direzione centro)"
+    , { name = "S.GIOVANNI AL NATISONE via Palmarina 109 (direzione centro)"
       , code = Id.fromString "35321"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -71391,8 +70627,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SPAGNUT DI PULFERO Strada di S.Giovanni D'Antro (dir.Pulfero"
+    , { name = "SPAGNUT DI PULFERO Strada di S.Giovanni D'Antro (dir.Pulfero"
       , code = Id.fromString "36126"
       , commune = "PULFERO"
       , coordinates =
@@ -71401,8 +70636,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN PIETRO AL NATISONE via Vernasso (bivio Ponte Vernasso)"
+    , { name = "SAN PIETRO AL NATISONE via Vernasso (bivio Ponte Vernasso)"
       , code = Id.fromString "36147"
       , commune = "SAN PIETRO AL NATISONE"
       , coordinates =
@@ -71438,8 +70672,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FIRMANO via Casali Potocco (fronte civico 6, direz. Udine)"
+    , { name = "FIRMANO via Casali Potocco (fronte civico 6, direz. Udine)"
       , code = Id.fromString "36322"
       , commune = "PREMARIACCO"
       , coordinates =
@@ -71466,8 +70699,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "MANZANO via Cividale 30 (direzione Cividale), Case Di Sopra"
+    , { name = "MANZANO via Cividale 30 (direzione Cividale), Case Di Sopra"
       , code = Id.fromString "36421"
       , commune = "MANZANO"
       , coordinates =
@@ -71521,8 +70753,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TORREANO via delle Cave (bivio Laurini, direzione Cividale)"
+    , { name = "TORREANO via delle Cave (bivio Laurini, direzione Cividale)"
       , code = Id.fromString "36937"
       , commune = "TORREANO"
       , coordinates =
@@ -71567,8 +70798,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LAUZACCO viale Dei Platani (rotonda Crosada, dir. Palmanova)"
+    , { name = "LAUZACCO viale Dei Platani (rotonda Crosada, dir. Palmanova)"
       , code = Id.fromString "37135"
       , commune = "SANTA MARIA LA LONGA"
       , coordinates =
@@ -71703,8 +70933,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "VILLA VICENTINA via Sant'Antonio 17 (direzione Fiumicello)"
+    , { name = "VILLA VICENTINA via Sant'Antonio 17 (direzione Fiumicello)"
       , code = Id.fromString "38202"
       , commune = "VILLA VICENTINA"
       , coordinates =
@@ -71767,8 +70996,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "PASIAN DI PRATO via Cristoforo Colombo 139, Santa Caterina"
+    , { name = "PASIAN DI PRATO via Cristoforo Colombo 139, Santa Caterina"
       , code = Id.fromString "40209"
       , commune = "PASIAN DI PRATO"
       , coordinates =
@@ -71804,8 +71032,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POZZECCO via Alessandro Manzoni 2 (centro, dir. Monumento)"
+    , { name = "POZZECCO via Alessandro Manzoni 2 (centro, dir. Monumento)"
       , code = Id.fromString "40538"
       , commune = "BERTIOLO"
       , coordinates =
@@ -72030,8 +71257,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CASANOVA DI MART. via Spilimbergo 1542 (Freud, dir. Udine)"
+    , { name = "CASANOVA DI MART. via Spilimbergo 1542 (Freud, dir. Udine)"
       , code = Id.fromString "50102"
       , commune = "MARTIGNACCO"
       , coordinates =
@@ -72058,8 +71284,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TAVAGNACCO SP 4 via Nazionale 37 (Prenatal, dir.Tricesimo)"
+    , { name = "TAVAGNACCO SP 4 via Nazionale 37 (Prenatal, dir.Tricesimo)"
       , code = Id.fromString "50203"
       , commune = "TAVAGNACCO"
       , coordinates =
@@ -72086,8 +71311,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BATTAGLIA via Tagliamento (ang.via Principale, dir.Madrisio)"
+    , { name = "BATTAGLIA via Tagliamento (ang.via Principale, dir.Madrisio)"
       , code = Id.fromString "50537"
       , commune = "FAGAGNA"
       , coordinates =
@@ -72132,8 +71356,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Chiamanis 8 (direzione Cornino)"
+    , { name = "SAN DANIELE DEL FRIULI via Chiamanis 8 (direzione Cornino)"
       , code = Id.fromString "50I04"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -72160,8 +71383,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CODUGNELLA via dei Prati (prov. Codugnella), loc. Le Crosade"
+    , { name = "CODUGNELLA via dei Prati (prov. Codugnella), loc. Le Crosade"
       , code = Id.fromString "51104"
       , commune = "COLLOREDO DI MONTE ALBANO"
       , coordinates =
@@ -72188,8 +71410,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COMERZO SR 463 via Alemagna (fronte chiesa, dir.S.Daniele)"
+    , { name = "COMERZO SR 463 via Alemagna (fronte chiesa, dir.S.Daniele)"
       , code = Id.fromString "51268"
       , commune = "MAJANO"
       , coordinates =
@@ -72252,8 +71473,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "OBENETTO Strada Provinciale 45 (bivio, direzione Peternel)"
+    , { name = "OBENETTO Strada Provinciale 45 (bivio, direzione Peternel)"
       , code = Id.fromString "35829"
       , commune = "DRENCHIA"
       , coordinates =
@@ -72343,8 +71563,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "AQUILEIA via Giulia Augusta (fronte 59, Porte direz. Grado)"
+    , { name = "AQUILEIA via Giulia Augusta (fronte 59, Porte direz. Grado)"
       , code = Id.fromString "38408"
       , commune = "AQUILEIA"
       , coordinates =
@@ -72380,8 +71599,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "SAN DANIELE DEL FRIULI via Osoppo 116 (pizzeria, dir.Majano)"
+    , { name = "SAN DANIELE DEL FRIULI via Osoppo 116 (pizzeria, dir.Majano)"
       , code = Id.fromString "50I10"
       , commune = "SAN DANIELE DEL FRIULI"
       , coordinates =
@@ -72390,8 +71608,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "POZZO DI CODROIPO via San Daniele (fronte 14, dir. Codroipo)"
+    , { name = "POZZO DI CODROIPO via San Daniele (fronte 14, dir. Codroipo)"
       , code = Id.fromString "40814"
       , commune = "CODROIPO"
       , coordinates =
@@ -72427,8 +71644,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "TREPPO GRANDE piazza Marconi 8 (municipio, direzione Buja)"
+    , { name = "TREPPO GRANDE piazza Marconi 8 (municipio, direzione Buja)"
       , code = Id.fromString "51526"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -72563,8 +71779,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRIMULACCO via Cividina (bivio Belvedere, direzione Udine)"
+    , { name = "PRIMULACCO via Cividina (bivio Belvedere, direzione Udine)"
       , code = Id.fromString "60339"
       , commune = "POVOLETTO"
       , coordinates =
@@ -72591,8 +71806,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PARTISTAGNO via Attimis (fr. 8, dir. Cividale), borgo Faris"
+    , { name = "PARTISTAGNO via Attimis (fr. 8, dir. Cividale), borgo Faris"
       , code = Id.fromString "60545"
       , commune = "ATTIMIS"
       , coordinates =
@@ -72610,8 +71824,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RAMANDOLO via Ramandolo (incr. via del Borgo, dir.Chialminis"
+    , { name = "RAMANDOLO via Ramandolo (incr. via del Borgo, dir.Chialminis"
       , code = Id.fromString "60620"
       , commune = "NIMIS"
       , coordinates =
@@ -72647,8 +71860,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "COLLALTO via Udine (incrocio via Tomadini, direzione Udine)"
+    , { name = "COLLALTO via Udine (incrocio via Tomadini, direzione Udine)"
       , code = Id.fromString "60770"
       , commune = "TARCENTO"
       , coordinates =
@@ -72675,8 +71887,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MAGNANO IN RIVIERA via Marconi 69 (dir.Tarcento), Setteponti"
+    , { name = "MAGNANO IN RIVIERA via Marconi 69 (dir.Tarcento), Setteponti"
       , code = Id.fromString "60859"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -72730,8 +71941,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CESARIIS Strada Pers e Cesariis (prefabbricati, dir.centro)"
+    , { name = "CESARIIS Strada Pers e Cesariis (prefabbricati, dir.centro)"
       , code = Id.fromString "61349"
       , commune = "LUSEVERA"
       , coordinates =
@@ -72749,8 +71959,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PRADIELIS frazione Pradielis (distributore, prov.Cesariis)"
+    , { name = "PRADIELIS frazione Pradielis (distributore, prov.Cesariis)"
       , code = Id.fromString "61321"
       , commune = "LUSEVERA"
       , coordinates =
@@ -72768,8 +71977,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CAMPO DI BONIS Strada Provinciale 38 (direzione Platischis)"
+    , { name = "CAMPO DI BONIS Strada Provinciale 38 (direzione Platischis)"
       , code = Id.fromString "61405"
       , commune = "TAIPANA"
       , coordinates =
@@ -72778,8 +71986,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTEAPERTA via Monte Aperta 51 (Borgo di Sotto, dir.centro)"
+    , { name = "MONTEAPERTA via Monte Aperta 51 (Borgo di Sotto, dir.centro)"
       , code = Id.fromString "61450"
       , commune = "TAIPANA"
       , coordinates =
@@ -72860,8 +72067,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ROVEREDO DI C. SC Moggio Ovedasso (chiesa, dir.Chiusaforte)"
+    , { name = "ROVEREDO DI C. SC Moggio Ovedasso (chiesa, dir.Chiusaforte)"
       , code = Id.fromString "80225"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -72870,8 +72076,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PEZZEIT SP 76 Val Raccolana (bivio, provenienza Sella Nevea)"
+    , { name = "PEZZEIT SP 76 Val Raccolana (bivio, provenienza Sella Nevea)"
       , code = Id.fromString "80229"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -72889,8 +72094,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "FUSINE via Verdi Km 103,70 (Confine di Stato, dir. Slovenia)"
+    , { name = "FUSINE via Verdi Km 103,70 (Confine di Stato, dir. Slovenia)"
       , code = Id.fromString "80331"
       , commune = "TARVISIO"
       , coordinates =
@@ -72917,8 +72121,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PLEZZUT Strada Statale 54 (direzione Tarvisio), Case Rossi"
+    , { name = "PLEZZUT Strada Statale 54 (direzione Tarvisio), Case Rossi"
       , code = Id.fromString "80363"
       , commune = "TARVISIO"
       , coordinates =
@@ -72972,8 +72175,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CANEVA DI TOLMEZZO via Terzo (fronte civico 6, dir.Tolmezzo)"
+    , { name = "CANEVA DI TOLMEZZO via Terzo (fronte civico 6, dir.Tolmezzo)"
       , code = Id.fromString "81216"
       , commune = "TOLMEZZO"
       , coordinates =
@@ -73009,8 +72211,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ROSA DEI VENTI Strada Provinciale 40 (direzione Cedarchis)"
+    , { name = "ROSA DEI VENTI Strada Provinciale 40 (direzione Cedarchis)"
       , code = Id.fromString "81351"
       , commune = "ARTA TERME"
       , coordinates =
@@ -73037,8 +72238,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "LOCALITA' AONES Strada Provinciale 23 (direzione Tolmezzo)"
+    , { name = "LOCALITA' AONES Strada Provinciale 23 (direzione Tolmezzo)"
       , code = Id.fromString "81430"
       , commune = "PAULARO"
       , coordinates =
@@ -73083,8 +72283,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CERCIVENTO via di Sore (fronte 104, angolo via Riu Barban)"
+    , { name = "CERCIVENTO via di Sore (fronte 104, angolo via Riu Barban)"
       , code = Id.fromString "81808"
       , commune = "CERCIVENTO"
       , coordinates =
@@ -73120,8 +72319,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "CLAUPES DI LAUCO Strada Provinciale 44 (prov.Villa Santina)"
+    , { name = "CLAUPES DI LAUCO Strada Provinciale 44 (prov.Villa Santina)"
       , code = Id.fromString "82123"
       , commune = "LAUCO"
       , coordinates =
@@ -73274,8 +72472,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "S.NICOLO' DI COMELICO via Lacuna (bar, dir. Santo Stefano)"
+    , { name = "S.NICOLO' DI COMELICO via Lacuna (bar, dir. Santo Stefano)"
       , code = Id.fromString "97903"
       , commune = "SAN NICOLO' DI COMELICO"
       , coordinates =
@@ -73293,8 +72490,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.STEFANO DI CADORE via San Candido 37 (dir. autostazione)"
+    , { name = "S.STEFANO DI CADORE via San Candido 37 (dir. autostazione)"
       , code = Id.fromString "98209"
       , commune = "SANTO STEFANO DI CADORE"
       , coordinates =
@@ -73393,8 +72589,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZOMPITTA via Mons. Pigani (incr. via Garibaldi, dir. Nimis)"
+    , { name = "ZOMPITTA via Mons. Pigani (incr. via Garibaldi, dir. Nimis)"
       , code = Id.fromString "60258"
       , commune = "REANA DEL ROIALE"
       , coordinates =
@@ -73457,8 +72652,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MARTINAZZO via Camillo Benso Conte di Cavour 2 (dir. Treppo)"
+    , { name = "MARTINAZZO via Camillo Benso Conte di Cavour 2 (dir. Treppo)"
       , code = Id.fromString "51645"
       , commune = "CASSACCO"
       , coordinates =
@@ -73494,8 +72688,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BIBIONE piazza Keplero (fronte civico 2, direzione Lignano)"
+    , { name = "BIBIONE piazza Keplero (fronte civico 2, direzione Lignano)"
       , code = Id.fromString "75315"
       , commune = "SAN MICHELE AL TAGLIAM. 2"
       , coordinates =
@@ -73504,8 +72697,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ZEGLIANUTTO via Giuseppe Verdi (fronte chiesa, direz. Buja)"
+    , { name = "ZEGLIANUTTO via Giuseppe Verdi (fronte chiesa, direz. Buja)"
       , code = Id.fromString "51506"
       , commune = "TREPPO GRANDE"
       , coordinates =
@@ -73649,8 +72841,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GRADO via Monfalcone SP19 (valle Goppion, direzione Grado)"
+    , { name = "GRADO via Monfalcone SP19 (valle Goppion, direzione Grado)"
       , code = Id.fromString "G0917"
       , commune = "GRADO"
       , coordinates =
@@ -74217,8 +73408,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "PARTISTAGNO via Attimis 8 (direzione Tarcento), borgo Faris"
+    , { name = "PARTISTAGNO via Attimis 8 (direzione Tarcento), borgo Faris"
       , code = Id.fromString "60527"
       , commune = "ATTIMIS"
       , coordinates =
@@ -74245,8 +73435,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "strada provinciale 1 del Carso 82/m (stazione carabinieri)"
+    , { name = "strada provinciale 1 del Carso 82/m (stazione carabinieri)"
       , code = Id.fromString "D6027"
       , commune = ""
       , coordinates =
@@ -74597,8 +73786,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "strada provinciale 8 di Monrupino 67 (Rupinpiccolo, loggia)"
+    , { name = "strada provinciale 8 di Monrupino 67 (Rupinpiccolo, loggia)"
       , code = Id.fromString "D7024"
       , commune = ""
       , coordinates =
@@ -74715,8 +73903,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE piazzale Camposanto (fronte entrata cimitero S.Vito)"
+    , { name = "UDINE piazzale Camposanto (fronte entrata cimitero S.Vito)"
       , code = Id.fromString "UD063"
       , commune = "UDINE"
       , coordinates =
@@ -75094,8 +74281,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Valbruna (incrocio via Lombardia, dir. università)"
+    , { name = "UDINE via Valbruna (incrocio via Lombardia, dir. università)"
       , code = Id.fromString "UD484"
       , commune = "UDINE"
       , coordinates =
@@ -75185,8 +74371,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "UDINE via Cividale 577 lato stazione ferroviaria S.Gottardo"
+    , { name = "UDINE via Cividale 577 lato stazione ferroviaria S.Gottardo"
       , code = Id.fromString "UD750"
       , commune = "UDINE"
       , coordinates =
@@ -75717,8 +74902,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SAN GIOVANNI AL NATISONE via delle Scuole 5 (scuola media)"
+    , { name = "SAN GIOVANNI AL NATISONE via delle Scuole 5 (scuola media)"
       , code = Id.fromString "35308"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -75727,8 +74911,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.GIOVANNI AL NAT. via del Collio 40 (Atika, dir. Dolegnano)"
+    , { name = "S.GIOVANNI AL NAT. via del Collio 40 (Atika, dir. Dolegnano)"
       , code = Id.fromString "35390"
       , commune = "SAN GIOVANNI AL NATISONE"
       , coordinates =
@@ -75755,8 +74938,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "S.VOLFANGO Strada Provinciale 45 (civ. 9, dir. Prapotnizza)"
+    , { name = "S.VOLFANGO Strada Provinciale 45 (civ. 9, dir. Prapotnizza)"
       , code = Id.fromString "35824"
       , commune = "DRENCHIA"
       , coordinates =
@@ -75801,8 +74983,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "FIUMICELLO S.ANTONIO SP68 via Libertà (dir.Villa Vicentina)"
+    , { name = "FIUMICELLO S.ANTONIO SP68 via Libertà (dir.Villa Vicentina)"
       , code = Id.fromString "38507"
       , commune = "FIUMICELLO"
       , coordinates =
@@ -75811,8 +74992,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MADRISIO DI VARMO via Santa Radegonda 11 (direzione Varmo)"
+    , { name = "MADRISIO DI VARMO via Santa Radegonda 11 (direzione Varmo)"
       , code = Id.fromString "40623"
       , commune = "VARMO"
       , coordinates =
@@ -75839,8 +75019,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "GRADISCUTTA DI VARMO via della Roggia 1 (direzione Camino)"
+    , { name = "GRADISCUTTA DI VARMO via della Roggia 1 (direzione Camino)"
       , code = Id.fromString "40626"
       , commune = "VARMO"
       , coordinates =
@@ -75939,8 +75118,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BUERIIS via Pontebbana 24 (bivio via J.Augusta, dir. Udine)"
+    , { name = "BUERIIS via Pontebbana 24 (bivio via J.Augusta, dir. Udine)"
       , code = Id.fromString "60854"
       , commune = "MAGNANO IN RIVIERA"
       , coordinates =
@@ -75958,8 +75136,7 @@ stops =
             }
       , services = [ Types.Urban, Types.ExtraUrban ]
       }
-    , { name =
-            "ROVEREDO DI CHIUS. SC Moggio Ovedasso(centro, dir.capolinea)"
+    , { name = "ROVEREDO DI CHIUS. SC Moggio Ovedasso(centro, dir.capolinea)"
       , code = Id.fromString "80211"
       , commune = "CHIUSAFORTE"
       , coordinates =
@@ -75968,8 +75145,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RUTTE GRANDE Strada Statale 54 (bivio, direzione Tarvisio)"
+    , { name = "RUTTE GRANDE Strada Statale 54 (bivio, direzione Tarvisio)"
       , code = Id.fromString "80336"
       , commune = "TARVISIO"
       , coordinates =
@@ -75987,8 +75163,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "SESTO via Dolomiti (parcheggio Hofer, direzione San Candido)"
+    , { name = "SESTO via Dolomiti (parcheggio Hofer, direzione San Candido)"
       , code = Id.fromString "97704"
       , commune = "SESTO-SEXTEN"
       , coordinates =
@@ -76231,8 +75406,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "DOSOLEDO via Roma (piazza Tiziano, direzione Santo Stefano)"
+    , { name = "DOSOLEDO via Roma (piazza Tiziano, direzione Santo Stefano)"
       , code = Id.fromString "97519"
       , commune = "COMELICO SUPERIORE"
       , coordinates =
@@ -76691,8 +75865,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "TARCENTO via Angelo Angeli 88 (direz. Udine), borgo Volpins"
+    , { name = "TARCENTO via Angelo Angeli 88 (direz. Udine), borgo Volpins"
       , code = Id.fromString "60785"
       , commune = "TARCENTO"
       , coordinates =
@@ -76701,8 +75874,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BEVORCHIANS SP 112 (bivio loc.Gialloz-Cjampiui, dir. Moggio)"
+    , { name = "BEVORCHIANS SP 112 (bivio loc.Gialloz-Cjampiui, dir. Moggio)"
       , code = Id.fromString "80725"
       , commune = "MOGGIO UDINESE"
       , coordinates =
@@ -76747,8 +75919,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MOGGIO UDINESE via Giorgio Ermolli 46 (cartiera, dir. Udine)"
+    , { name = "MOGGIO UDINESE via Giorgio Ermolli 46 (cartiera, dir. Udine)"
       , code = Id.fromString "80727"
       , commune = "MOGGIO UDINESE"
       , coordinates =
@@ -76955,8 +76126,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "VALPICETTO Strada Regionale 355 (bivio, direz. Comeglians)"
+    , { name = "VALPICETTO Strada Regionale 355 (bivio, direz. Comeglians)"
       , code = Id.fromString "82803"
       , commune = "RIGOLATO"
       , coordinates =
@@ -77352,8 +76522,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "AEROPORTO CAMPOFORMIDO via Campoformido (fr.138, dir.Udine)"
+    , { name = "AEROPORTO CAMPOFORMIDO via Campoformido (fr.138, dir.Udine)"
       , code = Id.fromString "40104"
       , commune = "PASIAN DI PRATO"
       , coordinates =
@@ -77362,8 +76531,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ORGNANO via Vittorio Veneto 9 (chiesa, direzione Sclaunicco)"
+    , { name = "ORGNANO via Vittorio Veneto 9 (chiesa, direzione Sclaunicco)"
       , code = Id.fromString "40307"
       , commune = "BASILIANO"
       , coordinates =
@@ -77372,8 +76540,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RASPANO via Bindo Chiurlo (incr. via Manzoni, direz. Treppo)"
+    , { name = "RASPANO via Bindo Chiurlo (incr. via Manzoni, direz. Treppo)"
       , code = Id.fromString "51644"
       , commune = "CASSACCO"
       , coordinates =
@@ -77382,8 +76549,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "ALLEGNIDIS Strada Provinciale 44 (centro, direzione Buttea)"
+    , { name = "ALLEGNIDIS Strada Provinciale 44 (centro, direzione Buttea)"
       , code = Id.fromString "82134"
       , commune = "LAUCO"
       , coordinates =
@@ -77446,8 +76612,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "BEVAZZANA DI S.MICHELE via Bevazzana 15 (direzione Lignano)"
+    , { name = "BEVAZZANA DI S.MICHELE via Bevazzana 15 (direzione Lignano)"
       , code = Id.fromString "75002"
       , commune = "SAN MICHELE AL TAGLIAM. 2"
       , coordinates =
@@ -77474,8 +76639,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "strada provinciale 5 di San Pelagio 54 (passaggio livello)"
+    , { name = "strada provinciale 5 di San Pelagio 54 (passaggio livello)"
       , code = Id.fromString "D6017"
       , commune = ""
       , coordinates =
@@ -77727,8 +76891,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "RASPANO via Patriarcato (fronte civico 11, direzione Treppo)"
+    , { name = "RASPANO via Patriarcato (fronte civico 11, direzione Treppo)"
       , code = Id.fromString "51642"
       , commune = "CASSACCO"
       , coordinates =
@@ -77782,8 +76945,7 @@ stops =
             }
       , services = [ Types.ExtraUrban ]
       }
-    , { name =
-            "MONTEAPERTA via Monte Aperta (fontana, direzione Debellis)"
+    , { name = "MONTEAPERTA via Monte Aperta (fontana, direzione Debellis)"
       , code = Id.fromString "61443"
       , commune = "TAIPANA"
       , coordinates =
@@ -77891,8 +77053,7 @@ stops =
             }
       , services = [ Types.Urban ]
       }
-    , { name =
-            "LEONACCO via Pozzuolo (incrocio via San Martino, dir. Udine)"
+    , { name = "LEONACCO via Pozzuolo (incrocio via San Martino, dir. Udine)"
       , code = Id.fromString "60164"
       , commune = "TRICESIMO"
       , coordinates =
