@@ -84,4 +84,5 @@ task =
             }
         )
     <| \_ ->
+    Do.exec "elm-format" [ "../generated" ] <| \_ ->
     BackendTask.succeed ()
