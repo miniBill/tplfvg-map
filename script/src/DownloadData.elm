@@ -2,6 +2,7 @@ module DownloadData exposing (run)
 
 import Angle
 import BackendTask exposing (BackendTask)
+import BackendTask.Custom as Custom
 import BackendTask.Do as Do
 import Elm
 import Elm.Annotation
@@ -10,6 +11,8 @@ import Gen.Angle
 import Gen.Id
 import Gen.Types
 import Id
+import Json.Decode
+import Json.Encode
 import Pages.Script as Script exposing (Script)
 import ScriptApi
 import SeqSet
@@ -18,7 +21,22 @@ import Types
 
 run : Script
 run =
-    Script.withoutCliOptions task
+    Script.withoutCliOptions
+        (Do.allowFatal
+            (Custom.run "profileStart"
+                Json.Encode.null
+                (Json.Decode.succeed ())
+            )
+         <| \_ ->
+         Do.do task <| \_ ->
+         Do.allowFatal
+             (Custom.run "profileEnd"
+                 Json.Encode.null
+                 (Json.Decode.succeed ())
+             )
+         <|
+             \_ -> Do.noop
+        )
 
 
 task : BackendTask FatalError ()
