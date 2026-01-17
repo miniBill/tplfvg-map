@@ -63,7 +63,7 @@ type ToFrontend
 type alias StopInfo =
     { name : String
     , code : Id Stop
-    , commune : String
+    , location : String
     , coordinates : Point
     , services : List Service
     }

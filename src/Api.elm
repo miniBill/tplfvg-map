@@ -7,8 +7,10 @@ import Http
 import Id exposing (Id, Stop, Vehicle)
 import Json.Decode exposing (Decoder)
 import Json.Encode
+import Maybe.Extra
 import Process
 import Quantity
+import Result.Extra
 import Task
 import Types exposing (BackendMsg(..), Bus, Point, Service(..), StopInfo)
 
@@ -128,9 +130,14 @@ angleDecoder =
 
 busStopsDecoder : Decoder (List StopInfo)
 busStopsDecoder =
-    DecodeComplete.object (\_ features -> features)
+    DecodeComplete.object (\_ features _ -> Maybe.Extra.values features)
         |> DecodeComplete.required "type" (constantDecoder "FeatureCollection")
         |> DecodeComplete.required "features" (Json.Decode.list busStopDecoder)
+        |> DecodeComplete.required "properties"
+            (DecodeComplete.object identity
+                |> DecodeComplete.required "strings" (Json.Decode.dict Json.Decode.string)
+                |> DecodeComplete.complete
+            )
         |> DecodeComplete.complete
 
 
@@ -157,16 +164,19 @@ escape s =
     Json.Encode.encode 0 (Json.Encode.string s)
 
 
-busStopDecoder : Decoder StopInfo
+busStopDecoder : Decoder (Maybe StopInfo)
 busStopDecoder =
     DecodeComplete.object
-        (\_ coordinates properties ->
-            { name = properties.name
-            , code = properties.code
-            , commune = properties.commune
-            , coordinates = coordinates
-            , services = properties.services
-            }
+        (\_ coordinates ->
+            Maybe.map
+                (\properties ->
+                    { name = properties.name
+                    , code = properties.code
+                    , location = properties.location
+                    , coordinates = coordinates
+                    , services = properties.services
+                    }
+                )
         )
         |> DecodeComplete.required "type" (constantDecoder "Feature")
         |> DecodeComplete.required "geometry" pointDecoder
@@ -198,28 +208,37 @@ pointDecoder =
 
 propertiesDecoder :
     Decoder
-        { name : String
-        , code : Id Stop
-        , commune : String
-        , services : List Service
-        }
-propertiesDecoder =
-    DecodeComplete.object
-        (\name code commune services ->
-            { name = name
-            , code = code
-            , services = services
-            , commune = commune
+        (Maybe
+            { name : String
+            , code : Id Stop
+            , location : String
+            , services : List Service
             }
         )
-        |> DecodeComplete.required "name" Json.Decode.string
-        |> DecodeComplete.required "code" idDecoder
-        |> DecodeComplete.required "commune" Json.Decode.string
-        |> DecodeComplete.discard "address"
-        |> DecodeComplete.discard "marker"
-        |> DecodeComplete.discard "accessibility"
-        |> DecodeComplete.required "services" (Json.Decode.list serviceDecoder)
-        |> DecodeComplete.complete
+propertiesDecoder =
+    Json.Decode.oneOf
+        [ Json.Decode.map (always Nothing) (Json.Decode.field "__type" (constantDecoder "retailer"))
+        , DecodeComplete.object
+            (\name code location services _ ->
+                { name = name
+                , code = code
+                , services = services
+                , location = location
+                }
+                    |> Just
+            )
+            |> DecodeComplete.required "name" Json.Decode.string
+            |> DecodeComplete.required "code" idDecoder
+            |> DecodeComplete.required "location" Json.Decode.string
+            |> DecodeComplete.discard "address"
+            |> DecodeComplete.discard "marker"
+            |> DecodeComplete.discard "favorite"
+            |> DecodeComplete.discard "accessibility"
+            |> DecodeComplete.discard "bus_services"
+            |> DecodeComplete.required "services" (Json.Decode.list serviceDecoder)
+            |> DecodeComplete.required "__type" (constantDecoder "stop")
+            |> DecodeComplete.complete
+        ]
 
 
 serviceDecoder : Decoder Service

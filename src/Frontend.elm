@@ -271,7 +271,7 @@ viewStop { dark } stop =
                     ++ String.fromFloat cy
                     ++ ") scale(0.1) translate(-128 -128)"
                 )
-            , Svg.Attributes.fill (communeToColor stop.commune)
+            , Svg.Attributes.fill (locationToColor stop.location)
             , Svg.Attributes.strokeWidth "2"
             , Svg.Attributes.stroke
                 (if dark then
@@ -281,7 +281,7 @@ viewStop { dark } stop =
                     "black"
                 )
             ]
-            [ Svg.title [] [ Svg.text (stop.commune ++ " - " ++ stop.name) ]
+            [ Svg.title [] [ Svg.text (stop.location ++ " - " ++ stop.name) ]
             ]
         ]
 
@@ -333,6 +333,6 @@ viewBus { dark } bus =
         ]
 
 
-communeToColor : String -> String
-communeToColor commune =
-    "oklch(50% 0.09 " ++ (FNV1a.hash commune |> modBy 360 |> String.fromInt) ++ ")"
+locationToColor : String -> String
+locationToColor location =
+    "oklch(50% 0.09 " ++ (FNV1a.hash location |> modBy 360 |> String.fromInt) ++ ")"
