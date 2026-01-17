@@ -9,7 +9,8 @@ import Id exposing (Id, Stop)
 import Lamdera exposing (ClientId, SessionId)
 import SeqDict
 import SeqSet exposing (SeqSet)
-import Task
+import SetFifo exposing (SetFifo)
+import Task exposing (Task)
 import Time
 import Types exposing (BackendModel, BackendMsg(..), ToBackend(..), ToFrontend(..))
 
@@ -34,8 +35,8 @@ init =
     ( { buses = SeqDict.empty
       , pending = SeqSet.empty
       , stops = []
-      , fastQueue = Fifo.empty
-      , slowQueue = Fifo.empty
+      , fastQueue = SetFifo.empty
+      , slowQueue = SetFifo.empty
       }
     , Task.attempt GotStops Api.getStops
     )
@@ -56,17 +57,17 @@ processQueue model =
                     size =
                         maxPending - SeqSet.size model.pending
 
-                    go : Int -> SeqSet (Id Stop) -> Fifo (Id Stop) -> ( SeqSet (Id Stop), Fifo (Id Stop) )
+                    go : Int -> SeqSet (Id Stop) -> SetFifo (Id Stop) -> ( SeqSet (Id Stop), SetFifo (Id Stop) )
                     go n acc queue =
                         if n >= size then
                             ( acc, queue )
 
                         else
-                            case Fifo.remove queue of
-                                ( Nothing, _ ) ->
+                            case SetFifo.dequeue queue of
+                                Nothing ->
                                     ( acc, queue )
 
-                                ( Just head, rest ) ->
+                                Just ( head, rest ) ->
                                     if
                                         SeqSet.member head model.pending
                                             || SeqSet.member head acc
@@ -87,6 +88,12 @@ processQueue model =
                             Api.getBusesForStopId
                                 (Duration.milliseconds (1000 + 100 * toFloat i))
                         )
+
+            _ =
+                SeqSet.toList toStart
+                    |> List.map (\id -> Id.toString id)
+                    |> String.join ", "
+                    |> Lamdera.log "Queueing new requests"
         in
         ( { model
             | pending = SeqSet.union toStart model.pending
@@ -96,6 +103,10 @@ processQueue model =
         )
 
     else
+        let
+            _ =
+                Lamdera.log "Queue is full" ()
+        in
         ( model, Cmd.none )
 
 
@@ -117,15 +128,15 @@ update msg model =
                         ( fastQueue, slowQueue ) =
                             if List.isEmpty buses then
                                 ( model.fastQueue
-                                , Fifo.insert stop model.slowQueue
+                                , SetFifo.enqueue stop model.slowQueue
                                 )
 
                             else
-                                ( Fifo.insert stop model.fastQueue
+                                ( SetFifo.enqueue stop model.fastQueue
                                 , model.slowQueue
                                 )
                     in
-                    { model
+                    ( { model
                         | pending = SeqSet.remove stop model.pending
                         , buses =
                             List.foldl
@@ -136,8 +147,9 @@ update msg model =
                                 buses
                         , fastQueue = fastQueue
                         , slowQueue = slowQueue
-                    }
-                        |> Cmd.Extra.pure
+                      }
+                    , Lamdera.broadcast (TFBuses (SeqDict.toList model.buses))
+                    )
 
                 Err e ->
                     let
@@ -146,19 +158,19 @@ update msg model =
                     in
                     { model
                         | pending = SeqSet.remove stop model.pending
-                        , slowQueue = Fifo.insert stop model.slowQueue
+                        , slowQueue = SetFifo.enqueue stop model.slowQueue
                     }
                         |> Cmd.Extra.pure
 
         Tick _ ->
-            case Fifo.remove model.slowQueue of
-                ( Nothing, _ ) ->
+            case SetFifo.dequeue model.slowQueue of
+                Nothing ->
                     model
                         |> Cmd.Extra.pure
 
-                ( Just head, tail ) ->
+                Just ( head, tail ) ->
                     { model
-                        | fastQueue = Fifo.insert head model.fastQueue
+                        | fastQueue = SetFifo.enqueue head model.fastQueue
                         , slowQueue = tail
                     }
                         |> Cmd.Extra.pure
@@ -174,10 +186,25 @@ update msg model =
         GotStops (Ok stops) ->
             ( { model
                 | stops = stops
-                , fastQueue = Fifo.fromList (List.map .code stops)
               }
-            , Lamdera.broadcast (TFStops stops)
+            , Cmd.batch
+                [ Lamdera.broadcast (TFStops stops)
+                , Api.getEndpoints (List.map .code stops)
+                    |> Task.attempt GotEndpoints
+                ]
             )
+
+        GotEndpoints (Err e) ->
+            let
+                _ =
+                    Lamdera.log ("Error getting endpoints: " ++ errorToString e) ()
+            in
+            model
+                |> Cmd.Extra.pure
+
+        GotEndpoints (Ok endpoints) ->
+            { model | fastQueue = SetFifo.fromSeqSet endpoints }
+                |> Cmd.Extra.pure
     )
         |> Cmd.Extra.andThen processQueue
 

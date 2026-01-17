@@ -1,15 +1,20 @@
-module Api exposing (getBusesForStopId, getStops)
+module Api exposing (getBusesForStopId, getEndpoints, getStops)
 
 import Angle exposing (Angle)
 import DecodeComplete
 import Duration exposing (Duration)
 import Http
-import Id exposing (Id, Stop, Vehicle)
+import Id exposing (Environment, Id, Line, Stop, Vehicle)
 import Json.Decode exposing (Decoder)
 import Json.Encode
+import Lamdera
+import List.Extra
 import Maybe.Extra
 import Process
 import Quantity
+import Regex exposing (Match, Regex)
+import Result.Extra
+import SeqSet exposing (SeqSet)
 import Task exposing (Task)
 import Types exposing (BackendMsg(..), Bus, Point, Service(..), StopInfo)
 
@@ -68,6 +73,28 @@ jsonResolver decoder =
 
                         Err jsonError ->
                             Err (Http.BadBody (Json.Decode.errorToString jsonError))
+        )
+
+
+stringResolver : Http.Resolver Http.Error String
+stringResolver =
+    Http.stringResolver
+        (\response ->
+            case response of
+                Http.BadUrl_ url ->
+                    Err (Http.BadUrl url)
+
+                Http.Timeout_ ->
+                    Err Http.Timeout
+
+                Http.NetworkError_ ->
+                    Err Http.NetworkError
+
+                Http.BadStatus_ { statusCode } _ ->
+                    Err (Http.BadStatus statusCode)
+
+                Http.GoodStatus_ _ body ->
+                    Ok body
         )
 
 
@@ -225,8 +252,8 @@ propertiesDecoder =
             (\name code location services _ ->
                 { name = name
                 , code = code
-                , services = services
                 , location = location
+                , services = services
                 }
                     |> Just
             )
@@ -256,3 +283,154 @@ serviceDecoder =
 idDecoder : Decoder (Id a)
 idDecoder =
     Json.Decode.map Id.fromString Json.Decode.string
+
+
+getEndpoints : List (Id Stop) -> Task Http.Error (SeqSet (Id Stop))
+getEndpoints initialQueue =
+    let
+        step : SeqSet (Id Stop) -> SeqSet (Id Line) -> List (Id Stop) -> Task Http.Error (SeqSet (Id Stop))
+        step acc failingLines queue =
+            let
+                queueLength : Int
+                queueLength =
+                    List.length queue
+
+                _ =
+                    if (queueLength |> modBy 10) == 0 then
+                        Lamdera.log "Queue size" queueLength
+
+                    else
+                        queueLength
+            in
+            case ( List.take 11 queue, List.drop 11 queue ) of
+                ( [], _ ) ->
+                    Task.succeed acc
+
+                ( head, tail ) ->
+                    head
+                        |> List.map
+                            (\stopId ->
+                                getLinesPassingByStop stopId
+                                    |> Task.andThen
+                                        (\lines ->
+                                            lines
+                                                |> List.Extra.removeWhen (\( _, line ) -> SeqSet.member line failingLines)
+                                                |> List.map getEndpointsForLine
+                                                |> List.Extra.greedyGroupsOf 10
+                                                |> List.map Task.sequence
+                                                |> Task.sequence
+                                                |> Task.map List.concat
+                                        )
+                            )
+                        |> Task.sequence
+                        |> Task.map List.concat
+                        |> Task.andThen
+                            (\results ->
+                                let
+                                    ( successes, failures ) =
+                                        Result.Extra.partition results
+
+                                    newIds : List (Id Stop)
+                                    newIds =
+                                        List.concat successes
+
+                                    newAcc : SeqSet (Id Stop)
+                                    newAcc =
+                                        List.foldl SeqSet.insert acc newIds
+                                in
+                                step
+                                    newAcc
+                                    (List.foldl SeqSet.insert failingLines failures)
+                                    ((newIds ++ tail)
+                                        |> List.Extra.removeWhen
+                                            (\id ->
+                                                SeqSet.member id newAcc
+                                            )
+                                    )
+                            )
+    in
+    step SeqSet.empty
+        (SeqSet.fromList
+            [ Id.fromString "U98DA"
+            , Id.fromString "U232"
+            , Id.fromString "U98DR"
+            , Id.fromString "U231"
+            ]
+        )
+        initialQueue
+
+
+getLinesPassingByStop : Id Stop -> Task Http.Error (List ( Id Environment, Id Line ))
+getLinesPassingByStop stopId =
+    httpGetString
+        ("https://tplfvg.it/it/il-viaggio/costruisci-il-tuo-orario/?bus_stop="
+            ++ Id.toString stopId
+            ++ "&search-lines-by-bus-stops"
+        )
+        |> Task.map parseLines
+
+
+httpGetString : String -> Task Http.Error String
+httpGetString url =
+    Http.task
+        { method = "GET"
+        , url = url
+        , timeout = Nothing
+        , resolver = stringResolver
+        , headers = []
+        , body = Http.emptyBody
+        }
+
+
+getEndpointsForLine : ( Id Environment, Id Line ) -> Task Http.Error (Result (Id Line) (List (Id Stop)))
+getEndpointsForLine ( environment, line ) =
+    httpGetString
+        ("https://tplfvg.it/services/timetables/full/?code=" ++ Id.toString line ++ "&lang=it&env=" ++ Id.toString environment)
+        |> Task.map parseEndpoints
+        |> Task.map Ok
+        |> Task.onError (\_ -> Task.succeed (Err line))
+
+
+parseLines : String -> List ( Id Environment, Id Line )
+parseLines raw =
+    Regex.find lineRegex raw
+        |> List.filterMap
+            (\match ->
+                case match.submatches of
+                    [ Just environmentCode, Just guidelineCode ] ->
+                        Just ( Id.fromString environmentCode, Id.fromString guidelineCode )
+
+                    _ ->
+                        Nothing
+            )
+
+
+lineRegex : Regex
+lineRegex =
+    Regex.fromString "\"environment_code\": \"([A-Z0-9]+)\", \"group_code\": \"[A-Z0-9]+\", \"guideline_code\": \"([A-Z0-9]+)\""
+        |> Maybe.withDefault Regex.never
+
+
+endpointRegex : Regex
+endpointRegex =
+    Regex.fromString "<strong>([A-Z0-9]+)</strong>"
+        |> Maybe.withDefault Regex.never
+
+
+parseEndpoints : String -> List (Id Stop)
+parseEndpoints raw =
+    let
+        matches : List Match
+        matches =
+            Regex.find endpointRegex raw
+
+        extract : Maybe Regex.Match -> List (Id stop)
+        extract match =
+            case Maybe.map .submatches match of
+                Just [ Just stopCode ] ->
+                    [ Id.fromString stopCode ]
+
+                _ ->
+                    []
+    in
+    extract (List.head matches) ++ extract (List.Extra.last matches)

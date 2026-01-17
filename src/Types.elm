@@ -1,12 +1,12 @@
 module Types exposing (BackendModel, BackendMsg(..), Bus, FrontendModel, FrontendMsg(..), Point, Service(..), StopInfo, ToBackend(..), ToFrontend(..))
 
 import Angle exposing (Angle)
-import Fifo exposing (Fifo)
 import Http
 import Id exposing (Id, Line, Stop, Vehicle)
 import Lamdera exposing (ClientId, SessionId, Url, UrlRequest)
 import SeqDict exposing (SeqDict)
 import SeqSet exposing (SeqSet)
+import SetFifo exposing (SetFifo)
 import Time
 
 
@@ -23,8 +23,8 @@ type alias BackendModel =
 
     -- Queues
     , pending : SeqSet (Id Stop)
-    , fastQueue : Fifo (Id Stop)
-    , slowQueue : Fifo (Id Stop)
+    , fastQueue : SetFifo (Id Stop)
+    , slowQueue : SetFifo (Id Stop)
     , stops : List StopInfo
     }
 
@@ -53,6 +53,7 @@ type BackendMsg
     | GotBusesFromStop (Id Stop) (Result Http.Error (List ( Id Vehicle, Bus )))
     | Tick Time.Posix
     | GotStops (Result Http.Error (List StopInfo))
+    | GotEndpoints (Result Http.Error (SeqSet (Id Stop)))
 
 
 type ToFrontend

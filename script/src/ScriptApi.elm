@@ -17,9 +17,6 @@ import SeqSet exposing (SeqSet)
 import Types exposing (Point, Service(..), StopInfo)
 
 
-type Environment
-    = Environment
-
 
 getStops : BackendTask FatalError (List StopInfo)
 getStops =
