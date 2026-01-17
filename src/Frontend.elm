@@ -17,7 +17,7 @@ import Rectangle2d
 import SeqDict
 import Svg exposing (Svg)
 import Svg.Attributes
-import Types exposing (Bus, FrontendModel, FrontendMsg(..), Point, ToFrontend(..))
+import Types exposing (Bus, FrontendModel, FrontendMsg(..), Point, ToBackend(..), ToFrontend(..))
 import Url
 
 
@@ -85,6 +85,9 @@ update msg model =
         ToggleDark ->
             ( { model | dark = not model.dark }, Cmd.none )
 
+        ReloadBusStops ->
+            ( model, Lamdera.sendToBackend TBReloadBusStops )
+
 
 updateFromBackend : ToFrontend -> FrontendModel -> ( FrontendModel, Cmd FrontendMsg )
 updateFromBackend msg model =
@@ -125,6 +128,9 @@ view model =
         , Html.button
             [ Html.Events.onClick ToggleDark ]
             [ Html.text "Toggle theme" ]
+        , Html.button
+            [ Html.Events.onClick ReloadBusStops ]
+            [ Html.text "Reload bus stops" ]
         ]
     }
 

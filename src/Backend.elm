@@ -202,8 +202,8 @@ errorToString err =
 updateFromFrontend : SessionId -> ClientId -> ToBackend -> BackendModel -> ( BackendModel, Cmd BackendMsg )
 updateFromFrontend _ _ msg model =
     case msg of
-        TBNoop ->
-            ( model, Cmd.none )
+        TBReloadBusStops ->
+            ( model, Api.getStops )
 
 
 subscriptions : BackendModel -> Sub BackendMsg

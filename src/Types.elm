@@ -41,10 +41,11 @@ type FrontendMsg
     = UrlClicked UrlRequest
     | UrlChanged Url
     | ToggleDark
+    | ReloadBusStops
 
 
 type ToBackend
-    = TBNoop
+    = TBReloadBusStops
 
 
 type BackendMsg
