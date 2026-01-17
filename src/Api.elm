@@ -16,7 +16,7 @@ import Types exposing (BackendMsg(..), Bus, Point, Service(..), StopInfo)
 getStops : Cmd BackendMsg
 getStops =
     Http.get
-        { url = "https://tplfvg.it/services/geojson/points"
+        { url = "https://tplfvg.it/services/geojson/points/"
         , expect = Http.expectJson GotStops busStopsDecoder
         }
 
