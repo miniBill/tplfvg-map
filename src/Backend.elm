@@ -43,7 +43,7 @@ init =
 
 maxPending : number
 maxPending =
-    1
+    10
 
 
 processQueue : BackendModel -> ( BackendModel, Cmd BackendMsg )
@@ -212,5 +212,5 @@ subscriptions : BackendModel -> Sub BackendMsg
 subscriptions _ =
     Sub.batch
         [ Lamdera.onConnect OnConnect
-        , Time.every 5000 Tick
+        , Time.every 10000 Tick
         ]
