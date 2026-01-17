@@ -9,6 +9,7 @@ import Id exposing (Id, Stop)
 import Lamdera exposing (ClientId, SessionId)
 import SeqDict
 import SeqSet exposing (SeqSet)
+import Task
 import Time
 import Types exposing (BackendModel, BackendMsg(..), ToBackend(..), ToFrontend(..))
 
@@ -36,7 +37,7 @@ init =
       , fastQueue = Fifo.empty
       , slowQueue = Fifo.empty
       }
-    , Api.getStops
+    , Task.attempt GotStops Api.getStops
     )
 
 
@@ -204,7 +205,7 @@ updateFromFrontend : SessionId -> ClientId -> ToBackend -> BackendModel -> ( Bac
 updateFromFrontend _ _ msg model =
     case msg of
         TBReloadBusStops ->
-            ( model, Api.getStops )
+            ( model, Task.attempt GotStops Api.getStops )
 
 
 subscriptions : BackendModel -> Sub BackendMsg

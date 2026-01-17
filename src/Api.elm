@@ -10,16 +10,19 @@ import Json.Encode
 import Maybe.Extra
 import Process
 import Quantity
-import Result.Extra
-import Task
+import Task exposing (Task)
 import Types exposing (BackendMsg(..), Bus, Point, Service(..), StopInfo)
 
 
-getStops : Cmd BackendMsg
+getStops : Task Http.Error (List StopInfo)
 getStops =
-    Http.get
+    Http.task
         { url = "https://tplfvg.it/services/geojson/points/"
-        , expect = Http.expectJson GotStops busStopsDecoder
+        , method = "GET"
+        , timeout = Nothing
+        , resolver = jsonResolver busStopsDecoder
+        , body = Http.emptyBody
+        , headers = []
         }
 
 
