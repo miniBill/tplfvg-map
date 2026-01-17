@@ -223,8 +223,20 @@ getBounds items =
 
 pointToCoordinates : Point -> ( Float, Float )
 pointToCoordinates point =
-    ( 1000 * Angle.inDegrees point.longitude
-    , 1000 * -(Angle.inDegrees point.latitude)
+    let
+        scale : number
+        scale =
+            40000
+    in
+    ( scale * Angle.inRadians point.longitude
+    , -scale
+        * logBase e
+            (Angle.tan
+                (Quantity.plus
+                    (Angle.radians (pi / 4))
+                    (Quantity.half point.latitude)
+                )
+            )
     )
 
 
