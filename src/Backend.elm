@@ -171,11 +171,12 @@ update msg model =
                 |> Cmd.Extra.pure
 
         GotStops (Ok stops) ->
-            { model
+            ( { model
                 | stops = stops
                 , fastQueue = Fifo.fromList (List.map .code stops)
-            }
-                |> Cmd.Extra.pure
+              }
+            , Lamdera.broadcast (TFStops stops)
+            )
     )
         |> Cmd.Extra.andThen processQueue
 

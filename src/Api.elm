@@ -193,7 +193,7 @@ pointDecoder =
                 |> Json.Decode.andThen
                     (\list ->
                         case list of
-                            [ latitude, longitude ] ->
+                            [ longitude, latitude ] ->
                                 { latitude = latitude
                                 , longitude = longitude
                                 }
