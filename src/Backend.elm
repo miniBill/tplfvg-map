@@ -1,7 +1,7 @@
 module Backend exposing (app)
 
 import Api
-import Data
+import Cmd.Extra
 import Duration
 import Http
 import Id exposing (Id, Stop)
@@ -29,17 +29,19 @@ app =
 
 init : ( BackendModel, Cmd BackendMsg )
 init =
-    { buses = SeqDict.empty
-    , pending = SeqSet.empty
-    , fastQueue = Data.endpoints
-    , slowQueue = []
-    }
-        |> processQueue
+    ( { buses = SeqDict.empty
+      , pending = SeqSet.empty
+      , stops = []
+      , fastQueue = []
+      , slowQueue = []
+      }
+    , Api.getStops
+    )
 
 
 maxPending : number
 maxPending =
-    10
+    1
 
 
 processQueue : BackendModel -> ( BackendModel, Cmd BackendMsg )
@@ -97,10 +99,13 @@ processQueue model =
 
 update : BackendMsg -> BackendModel -> ( BackendModel, Cmd BackendMsg )
 update msg model =
-    case msg of
+    (case msg of
         OnConnect _ clientId ->
             ( model
-            , Lamdera.sendToFrontend clientId (TFBuses (SeqDict.toList model.buses))
+            , Cmd.batch
+                [ Lamdera.sendToFrontend clientId (TFStops model.stops)
+                , Lamdera.sendToFrontend clientId (TFBuses (SeqDict.toList model.buses))
+                ]
             )
 
         GotBusesFromStop stop result ->
@@ -130,7 +135,7 @@ update msg model =
                         , fastQueue = fastQueue
                         , slowQueue = slowQueue
                     }
-                        |> processQueue
+                        |> Cmd.Extra.pure
 
                 Err e ->
                     let
@@ -141,19 +146,37 @@ update msg model =
                         | pending = SeqSet.remove stop model.pending
                         , slowQueue = stop :: model.slowQueue
                     }
-                        |> processQueue
+                        |> Cmd.Extra.pure
 
         Tick _ ->
             case model.slowQueue of
                 [] ->
-                    ( model, Cmd.none )
+                    model
+                        |> Cmd.Extra.pure
 
                 head :: tail ->
                     { model
                         | fastQueue = head :: model.fastQueue
                         , slowQueue = tail
                     }
-                        |> processQueue
+                        |> Cmd.Extra.pure
+
+        GotStops (Err e) ->
+            let
+                _ =
+                    Lamdera.log ("Error getting stops: " ++ errorToString e) ()
+            in
+            model
+                |> Cmd.Extra.pure
+
+        GotStops (Ok stops) ->
+            { model
+                | stops = stops
+                , fastQueue = List.map .code stops
+            }
+                |> Cmd.Extra.pure
+    )
+        |> Cmd.Extra.andThen processQueue
 
 
 errorToString : Http.Error -> String

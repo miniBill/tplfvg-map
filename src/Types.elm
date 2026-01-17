@@ -12,6 +12,7 @@ import Time
 type alias FrontendModel =
     { key : Lamdera.Key
     , buses : SeqDict (Id Vehicle) Bus
+    , stops : List StopInfo
     , dark : Bool
     }
 
@@ -23,6 +24,7 @@ type alias BackendModel =
     , pending : SeqSet (Id Stop)
     , fastQueue : List (Id Stop)
     , slowQueue : List (Id Stop)
+    , stops : List StopInfo
     }
 
 
@@ -48,10 +50,12 @@ type BackendMsg
     = OnConnect SessionId ClientId
     | GotBusesFromStop (Id Stop) (Result Http.Error (List ( Id Vehicle, Bus )))
     | Tick Time.Posix
+    | GotStops (Result Http.Error (List StopInfo))
 
 
 type ToFrontend
-    = TFBuses (List ( Id Vehicle, Bus ))
+    = TFStops (List StopInfo)
+    | TFBuses (List ( Id Vehicle, Bus ))
 
 
 type alias StopInfo =

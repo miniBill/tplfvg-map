@@ -4,7 +4,6 @@ import Angle
 import BoundingBox2d exposing (BoundingBox2d)
 import Browser exposing (UrlRequest(..))
 import Browser.Navigation as Nav
-import Data
 import FNV1a
 import Frame2d
 import Html exposing (Html)
@@ -58,6 +57,7 @@ init : Url -> Key -> ( FrontendModel, Cmd FrontendMsg )
 init _ key =
     ( { key = key
       , buses = SeqDict.empty
+      , stops = []
       , dark = False
       }
     , Cmd.none
@@ -102,6 +102,9 @@ updateFromBackend msg model =
             , Cmd.none
             )
 
+        TFStops stops ->
+            ( { model | stops = stops }, Cmd.none )
+
 
 view : FrontendModel -> Browser.Document FrontendMsg
 view model =
@@ -128,53 +131,57 @@ view model =
 
 innerView : FrontendModel -> Html msg
 innerView model =
-    let
-        -- endpoints =
-        --     IdSet.fromList Data.endpoints
-        viewBox : String
-        viewBox =
-            let
-                bounds : BoundingBox2d Unitless world
-                bounds =
-                    getBounds Data.stops
+    if List.isEmpty model.stops then
+        Html.text "Loading..."
 
-                ( width, height ) =
-                    BoundingBox2d.dimensions bounds
-            in
-            [ BoundingBox2d.minX bounds
-            , BoundingBox2d.minY bounds
-            , width
-            , height
+    else
+        let
+            -- endpoints =
+            --     IdSet.fromList model.endpoints
+            viewBox : String
+            viewBox =
+                let
+                    bounds : BoundingBox2d Unitless world
+                    bounds =
+                        getBounds model.stops
+
+                    ( width, height ) =
+                        BoundingBox2d.dimensions bounds
+                in
+                [ BoundingBox2d.minX bounds
+                , BoundingBox2d.minY bounds
+                , width
+                , height
+                ]
+                    |> List.map (\q -> q |> Quantity.toFloat |> String.fromFloat)
+                    |> String.join " "
+
+            stops : List (Svg msg)
+            stops =
+                List.map (viewStop { dark = model.dark }) model.stops
+
+            buses : List (Svg msg)
+            buses =
+                model.buses
+                    |> SeqDict.values
+                    |> List.map (viewBus { dark = model.dark })
+        in
+        Svg.svg
+            [ Svg.Attributes.viewBox viewBox
+            , Html.Attributes.style "height" "auto"
+            , Html.Attributes.style "width" "100%"
+            , Html.Attributes.style "max-height" "90vh"
+            , Html.Attributes.style "background"
+                (if model.dark then
+                    "black"
+
+                 else
+                    "white"
+                )
             ]
-                |> List.map (\q -> q |> Quantity.toFloat |> String.fromFloat)
-                |> String.join " "
-
-        stops : List (Svg msg)
-        stops =
-            List.map (viewStop { dark = model.dark }) Data.stops
-
-        buses : List (Svg msg)
-        buses =
-            model.buses
-                |> SeqDict.values
-                |> List.map (viewBus { dark = model.dark })
-    in
-    Svg.svg
-        [ Svg.Attributes.viewBox viewBox
-        , Html.Attributes.style "height" "auto"
-        , Html.Attributes.style "width" "100%"
-        , Html.Attributes.style "max-height" "90vh"
-        , Html.Attributes.style "background"
-            (if model.dark then
-                "black"
-
-             else
-                "white"
-            )
-        ]
-        [ Svg.g [ Svg.Attributes.id "stops" ] stops
-        , Svg.g [ Svg.Attributes.id "buses" ] buses
-        ]
+            [ Svg.g [ Svg.Attributes.id "stops" ] stops
+            , Svg.g [ Svg.Attributes.id "buses" ] buses
+            ]
 
 
 getBounds : List { a | coordinates : Point } -> BoundingBox2d Unitless world
