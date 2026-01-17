@@ -1,6 +1,7 @@
 module Types exposing (BackendModel, BackendMsg(..), Bus, FrontendModel, FrontendMsg(..), Point, Service(..), StopInfo, ToBackend(..), ToFrontend(..))
 
 import Angle exposing (Angle)
+import Fifo exposing (Fifo)
 import Http
 import Id exposing (Id, Line, Stop, Vehicle)
 import Lamdera exposing (ClientId, SessionId, Url, UrlRequest)
@@ -22,8 +23,8 @@ type alias BackendModel =
 
     -- Queues
     , pending : SeqSet (Id Stop)
-    , fastQueue : List (Id Stop)
-    , slowQueue : List (Id Stop)
+    , fastQueue : Fifo (Id Stop)
+    , slowQueue : Fifo (Id Stop)
     , stops : List StopInfo
     }
 

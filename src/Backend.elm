@@ -3,6 +3,7 @@ module Backend exposing (app)
 import Api
 import Cmd.Extra
 import Duration
+import Fifo exposing (Fifo)
 import Http
 import Id exposing (Id, Stop)
 import Lamdera exposing (ClientId, SessionId)
@@ -32,8 +33,8 @@ init =
     ( { buses = SeqDict.empty
       , pending = SeqSet.empty
       , stops = []
-      , fastQueue = []
-      , slowQueue = []
+      , fastQueue = Fifo.empty
+      , slowQueue = Fifo.empty
       }
     , Api.getStops
     )
@@ -54,17 +55,17 @@ processQueue model =
                     size =
                         maxPending - SeqSet.size model.pending
 
-                    go : Int -> SeqSet (Id Stop) -> List (Id Stop) -> ( SeqSet (Id Stop), List (Id Stop) )
+                    go : Int -> SeqSet (Id Stop) -> Fifo (Id Stop) -> ( SeqSet (Id Stop), Fifo (Id Stop) )
                     go n acc queue =
                         if n >= size then
                             ( acc, queue )
 
                         else
-                            case queue of
-                                [] ->
+                            case Fifo.remove queue of
+                                ( Nothing, _ ) ->
                                     ( acc, queue )
 
-                                head :: rest ->
+                                ( Just head, rest ) ->
                                     if
                                         SeqSet.member head model.pending
                                             || SeqSet.member head acc
@@ -115,11 +116,11 @@ update msg model =
                         ( fastQueue, slowQueue ) =
                             if List.isEmpty buses then
                                 ( model.fastQueue
-                                , stop :: model.slowQueue
+                                , Fifo.insert stop model.slowQueue
                                 )
 
                             else
-                                ( stop :: model.fastQueue
+                                ( Fifo.insert stop model.fastQueue
                                 , model.slowQueue
                                 )
                     in
@@ -144,19 +145,19 @@ update msg model =
                     in
                     { model
                         | pending = SeqSet.remove stop model.pending
-                        , slowQueue = stop :: model.slowQueue
+                        , slowQueue = Fifo.insert stop model.slowQueue
                     }
                         |> Cmd.Extra.pure
 
         Tick _ ->
-            case model.slowQueue of
-                [] ->
+            case Fifo.remove model.slowQueue of
+                ( Nothing, _ ) ->
                     model
                         |> Cmd.Extra.pure
 
-                head :: tail ->
+                ( Just head, tail ) ->
                     { model
-                        | fastQueue = head :: model.fastQueue
+                        | fastQueue = Fifo.insert head model.fastQueue
                         , slowQueue = tail
                     }
                         |> Cmd.Extra.pure
@@ -172,7 +173,7 @@ update msg model =
         GotStops (Ok stops) ->
             { model
                 | stops = stops
-                , fastQueue = List.map .code stops
+                , fastQueue = Fifo.fromList (List.map .code stops)
             }
                 |> Cmd.Extra.pure
     )
